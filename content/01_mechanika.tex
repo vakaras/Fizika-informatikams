@@ -1,24 +1,273 @@
 \chapter{Mechanika}
 
-\section{Materija ir jos savybės. Pagrindinės judančiųjų kūnų charakteristikos (greitis, pagreitis).}
+\section{Materija ir jos savybės.}
+
+\begin{defn}[Materija]
+  Viskas, kas mus supa. Tiek gyva ir negyva.
+\end{defn}
+
+Materija gali būti dviejose formose:
+\begin{description}
+  \item[medžiaga] – ;
+  \item[jėgų laukas] – gravitacinis, elektromagnetinis (kai kurie skirsto
+    į elektrinį ir magnetinį), branduolinis (sąveika tarp nuklonų
+    atomo branduolyje).
+\end{description}
+
+Judėjimas betarpiškai siejasi su kinetine energija. Temperatūra yra
+dalelių vidutinė kinetinė energija. Prie absoliutaus nulio, bet koks
+judėjimas nustoja egzistuoti.
+
+Nusakydami kūnų judėjimo greitį naudojame šviesos sklidimo vakuume skalę.
+Šviesos greitis yra laikomas greičio įmanomo greičio viršutiniu 
+rėžiu.
+\begin{equation*}
+  c = 2,998 \cdot 10^{8} \frac{m}{s} \approx 3 \cdot 10 ^{8} \frac{m}{s}.
+\end{equation*}
+
+Jei $\frac{v^{2}}{c^{2}} << 1$, tai judėjimas laikomas nereliatyviuoju,
+priešingu atveju – reliatyviuoju.
+
+Mechanikos mokslo tikslas yra nagrinėti kūnų judėjimo erdvėje
+dėsningumus.
+
+Mechanika yra skirstoma į:
+\begin{description}
+  \item[klasikinę] –;
+  \item[kvantinę] –;
+\end{description}
+
+Planko konstanta (TODO: perbraukta h):
+\begin{equation*}
+  h_{\t{Planko}} = 1,0549 \cdot 10 ^{-34} J \cdot s
+\end{equation*}
+Kartais naudojama:
+\begin{equation*}
+  h = 6,6256 \cdot 10 ^{-34} J \cdot s
+\end{equation*}
+Ryšys:
+\begin{equation*}
+  h_{\t{Planko}} = \frac{h}{2 \pi}
+\end{equation*}
+
+
 \section{Vienetų sistemos.}
+
+\section{Pagrindinės judančiųjų kūnų charakteristikos (greitis, pagreitis).}
+
+\begin{defn}[Greitis]
+  Radius-vektoriaus kitimo sparta.
+\end{defn}
+
+Kampinis greitis:
+\begin{align*}
+  \vec{v}
+  &= \frac{dr}{dt} \\
+  &= \frac{\left[ d\vec{\varphi} \vec{r} \right]}{dt} \\
+  &= \left[ \frac{d\vec{\varphi}}{dt}r \right] \\
+  &= \left[ \vec{\omega}\vec{r} \right] \\
+\end{align*}
+
+Pagreitis:
+\begin{align*}
+  \vec{a} = a_{t} \vec{n} + a_{n} \vec{m},
+\end{align*}
+čia $\vec{n}$ ir $\vec{m}$ ortogonalūs (statmeni) vienetiniai vektoriai. 
+
+Jeigu kūnas juda apskritimu, tada kampinis pagreitis:
+\begin{align*}
+  \vec{\varepsilon}
+  &= \frac{d\vec{\omega}}{t} \\
+  &= \frac{d}{dt}\left( \frac{d\vec{\varphi}}{dt} \right) \\
+  &= \frac{d^{2} \vec{\varphi}}{dt^{2}} \\
+\end{align*}
+
+Svarbiausi klausimai:
+\begin{itemize}
+  \item kas tai yra kūno greitis, kuo jis charakterizuojamas (trimatėje
+    sistemoje) – radius-vektoriaus kitimo sparta tam tikra išreikšta
+    kryptimi; jei yra sukamasis judėjimas, tai įvedama kampinio greičio
+    sąvoka;
+  \item jeigu turime netolygų judėjimą, tai tam turime dar vieną parametrą
+    – pagreitį (apskritiminiam – kampinis pagreitis);
+  \item jei yra kūnas mestas kampu į horizontą, tai pagreitis susideda
+    iš tangentinio ir normaliojo.
+\end{itemize}
+
 \section{Galilėjaus transformacijos.}
 
 Jei turim klasikinį judėjimo modelį.
+
+Galilėjaus transformacijos – metodas aprašyti makroskopinių kūnų
+judėjimą.
+
+Tarkime, turime dvi judančias sistemas $K$ ir $K'$. Jeigu paimtume
+pokytį skalėje dydžiu $t_{0}$ ir koordinačių pradžią paslinktume
+per radius vektorių $\vec{r_{0}}$, tai laikas TODO: patikrinti formulių
+vektorius.
+
+
+Jeigu taško judėjimo greitis vienoje sistemoje $V$…:
+\begin{align*}
+  \vec{V} = \vec{V}' + v;
+\end{align*}
+
+Reikia prisiminti, kad $\frac{v^{2}}{c^{2}} << 1$! Nei laikas, nei
+geometrija nekinta.
 
 \section{Lorenco transformacijos.}
 
 Jei turim reliatyvistinį judėjimo modelį. Bus paaiškinti laiko ir
 geometrijos kitimas.
 
-\section{Dinaminiai mechanikos principai.}
-Niutono dėsniai. Gravitacija. Energija (kinetinė, potencinė).
-\section{Tvermės dėsniai.}
-Trys tvermės dėsniai:
+Lorenco transformacijos yra taikomos tada, kai turime reliatyvistinį
+judėjimą, kai turime kvantinės mechanikos atvejį.
+
+Jei $\frac{v^{2}}{c^{2}} \approx 1$, tai judėjimas $K'$ atžvilgiu
+nejudančios $K$ sistemos yra reliatyvistinis.
+
+Reikia prisiminti: esant tokiam judėjimui kinta laikas ir geometrija.
+Svarbiausia:
 \begin{itemize}
-  \item energijos;
-  \item impulso;
-  \item sukimosi momento.
+  \item tinka aprašyti judėjimus, kai $\frac{v^{2}}{c^{2}} \approx 1$;
+  \item Lorenco transformacijos duoda sampratą apie geometrijos
+    kitimą esant reliatyvistiniam judėjimui (judančioje sistemoje
+    kūnų geometrija mažėja atžvilgiu nejudančios sistemos);
+  \item judančioje sistemoje laikas sutrumpėja nejudančios sistemos.
 \end{itemize}
 
-Nagrinėsim Hamiltono funkcijas.
+\section{Dinaminiai mechanikos principai.}
+Niutono dėsniai. Gravitacija. Energija (kinetinė, potencinė).
+
+Bet kokios N dalelių sistemos kiekvienos dalelės pagreitis yra jų
+radius-vektorių bei greičių funkcija:
+\begin{align}
+  \vec{a_{i}}
+  &= \frac{d^{2}\vec{r}_{i}}{dt^{2}} \\
+  &= \vec{a}_{i}(%
+    \vec{r_{1}},\ldots,\vec{r_{N}}; \vec{v_{1}},\ldots,\vec{v_{N}}) \\
+  &= \vec{a_{i}} \left(%
+    \vec{r_{1}},\ldots,\vec{r_{N}}; %
+    \frac{dr_{1}}{dt},\cdots,\frac{dr_{N}}{dt} \right) \\
+  \label{eq:klasikines_mechanikos_judejimo_lygis}
+\end{align},
+čia $i = 1,2,\ldots,N$.
+
+\ref{eq:klasikines_mechanikos_judejimo_lygis} lygtis yra vadinama
+klasikinės mechanikos judėjimo lygtimi. Bet kurios dalelės:
+\begin{align*}
+  \vec{a}
+  &= \frac{d^{2}\vec{r}}{dt^{2}} \\
+  &= \vec{a}(\vec{r}, \vec{v}) \\
+  &= \vec{a} (\vec{r}, \frac{d\vec{r}}{dt}) \\
+\end{align*}
+
+Impulsas: $\vec{p} = m\vec{v}$.
+
+
+$v_{1}$ ir $v_{2}$ – greičiai prieš susiduriant, o
+$v_{1}'$ ir $v_{2}'$ – greičiai po susidūrimo:
+\begin{align*}
+  m_{1}v_{1} + m_{2}v_{2} &= m_{1}v_{1}' + m_{2}v_{2}' \\
+  m_{1}(v_{1}-v_{1}') &= m_{2}(v_{2}' - v_{2}) \\
+\end{align*}
+
+I-asis Niutono dėsnis: $\vec{a} = 0$ ir $F = 0$.
+
+III-asis Niutono dėsnis: $\vec{F_{12}} = - \vec{F_{21}}$.
+\begin{equation*}
+  \frac{d\vec{P_{i}}}{dt}
+  = F_{i} (\vec{r_{1}},\ldots,\vec{r_{N}}; \vec{v_{1},\ldots,\vec{v_{N}}})
+\end{equation*}
+
+Jėgos, veikdamos kūnus, verčia juos judėti, tai yra atlieka darbą.
+Pavyzdžiui:
+\begin{align*}
+  dA = \vec{F}d\vec{r}'\\
+  \Delta A = \int dA = \int \vec{F}d\vec{r}' \\
+  \Delta A= F \Delta r \cos \alpha
+\end{align*}
+
+
+\begin{align*}
+  \Delta A = U(\vec{r_{0}}) - U(\vec{r}) \\
+  U = mgh \\
+\end{align*}
+
+U – potencinė energija. Kinetinė energija: $E_{k} = \frac{mv^{2}}{2}$.
+
+Svarbu:
+\begin{itemize}
+  \item nuo ko priklauso pagreitis (funkcija radius vektoriaus ir greičio);
+  \item jei sistemoje yra N dalelių, tai pagreičiai atitinkamai būtų
+    nusakomi, kaip funkcijos dalelių radius…;
+  \item sąryšis tarp impulso, masės ir greičio;
+  \item uždaros sistemos impulsų sistema yra konstanta;
+  \item jėgos ir impulso sąryšis;
+  \item antrasis Niutono dėsnis (pagreičio apibrėžimas);
+  \item pirmasis Niutono dėsnis;
+  \item trečiasis Niutono dėsnis;
+  \item gravitacijos jėgos išraiška;
+  \item ryšys tarp darbo ir jėgos;
+  \item ryšys tarp darbo ir potencinės energijos.
+\end{itemize}
+
+\section{Tvermės dėsniai.}
+
+Trys tvermės dėsniai:
+\begin{itemize}
+  \item impulso;
+  \item energijos;
+  \item impulso momento.
+\end{itemize}
+
+\begin{equation*}
+  U(x_{1} + x_{0}; x_{2}+x_{0}) = U(x_{1},x_{2}).
+\end{equation*}
+
+$F_{21}$ yra vadinama reakcijos jėga (jėgai $F_{12}$).
+
+Reliatyvumo judėjimo atveju:
+\begin{equation*}
+  \vec{p} = \frac{m\vec{v}}{\sqrt{1 - (\frac{v}{c})^{2}}}
+\end{equation*}
+
+\begin{note}
+  Kartais žymima: $\left( \frac{v}{c} \right)^{2} = \beta$.
+\end{note}
+
+Turint N dalelių sistemą, jos energetinę būseną galime nusakyti:
+\begin{equation*}
+  E = E(\vec{r_{1}},\ldots,\vec{r_{N}}; \vec{p_{1},\ldots,\vec{p_{N}}}) = H
+\end{equation*}
+Tokia funkcija yra vadinama Hamiltono funkcija ir žymima H.
+
+Svarbu prisiminti:
+\begin{itemize}
+  \item energijos ryšys su impulsu;
+  \item Hamiltono lygtys;
+  \item sąryšis tarp …
+  \item reikia mokėti išvesti energijos tvermės dėsnį iš Hamiltono
+    lygčių.
+\end{itemize}
+
+TODO: Rimties energija ($m*c^{2}$).
+
+\subsection{Impulso momento tvermės dėsnis}
+
+Impulso momentas: $\vec{L} = \left[ \vec{r}\vec{p} \right]$.
+Izoliuotam kūnui: $\vec{L} = const.$
+
+Tai seka iš:
+\begin{equation*}
+  \frac{d\vec{L}}{dt} = \left[ \frac{d\vec{r}}{dt} \vec{p} \right] +
+  \left[ \vec{r} \frac{d\vec{p}}{dt} \right]
+\end{equation*}
+
+Kadangi greitis $\frac{d\vec{r}}{dt}$ ir $\vec{p}$ kolinearūs, tai,
+o be to, $\frac{d\vec{L}}{dt} = 0$ ir $\vec{L}$ yra $const$.
+Jei dalelę veikia jėgos, tai atsiranda dalelę veikiantis jėgų
+momentas:
+\begin{equation*}
+  \vec{M} = \left[ \vec{r}\vec{F} \right]
+\end{equation*}
