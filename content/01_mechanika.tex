@@ -1,63 +1,153 @@
 \chapter{Mechanika}
 
-Radius vektorius yra vektorius, kuris turi ir modulį ir kryptį.
-Radius vektoriaus išvestinė yra greičio vektorius, kurio kryptis
-sutampa su pačio radius vektoriaus kryptimi.
-
 \section{Materija ir jos savybės.}
 
-\begin{defn}[Materija]
-  Viskas, kas mus supa. Tiek gyva ir negyva.
-\end{defn}
+Viskas, kas mus supa, tiek gyva ir negyva, yra vadinama materija.
+Materija gali egzistuoti vienoje iš dviejų formų: medžiaga, arba
+jėgų laukas. Jėgų laukai gali būti:
+\begin{itemize}
+  \item gravitacinis;
+  \item elektromagnetinis (kai kurie fizikai skirsto į elektrinį
+    ir magnetinį);
+  \item branduolinis (sąveika tarp nuklonų atomo branduolyje).
+\end{itemize}
 
-Materija gali būti dviejose formose:
-\begin{description}
-  \item[medžiaga] – ;
-  \item[jėgų laukas] – gravitacinis, elektromagnetinis (kai kurie skirsto
-    į elektrinį ir magnetinį), branduolinis (sąveika tarp nuklonų
-    atomo branduolyje).
-\end{description}
+Viena iš pagrindinių materijos egzistavimo formų yra judėjimas.
+(Bet koks materialaus objekto kitimas erdvėje ir laike yra vadinamas
+jo judėjimu.) Erdvė nusako kūnų išsidėstymą vienas kito atžvilgiu
+bei jų dydį. Laikas nusako įvykių seką bei jo santykinę trukmę.
+Materijos judėjimo formos:
+\begin{itemize}
+  \item mechaninė;
+  \item šiluminė;
+  \item elektromagnetinė;
+  \item branduolinė;
+  \item virsmų (pavyzdžiui, elementariųjų dalelių virsmai).
+\end{itemize}
+Jos charakterizuoja įvarius procesus medžiagose, kurie, pavyzdžiui,
+gali būti fizikiniai, cheminiai, biologiniai.
 
-Judėjimas betarpiškai siejasi su kinetine energija. Temperatūra yra
-dalelių vidutinė kinetinė energija. Prie absoliutaus nulio, bet koks
-judėjimas nustoja egzistuoti.
+Nusakydami kūnų judėjimo greitį, naudojame šviesos sklidimo vakuume
+skalę:
+\begin{equation}
+  c = 2,998 \cdot 10^{8} \frac{m}{s} \approx 3 \cdot 10^{8} \frac{m}{s}.
+  \label{const:c}
+\end{equation}
+Fundamentali, šios reikšmės savybė yra tai, kad šviesos greitis yra
+ribinis bet kokiam materialiam taškui, todėl ši vertė yra vadinama
+universaliąją verte arba konstanta. Jeigu
+$\left( \frac{v}{c} \right)^{2} \ll 1$, kur $v$ yra materialaus objekto
+greitis, tai to objekto judėjimas laikomas nereliatyviuoju.
+Priešingu atveju – reliatyviuoju. Šie judėjimai kokybiškai skiriasi.
 
-Nusakydami kūnų judėjimo greitį naudojame šviesos sklidimo vakuume skalę.
-Šviesos greitis yra laikomas greičio įmanomo greičio viršutiniu 
-rėžiu.
-\begin{equation*}
-  c = 2,998 \cdot 10^{8} \frac{m}{s} \approx 3 \cdot 10 ^{8} \frac{m}{s}.
-\end{equation*}
+Pagrindinis mechanikos mokslo tikslas yra nagrinėti kūnų judėjimo
+erdvėje dėsningumus. Mechanika yra skirstoma į dvi dalis: klasikinę
+ir kvantinę, o kiekviena iš šių dalių dar atitinkamai į reliatyvistinę
+ir nereliatyvistinę. Nereliatyvistinės mechanikos dėsningumus gauname
+iš reliatyvistinės, riboje kai
+$\left( \frac{v}{c} \right)^{2} \ll 1$.
 
-Jei $\frac{v^{2}}{c^{2}} << 1$, tai judėjimas laikomas nereliatyviuoju,
-priešingu atveju – reliatyviuoju.
+Klasikinių dėsningumų galiojimo ribas nusako Planko konstanta:
+\begin{equation}
+  \hbar = 1,0549 \cdot 10^{-34} J \cdot s.
+  \label{const:hbar}
+\end{equation}
+Kartais yra naudojama kita išraiška:
+\begin{equation}
+  h = 2\pi\hbar = 6,6256 \cdot 10^{-34} J \cdot s.
+  \label{const:h}
+\end{equation}
+Makroskopiniai kūnai juda pagal klasikinės mechanikos dėsningumus,
+o mikroskopiniai (kurių dydžiai artimi atomų linijiniams dydžiams –
+$\sim 10^{-10}$ metro) – kvantiniais. Todėl šalia konstantos $c$, mums
+irgi yra svarbi ir universalioji konstanta $\hbar$, kuri atskiria
+kvantinės ir klasikinės fizikos dėsningumus.
 
-Mechanikos mokslo tikslas yra nagrinėti kūnų judėjimo erdvėje
-dėsningumus.
+Judėjimas yra laikomas klasikiniu, jei $mvr \ll \hbar$ ir kvantinis,
+jei $mvr \cong \hbar$. Pavyzdžiui, jeigu imsime elektroną vandenilio
+atome ($r \approx 10^{-10} m, m_{e} = 9,109 \cdot 10^{-31} kg,
+v = 10^{6} \frac{m}{s}$), tai judėjimas bus kvantinis, nes
+($mvr = 9,109 \cdot 10^{-31} \cdot 10^{-10} \cdot 10^{6}
+\cong 10^{-34} J \cdot s$). Iš kitos pusės, kadangi laikas ir
+erdvė visuomet nagrinėjami atžvilgiu kokios nors tai atskaitos sistemos,
+tai šie dydžiai visuomet yra reliatyvūs.
 
-Mechanika yra skirstoma į:
-\begin{description}
-  \item[klasikinę] –;
-  \item[kvantinę] –;
-\end{description}
+Atskaitos sistemos, kuriose laisvieji kūnai juda tiesiaeigiai ir
+tolygiai vadinamos inercinėmis. Visi fizikos dėsniai tokiose atskaitos
+sistemose turi tuos pačius pavidalus. Kitaip tariant, visos
+inercinės sistemos fizikiniu požiūriu yra vienos kitoms ekvivalenčios,
+o fizikiniai dėsniai pereinant iš vienos į kitą – invariantiniai.
 
-Planko konstanta (TODO: perbraukta h):
-\begin{equation*}
-  h_{\t{Planko}} = 1,0549 \cdot 10 ^{-34} J \cdot s
-\end{equation*}
-Kartais naudojama:
-\begin{equation*}
-  h = 6,6256 \cdot 10 ^{-34} J \cdot s
-\end{equation*}
-Ryšys:
-\begin{equation*}
-  h_{\t{Planko}} = \frac{h}{2 \pi}
-\end{equation*}
-
+Nagrinėdami realius kūnus mechanikos kurse, koncentruosime savo mintis,
+naudodami materialaus taško bei absoliučiai kieto kūno sąvokas.
+Materialiu tašku vadinama dalelė, kuriai judant, jos dydis, forma,
+struktūra bei vykstantys joje procesai nedaro įtakos judėjimui.
+Absoliučiai kietu kūnu vadiname kūną, kuriam judant, atskiros jo
+dalys yra nejudančios viena kitos atžvilgiu.
 
 \section{Vienetų sistemos.}
 
+\subsection{Fundamentaliosios konstantos}
+
+\xtable{
+  w [2 | 1 | 2]
+  a [p | p | p]
+  h [Dydis | Simbolis | Reikšmė]
+  e [Avogadro skaičius | $N_{A}$ | $6,02214199 \cdot 10^{23} mol^{-1}$]
+}
+
+TODO: Suvesti iš 6 skaidrės.
+
+\subsection{Naudingi fizikiniai duomenys}
+
+TODO: Suvesti iš 6 skaidrės.
+
+\subsection{Dydžių konvertavimas}
+
+TODO: Suvesti iš 7 skaidrės.
+
+\subsection{Priešdėliai skirti pažymėti 10 laipsniui}
+
+TODO: Suvesti iš 7 skaidrės.
+
+\subsection{Pagrindinės matematinės formulės}
+
+TODO: Suvesti iš 7 skaidrės.
+
 \section{Pagrindinės judančiųjų kūnų charakteristikos (greitis, pagreitis).}
+
+Jeigu yra žinoma, kokiu būdu laike kinta kūnų padėtis, tai yra sakoma,
+kad tokio judėjimo dėsnis yra nustatytas. Materialaus taško padėtį
+erdvėje nusako radius-vektorius. Radius vektorius yra vektorius, kuris
+turi ir modulį ir kryptį.
+
+TODO: Brėžinys. (1 pav. iš 8 skaidrės.)
+
+Trimatės erdvės atveju galima sakyti, kad taškas turi 3 laisvės
+laipsnius. Jeigu sistema turi $N$ dalelių, o kiekviena gali
+judėti viena kitos atžvilgiu, tai tokia sistema turi $3N$ laisvės
+laipsnius. Iš čia seka, kad laisvės laipsniu galime vadinti
+minimalų parametrų, kurie nusako taško padėtį erdvėje, skaičių.
+
+Judant kūnui, jo radius-vektorius kinta, tai yra:
+\begin{equation*}
+  \vec{r} = \vec{r}(t) = \left\{ x(t), y(t), z(t) \right\}.
+\end{equation*}
+Dydis, charakterizuojantis kūnų padėties kitimą laike, vadinamas
+greičiu. Jis yra apibrėžiamas, kaip radius-vektoriaus išvestinė:
+\begin{align*}
+  \vec{v}(t)
+    &= \lim_{\Delta t \to 0}
+      \frac{\vec{r}(t + \Delta t) - \vec{r}(t)}{\Delta t}
+    = \lim_{\Delta t \to 0} \frac{\Delta \vec{r}}{\Delta t}
+    = \frac{d \vec{r}}{dt}; \\
+  v_{x}(t) &= \frac{dx(t)}{dt}; \\
+  v_{y}(t) &= \frac{dy(t)}{dt}; \\
+  v_{z}(t) &= \frac{dz(t)}{dt}; \\
+\end{align*}
+Jo kryptis sutampa su pačio radius-vektoriaus kryptimi.
+
+TODO: Brėžinys. (2 pav. iš 9 skaidrės.)
 
 \begin{defn}[Greitis]
   Radius-vektoriaus kitimo sparta.
