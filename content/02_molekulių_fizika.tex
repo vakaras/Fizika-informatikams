@@ -290,25 +290,38 @@ kuri yra matuojama $\frac{J}{kg}$.
 
 \section{Skysčių savybės.}
 
-Klampumo koeficientas:
-\begin{equation*}
-  \nu = \frac{Fl}{\Delta \vec{v}s}.
-\end{equation*}
+Skysčiai yra charakterizuojami klampumu. Jų klampumo koeficientas:
+\begin{equation}
+  \eta = \frac{Fl}{\Delta \vec{v}S},
+  \label{eq:klampumas_1}
+\end{equation}
+čia:
+\begin{description}
+  \item[$l$] – atstumas tarp sluoksnių skystyje;
+  \item[$\Delta \vec{v}$] – sluoksnių judėjimo greičių skirtumas;
+  \item[$S$] – skysčio sluoksnių sąlyčio plotas;
+  \item[$F$] – trinties jėga tarp sluoksnių skystyje.
+\end{description}
+Klampumas matuojamas $Pa \cdot s$.
 
+Iš \ref{eq:klampumas_1} išsireiškę jėgą:
 \begin{equation*}
-  F = \nu \frac{\Delta \vec{v}s}{l}
+  F = \eta \frac{\Delta \vec{v} S}{l}
 \end{equation*}
+gauname Niutono sąryšį.
 
+Stoksas eksperimentiškai nustatė, kad rutulį, kurio spindulys yra $R$,
+skęstantį greičiu $v$ veikia pasipriešinimo jėga lygi:
 \begin{equation*}
-  F = 7 \pi \nu R \vec{v}
+  F = 6 \pi \eta R \vec{v}.
 \end{equation*}
 
 Skystis slegia į indo sieneles bei dugną:
 \begin{equation*}
-  P = \frac{F}{s}
+  P = \frac{F}{S}.
 \end{equation*}
 
-Atmosferų ir paskalių sąryšys:
+Atmosferų ir paskalių sąryšis:
 \begin{align*}
   1 \t{atmosfera}
     &= \frac{1 \t{jėgos kilogramas}}{1 \t{kvadratinis centimetras}} \\
@@ -316,18 +329,33 @@ Atmosferų ir paskalių sąryšys:
 \end{align*}
 
 Skysčio paviršius nusakomas paviršiaus įtempimo koeficientu
-$\xi' = \frac{F}{l}$, $l$ – paviršiaus kontūro ilgis, $F$ – paviršiaus
+$\sigma = \frac{F}{l}$, $l$ – paviršiaus kontūro ilgis, $F$ – paviršiaus
 įtempimo jėga.
 
 Skysčiai gali šlapinti kūnus arba jų nešlapinti.
 
-Kapiliariškumas – skysčio pakilimas kapiliare.
+TODO: Brėžiniai iš 37 skaidrės.
 
-$r$ – kapiliaro spindulys.
+Kapiliariškumas – skysčio pakilimas kapiliare. Jei skystis drėkinantis
+kūną yra talpinamas į ploną vamzdelį, gauname TODO: Brėžinys iš
+37 skaidrės. Tokiu atveju skysčio slėgis po menisku yra mažesnis
+negu išorinis atmosferos slėgis. Skystis plonuose vamzedliuose
+kyla į viršų iki tol, kol susilygina slėgiai. Skysčio kilimo
+aukštis:
+\begin{align*}
+  h
+  &= \frac{2 \sigma}{\rho g r} \\
+\end{align*}
+čia:
+\begin{description}
+  \item[$\sigma$] – skysčio paviršiaus įtempimo koeficientas;
+  \item[$\rho$] – skysčio tankis;
+  \item[$g$] – laisvojo kritimo pagreitis;
+  \item[$r$] – kapiliaro spindulys.
+\end{description}
 
-Prisiminti.
-\begin{itemize}
-  \item Skysčiai turi struktūra. (Sluoksnius.)
+\begin{remember}
+  \item Skysčiai turi struktūrą. (Sluoksnius.)
   \item Koks pagrindinis parametras nusako skystį (klampumas).
   \item Kaip galime išreikšti klampumą.
   \item Niutono jėga, kuri dominuoja skysčiuose, kai sluoksniai juda.
@@ -336,11 +364,7 @@ Prisiminti.
   \item Kaip siejasi skysčio paviršiaus įtempimas
   \item Kuo skiriasi drėkinantys ir nedrėkinantys skysčiai.
   \item Kapiliarinis reiškinys.
-\end{itemize}
-
-Klampumas. Trinties jėga (Niutono jėga). Kokius eksperimentus yra padaręs
-Stoksas. Drėkinantys ir nedrėkinantys skysčiai paviršius. Kapiliarumo
-reiškinys.
+\end{remember}
 
 \section{Dujų savybės.}
 
