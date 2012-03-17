@@ -223,24 +223,78 @@ Apskritimu judančio kūno kampinis pagreitis:
 
 \section{Galilėjaus transformacijos.}
 
-Jei turim klasikinį judėjimo modelį.
+Daugelyje atvejų tenka analizuoti fizikinius reiškinius keliose
+inercinėse atskaitos sistemose. (Kitaip tariant, turime klasikinį
+judėjimo modelį.) Norint tai atlikti, visų pirma, reikia nustatyti
+vienos sistemos inertiškumą, po to parinkti kitą sistemą taip, kad
+joje galima būtų apibūdinti:
+\begin{itemize}
+  \item laiko atskaitos pradžią;
+  \item koordinačių pradžią;
+  \item koordinačių orientaciją;
+  \item judančios sistemos greitį.
+\end{itemize}
 
-Galilėjaus transformacijos – metodas aprašyti makroskopinių kūnų
-judėjimą.
-
-Tarkime, turime dvi judančias sistemas $K$ ir $K'$. Jeigu paimtume
-pokytį skalėje dydžiu $t_{0}$ ir koordinačių pradžią paslinktume
-per radius vektorių $\vec{r_{0}}$, tai laikas TODO: patikrinti formulių
-vektorius.
-
-
-Jeigu taško judėjimo greitis vienoje sistemoje $V$…:
+Tarkime, jog turime dvi koordinačių sistemas: $K$ ir $K'$. Jeigu tartume,
+kad laikas abiejose sistemose skiriasi dydžiu $t_{0}$, o $K'$ koordinačių
+pradžia yra paslinkta per radius-vektorių $\vec{r_{0}}$ sistemos
+$K$ atžvilgiu, tai $K$ sistemos dydžius su $K'$ sistemos dydžiais
+sieja tokie sąryšiai:
 \begin{align*}
-  \vec{V} = \vec{V}' + v;
+  t' &= t + t_{0} \\
+  \vec{r}' &= \vec{r} + \vec{r_{0}} \\
 \end{align*}
 
-Reikia prisiminti, kad $\frac{v^{2}}{c^{2}} << 1$! Nei laikas, nei
-geometrija nekinta.
+TODO: 6 brėžinys iš 12 skaidrės.
+
+Jei sistemą $K'$ dar pasuktume kampu $\varphi$, pavyzdžiui,
+plokštumoje $xy$, tai gautume, jog:
+\begin{align*}
+  x &= x'\cos \varphi - y' \sin \varphi \\
+  y &= x'\sin \varphi + y' \cos \varphi \\
+\end{align*}
+
+TODO: 7 brėžinys iš 13 skaidrės.
+
+Jeigu sistema $K'$ yra judanti, tai esant sąlygai
+$\left( \frac{v}{c} \right)^{2} \ll 1$, abiejose sistemose
+$K$ ir $K'$ laikas slenka vienodai: $t = t'$.
+
+Jeigu sistema $K'$ juda kryptimi $x$, tai
+\begin{align*}
+  x' &= x - vt \\
+  y' &= y \\
+  z' &= z \\
+\end{align*}
+Šie sąryšiai yra vadinami \emph{Galilėjaus transformacijomis}.
+Galilėjaus transformacijos galioja nereliatyvistinės mechanikos rėmuose.
+Iš Galilėjaus transformacijų seka, kad:
+\begin{enumerate}
+  \item nereliatyvistinio judėjimo atveju kūnų matmenys nekinta;
+  \item $K$ sistemos atžvilgiu atstumas tarp taškų vienoje ir kitoje
+    sistemoje gali būti išreikštas:
+    \begin{equation*}
+      l_{KK'} = \sqrt{(x'-x)^{2} + (y'-y)^{2} + (z'-z)^{2}};
+    \end{equation*}
+  \item jeigu taško judėjimo greitis vienoje sistemoje yra $v$, o
+    kitoje – $v'$ bei sistema $K'$ juda greičiu $\bar{v}$ sistemos
+    $K$ atžvilgiu, tai
+    \begin{align*}
+      \vec{v} &= \vec{v'} + \vec{\bar{v}} \\
+      v_{x} &= v'_{x} + \bar{v_{x}} \\
+      v_{y} &= v'_{y} + \bar{v_{y}} \\
+      v_{z} &= v'_{z} + \bar{v_{z}} \\
+      t &= t' \\
+    \end{align*}
+  \item visi kūnai kitų inercinių sistemų atžvilgiu juda vienodais
+    pagreičiais:
+    \begin{equation*}
+      \frac{dv}{dt} = \frac{dv'}{dt} = \frac{dv'}{dt'}
+    \end{equation*}
+  \item šviesos greitis įvairiose inercinėse atskaitos sistemose turi tą
+    pačią $c$ reikšmę, kurią eksperimentais nustatė A. Maikelsonas ir
+    E. Morli 1880-1887 metais.
+\end{enumerate}
 
 \section{Lorenco transformacijos.}
 
