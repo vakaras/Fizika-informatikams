@@ -522,44 +522,155 @@ U – potencinė energija. Kinetinė energija: $E_{k} = \frac{mv^{2}}{2}$.
 
 \section{Tvermės dėsniai.}
 
-Trys tvermės dėsniai:
+Tvermės dėsniai glaudžiai siejami ir grindžiami gamtos dėsnių
+invariantiškumu, o pastarieji reiškiasi erdvės simetrija bei
+vienalytiškumu.
+
+Visi fizikiniai dėsningumai remiasi trimis tvermės dėsniais:
 \begin{itemize}
   \item impulso;
   \item energijos;
   \item impulso momento.
 \end{itemize}
 
-\begin{equation*}
+\subsection{Impulso tvermės dėsnis}
+
+Tegul turime dviejų dalelių izoliuotą sistemą, o šios dalelės gali
+judėti $x$ kryptimi. Tegul pradinės jų koordinatės yra $x_{1}$ ir
+$x_{2}$, o potencinė jų energija $U(x_{1}, x_{2})$. Jeigu dalelių
+koordinatės pakinta dydžiu $x_{0} (x_{0} = const)$, tai potencinė
+jų energija nepakis:
+\begin{equation}
   U(x_{1} + x_{0}; x_{2}+x_{0}) = U(x_{1},x_{2}).
+  \label{eq:potencines_energijos_invariantas}
+\end{equation}
+Esant bet kokiai funkcijai $U$,
+\ref{eq:potencines_energijos_invariantas} lygybė nepakis, jeigu
+$U$ priklauso nuo $x_{1}$ ir $x_{2}$ atskirai, arba nuo
+jų skirtumo.
+
+Jei pažymėsime $x = x_{1} - x_{2}$, tai
+$U(x_{1}, x_{2}) = U(x_{1}-x_{2}) = U(x)$. Tada kiekvieną
+dalelę veikiančios jėgos bus lygios:
+\begin{align*}
+  F_{12}
+  &= \frac{\partial U(x_{1}, x_{2})}{\partial x_{1}} \\
+  &= \frac{\partial U(x)}{\partial x_{1}} \\
+  &= \frac{\partial U(x)\partial x}{\partial x_{1} \partial x} \\
+  &= \frac{\partial U(x)}{\partial x}; \\
+  F_{21}
+  &= \frac{\partial U(x_{1}, x_{2})}{\partial x_{2}} \\
+  &= \frac{\partial U(x)}{\partial x_{2}} \\
+  &= \frac{\partial U(x)\partial x}{\partial x_{2} \partial x} \\
+  &= -\frac{\partial U(x)}{\partial x}. \\
+\end{align*}
+Gavome, kad $F_{12} = -F_{21}$. Kadangi $\frac{dp_{1}}{dt} = F_{12}$,
+o $\frac{dp_{2}}{dt} = F_{21} = -F_{12}$, tai
+\begin{equation*}
+  \frac{d}{dt}(p_{1} + p_{2}) = \frac{dp_{1}}{dt} + \frac{dp_{2}}{dt} = 0
 \end{equation*}
 
 $F_{21}$ yra vadinama reakcijos jėga (jėgai $F_{12}$).
 
-Reliatyvumo judėjimo atveju:
+Pilnasis impulsas $p = p_{1} + p_{2} = const$ arba daugelio
+dalelių sistemai:
 \begin{equation*}
-  \vec{p} = \frac{m\vec{v}}{\sqrt{1 - (\frac{v}{c})^{2}}}
+  \vec{p} = \sum ^{N} _{i = 1} \vec{p_{i}} = const
+\end{equation*}
+Ši lygybė yra impulso tvermės dėsnio matematinė išraiška. Reliatyvaus
+judėjimo atveju:
+\begin{equation*}
+  \vec{p} = \frac{m\vec{v}}{\sqrt{1 - \left( \frac{v}{c} \right)^{2}}}.
 \end{equation*}
 
 \begin{note}
   Kartais žymima: $\left( \frac{v}{c} \right)^{2} = \beta$.
 \end{note}
 
+\subsection{Energijos tvermės dėsnis}
+
 Turint N dalelių sistemą, jos energetinę būseną galime nusakyti:
 \begin{equation*}
-  E = E(\vec{r_{1}},\ldots,\vec{r_{N}}; \vec{p_{1},\ldots,\vec{p_{N}}}) = H
+  E = E(\vec{r}_{1},\ldots,\vec{r}_{N}; \vec{p}_{1},\ldots,\vec{p}_{N}) = H
 \end{equation*}
-Tokia funkcija yra vadinama Hamiltono funkcija ir žymima H.
+Tokia funkcija yra vadinama Hamiltono funkcija ir žymima $H$. Tokia
+funkcija nusako sistemos dinamiką, o judėjimo lygtis galima
+užrašyti taip:
+\begin{align}
+  \frac{dx_{1}}{dt} = \frac{\partial E}{\partial p_{ix}};&
+  \frac{dy_{1}}{dt} = \frac{\partial E}{\partial p_{iy}};&
+  \frac{dz_{1}}{dt} = \frac{\partial E}{\partial p_{iz}},
+  \label{eq:hamiltono_lygtis_1} \\
+  \frac{dp_{ix}}{dt} = -\frac{\partial E}{\partial x_{i}}; &
+  \frac{dp_{iy}}{dt} = -\frac{\partial E}{\partial y_{i}}; &
+  \frac{dp_{iz}}{dt} = -\frac{\partial E}{\partial z_{i}},
+  \label{eq:hamiltono_lygtis_2}
+\end{align}
+čia $i = 1,2,\ldots,N$.
 
-Svarbu prisiminti:
-\begin{itemize}
-  \item energijos ryšys su impulsu;
-  \item Hamiltono lygtys;
-  \item sąryšis tarp …
-  \item reikia mokėti išvesti energijos tvermės dėsnį iš Hamiltono
-    lygčių.
-\end{itemize}
+TODO: Sutvarkyti 24, 25 skaidrės.
 
 TODO: Rimties energija ($m*c^{2}$).
+
+Nagrinėjant \ref{eq:hamiltono_lygtis_1}, tarkime, kad dalelės gali
+judėti greičiais artimais $c$. Tai $v_{x} = \frac{dx}{dt}$, o
+$p_{x} = \frac{mv_{x}}{\sqrt{1 - \frac{v_{x}^{2}}{c^{2}}}}$.
+Išsireiškiame $v_{x}$:
+\begin{align*}
+  p_{x} &= \frac{mv_{x}}{\sqrt{1 - \frac{v^{2}}{c^{2}}}} \\
+  p^{2}_{x} &= \frac{m^{2}v_{x}^{2}}{1 - \frac{v_{x}^{2}}{c^{2}}} \\
+  p^{2}_{x} - \frac{p_{x}^{2}v_{x}^{2}}{c^{2}} &= m^{2}v_{x}^{2} \\
+  v^{2}\left( m^{2} + \frac{p^{2}}{c^{2}} \right) &= p^{2} \\
+  v_{x}
+  &= \frac{p_{x}}{\sqrt{m^{2} + \frac{p_{x}^{2}}{c^{2}}}} \\
+  &= \frac{cp_{x}}{\sqrt{m^{2}c^{2} + p_{x}^{2}}}. \\
+\end{align*}
+Dabar gauname, kad:
+\begin{equation*}
+  \frac{dE}{dp_{x}} = \frac{p_{x}c}{\sqrt{m^{2}c^{2} + p_{x}^{2}}}.
+\end{equation*}
+Ją suintegruojame ir gauname:
+\begin{align*}
+  E_{K}(p)
+  &= E(p) - E(0) \\
+  &= c\sqrt{p_{x}^{2} + m^{2}c^{2}} - E(0), \\
+  &= c\sqrt{m^{2}c^{2}
+    \left( 1 + \frac{p_{x}^{2}}{m^{2}c^{2}}  \right)}
+    - E(0) \\
+  &= mc^{2}\sqrt{1 + \left( \frac{p_{x}}{mc} \right)^{2}} \\
+  &=  mc^{2}
+    \left(1 + \left( \frac{p_{x}}{mc} \right)^{2}\right)^{\frac{1}{2}} \\
+\end{align*}
+čia:
+\begin{description}
+  \item[$E_{K}$] – reliatyvistinės dalelės kinetinė energija;
+  \item[$E(0)$] – FIXME: Neturiu žalio supratimo.
+\end{description}
+
+Pasinaudojus Niutono binomo skleistine
+$(1+x)^{q} = 1 + qx + \frac{q(q-1)}{2}x^{2}+\cdots$ išraiškai
+$\left( 1 + \left( \frac{p}{mc} \right)^{2} \right)^{\frac{1}{2}}$, kai
+$p \ll mc$ (tai yra, kai $v \ll c$) imdami tik 2 jos narius,
+gausime:
+\begin{align*}
+  E(p)
+  &= mc^{2}\left( 1 + \frac{1}{2}\frac{p}{m^{2}c^{2}} \right) \\
+  &= mc^{2} + \frac{p^{2}}{2m} \\
+\end{align*}
+arba mūsų atveju, nereliatyvistinės dalelės
+\begin{equation*}
+  E
+  = E(\vec{r}, \vec{p})
+  = mc^{2} + \frac{p^{2}}{2m} + U(\vec{r})
+\end{equation*}
+
+\begin{remember}
+  \item Energijos ryšys su impulsu.
+  \item Hamiltono lygtys.
+  \item Sąryšis tarp … FIXME
+  \item Reikia mokėti išvesti energijos tvermės dėsnį iš Hamiltono
+    lygčių.
+\end{remember}
 
 \subsection{Impulso momento tvermės dėsnis}
 
