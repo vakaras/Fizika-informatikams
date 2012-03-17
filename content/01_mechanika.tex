@@ -149,11 +149,16 @@ Jo kryptis sutampa su pačio radius-vektoriaus kryptimi.
 
 TODO: Brėžinys. (2 pav. iš 9 skaidrės.)
 
-\begin{defn}[Greitis]
-  Radius-vektoriaus kitimo sparta.
-\end{defn}
+Judėdami kūnai tuo pačiu metu gali ir suktis, todėl apibrėžiame
+kampinį greitį:
+\begin{equation*}
+  \vec{\omega}(t) = \frac{d\vec{\varphi}}{dt},
+\end{equation*}
+čia $\varphi$ yra posūkio kampas.
 
-Kampinis greitis:
+TODO: Brėžinys. (3 pav. iš 10 skaidrės.)
+
+Liestinio ir kampinio greičių sąryšis:
 \begin{align*}
   \vec{v}
   &= \frac{dr}{dt} \\
@@ -161,32 +166,60 @@ Kampinis greitis:
   &= \left[ \frac{d\vec{\varphi}}{dt}r \right] \\
   &= \left[ \vec{\omega}\vec{r} \right] \\
 \end{align*}
-
-Pagreitis:
+Taip pat, jei $f$ pažymėsime dažnį (matuojamas hercais), o $T$ – periodą
+(matuojamas sekundėmis), tai taip pat yra teisingos lygybės:
 \begin{align*}
-  \vec{a} = a_{t} \vec{n} + a_{n} \vec{m},
+  \omega &= 2 \pi f \\
+  \omega &= \frac{2 \pi}{T} \\
 \end{align*}
-čia $\vec{n}$ ir $\vec{m}$ ortogonalūs (statmeni) vienetiniai vektoriai. 
 
-Jeigu kūnas juda apskritimu, tada kampinis pagreitis:
+Jei kūnas juda netolygiai, tai sakome, kad kūnas juda su pagreičiu:
+\begin{align*}
+  \vec{a}
+  &= \frac{d\vec{v}}{dt} \\
+  &= \frac{d^{2}\vec{r}}{dt^{2}} \\
+  \vec{a} &= \left\{ a_{x}, a_{y}, a_{z} \right\} \\
+  a_{x}(t) &= \frac{dv_{x}(t)}{dt} = \frac{d^{2}x(t)}{dt^{2}} \\
+  a_{y}(t) &= \frac{dv_{y}(t)}{dt} = \frac{d^{2}y(t)}{dt^{2}} \\
+  a_{z}(t) &= \frac{dv_{z}(t)}{dt} = \frac{d^{2}z(t)}{dt^{2}} \\
+\end{align*}
+Esant kampu į horizontą mesto kūno judėjimui, kūno pagreitis
+turi du sandus\footnote{sánd|as – sudedamoji dalis, dėmuo (DLKŽ)}:
+tangentinį $a_{t}$ ir normalinį $a_{n}$. ($a_{t}$ yra $\vec{a}$ projekcija
+į tiesę išvestą per $\vec{v}$, o $a_{n}$ – į jai statmeną.) Kitaip
+tariant:
+\begin{equation*}
+  \vec{a} = a_{t} \vec{n} + a_{n} \vec{m},
+\end{equation*}
+čia $\vec{n}$ ir $\vec{m}$ yra statmeni vienetiniai vektoriai.
+
+TODO: Brėžinys. (4 pav. iš 11 skaidrės.)
+
+Apskritimu vienodu kampiniu greičiu judantis kūnas turi įcentrinį
+pagreitį:
+\begin{equation*}
+  a_{\t{įc}} = \frac{v^{2}}{R},
+\end{equation*}
+čia $v$ – linijinis greitis, o $R$ – apskritimo spindulys.
+
+Apskritimu judančio kūno kampinis pagreitis:
 \begin{align*}
   \vec{\varepsilon}
-  &= \frac{d\vec{\omega}}{t} \\
-  &= \frac{d}{dt}\left( \frac{d\vec{\varphi}}{dt} \right) \\
-  &= \frac{d^{2} \vec{\varphi}}{dt^{2}} \\
+  &= \frac{d\vec{\omega}}{dt} \\
+  &= \frac{d}{dt} \left( \frac{d\vec{\varphi}}{dt} \right) \\
+  &= \frac{d^{2}\vec{\varphi}}{dt^{2}} \\
 \end{align*}
 
-Svarbiausi klausimai:
-\begin{itemize}
-  \item kas tai yra kūno greitis, kuo jis charakterizuojamas (trimatėje
+\begin{remember}
+  \item Kas tai yra kūno greitis, kuo jis charakterizuojamas (trimatėje
     sistemoje) – radius-vektoriaus kitimo sparta tam tikra išreikšta
     kryptimi; jei yra sukamasis judėjimas, tai įvedama kampinio greičio
-    sąvoka;
-  \item jeigu turime netolygų judėjimą, tai tam turime dar vieną parametrą
-    – pagreitį (apskritiminiam – kampinis pagreitis);
-  \item jei yra kūnas mestas kampu į horizontą, tai pagreitis susideda
+    sąvoka.
+  \item Jeigu turime netolygų judėjimą, tai tam turime dar vieną parametrą
+    – pagreitį (apskritiminiam – kampinis pagreitis).
+  \item Jei yra kūnas mestas kampu į horizontą, tai pagreitis susideda
     iš tangentinio ir normaliojo.
-\end{itemize}
+\end{remember}
 
 \section{Galilėjaus transformacijos.}
 
