@@ -377,10 +377,9 @@ Lorenco transformacijos virsta Galilėjaus transformacijomis.
 \end{remember}
 
 \section{Dinaminiai mechanikos principai.}
-Niutono dėsniai. Gravitacija. Energija (kinetinė, potencinė).
 
-Bet kokios N dalelių sistemos kiekvienos dalelės pagreitis yra jų
-radius-vektorių bei greičių funkcija:
+Bet kokios iš $N$ dalelių sudarytos sistemos kiekvienos dalelės
+pagreitis yra jos radius-vektorių bei greičių funkcija:
 \begin{align}
   \vec{a_{i}}
   &= \frac{d^{2}\vec{r}_{i}}{dt^{2}} \\
@@ -388,9 +387,9 @@ radius-vektorių bei greičių funkcija:
     \vec{r_{1}},\ldots,\vec{r_{N}}; \vec{v_{1}},\ldots,\vec{v_{N}}) \\
   &= \vec{a_{i}} \left(%
     \vec{r_{1}},\ldots,\vec{r_{N}}; %
-    \frac{dr_{1}}{dt},\cdots,\frac{dr_{N}}{dt} \right) \\
+    \frac{dr_{1}}{dt},\cdots,\frac{dr_{N}}{dt} \right), \\
   \label{eq:klasikines_mechanikos_judejimo_lygis}
-\end{align},
+\end{align}
 čia $i = 1,2,\ldots,N$.
 
 \ref{eq:klasikines_mechanikos_judejimo_lygis} lygtis yra vadinama
@@ -402,22 +401,84 @@ klasikinės mechanikos judėjimo lygtimi. Bet kurios dalelės:
   &= \vec{a} (\vec{r}, \frac{d\vec{r}}{dt}) \\
 \end{align*}
 
-Impulsas: $\vec{p} = m\vec{v}$.
+Kaip matome, turime vektorinės funkcijos $\vec{r}(t)$ antros eilės
+diferencialines lygtis. Jos bendrąjį sprendinį galima rasti tuomet,
+kai yra žinomos pradinės sąlygos.o
+Jeigu yra $N$ dalelių sistema, kurios dalelės juda greičiais
+$\vec{v}_{1}, \vec{v}_{2}, \ldots, \vec{v}_{N}$, o jų masės yra
+$m_{1}, m_{2}, \ldots, m_{N}$, tai eksperimentais nustatyta, kad
+tos sistemos impulsas $\vec{p}$ yra:
+\begin{equation*}
+  \vec{p} = \sum ^{N} _{i = 1} \vec{p_{i}} = const.
+\end{equation*}
+Čia $\vec{p_{i}} (\vec{p_{i}} = m \vec{v_{i}})$ yra vadinamas
+dalelės impulsu.
 
-
-$v_{1}$ ir $v_{2}$ – greičiai prieš susiduriant, o
-$v_{1}'$ ir $v_{2}'$ – greičiai po susidūrimo:
+Sistemos dalelės yra nuolatiniame judėjime. Tarp jų yra galimi
+susidūrimai. Dviejų dalelių atveju:
 \begin{align*}
   m_{1}v_{1} + m_{2}v_{2} &= m_{1}v_{1}' + m_{2}v_{2}' \\
-  m_{1}(v_{1}-v_{1}') &= m_{2}(v_{2}' - v_{2}) \\
+  m_{1}(v_{1}-v_{1}') &= m_{2}(v_{2}' - v_{2}), \\
 \end{align*}
+čia $v_{1}$ ir $v_{2}$ yra greičiai prieš susiduriant, o
+$v_{1}'$ ir $v_{2}'$ – greičiai po susidūrimo.
 
-I-asis Niutono dėsnis: $\vec{a} = 0$ ir $F = 0$.
+Jei $\frac{d\vec{p}}{dt}$ pažymėsime $\vec{F}$, tai gausime, kad
+\begin{align*}
+  \vec{F}
+  &= \frac{d\vec{p}}{dt} \\
+  &= \frac{d(m\vec{v})}{dt} \\
+  &= m \frac{dv}{dt} \\
+  &= m\vec{a}.
+\end{align*}
+Kitaip tariant $\vec{a} = \frac{\vec{F}}{m}$, o tai yra antrasis
+Niutono dėsnis:
+\begin{defn}[II-asis Niutono dėnis]
+  Dalelė veikiama jėgos juda su pagreičiu, kuris yra tiesiogiai
+  proporcingas veikiančios jėgos didumui ir atvirkščiai proporcingas
+  dalelės masei.
+\end{defn}
 
-III-asis Niutono dėsnis: $\vec{F_{12}} = - \vec{F_{21}}$.
+\begin{defn}[I-asis Niutono dėsnis]
+  Jeigu dalelė (kūnas) yra rimties būvyje arba juda be pagreičio, tai
+  jo neveikia jokios pašalinės jėgos:
+  \begin{equation*}
+    \vec{a} = 0 \implies \vec{F} = 0.
+  \end{equation*}
+\end{defn}
+
+\begin{defn}[III-asis Niutono dėsnis]
+  Jėga nusako sistemos būseną. Veiksmas ir atoveiksmis yra tarpusavyje
+  lygūs, tačiau priešingų krypčių:
+  \begin{equation*}
+    \vec{F_{12}} = -\vec{F_{21}}.
+  \end{equation*}
+\end{defn}
+
+Klasikinėje mechanikoje visos jėgos yra gravitacinės ir elektromagnetinės
+prigimties. Gravitacinės sąveikos nusakomos visuotinės traukos
+dėsningumais. 1687 metais Niutonas suformulavo visuotinės traukos
+dėsnį, kuris teigia, kad visi kūnai traukia vienas kitą jėga, kurios
+modulis yra tiesiog proporcingas jų masių sandaugai ir atvirkščiai
+proporcingas atstumo tarp jų kvadratui. Šios jėgos modulis yra
+lygus:
 \begin{equation*}
-  \frac{d\vec{P_{i}}}{dt}
-  = F_{i} (\vec{r_{1}},\ldots,\vec{r_{N}}; \vec{v_{1},\ldots,\vec{v_{N}}})
+  F = G \frac{m_{1}\cdot m_{2}}{r^{2}},
+\end{equation*}
+čia:
+\begin{description}
+  \item[$m_{1}$] – pirmo kūno masė;
+  \item[$m_{2}$] – antro kūno masė;
+  \item[$r$] – atstumas tarp kūnų;
+  \item[$G$] – gravitacijos konstanta
+    ($G = 6,67 \cdot 10^{-11}\frac{N\cdot m^{2}}{kg^{2}}$).
+\end{description}
+Vietoje $m_{2}$ įsistatę žemės masę
+$M (M \approx 6 \cdot 10^{24} kg)$, o vietoje $r$ jos spindulį
+$R (R \approx 6,4 \cdot 10^{6} m)$ gausime laisvojo kritimo
+pagreitį:
+\begin{equation*}
+  g = G\frac{M}{R^{2}} \approx 9,81 \frac{m}{s^{2}}
 \end{equation*}
 
 Jėgos, veikdamos kūnus, verčia juos judėti, tai yra atlieka darbą.
@@ -428,6 +489,14 @@ Pavyzdžiui:
   \Delta A= F \Delta r \cos \alpha
 \end{align*}
 
+Galia apibrėžiama:
+\begin{align*}
+  P
+  &= \frac{dA}{dt} \\
+  &= \left( \vec{F}\frac{d\vec{r}}{dt} \right) \\
+  &= \left( \vec{F}\vec{v} \right).
+\end{align*}
+Galia yra matuojama vatais ($1 W = 1 \frac{J}{s}$).
 
 \begin{align*}
   \Delta A = U(\vec{r_{0}}) - U(\vec{r}) \\
@@ -436,21 +505,20 @@ Pavyzdžiui:
 
 U – potencinė energija. Kinetinė energija: $E_{k} = \frac{mv^{2}}{2}$.
 
-Svarbu:
-\begin{itemize}
-  \item nuo ko priklauso pagreitis (funkcija radius vektoriaus ir greičio);
-  \item jei sistemoje yra N dalelių, tai pagreičiai atitinkamai būtų
-    nusakomi, kaip funkcijos dalelių radius…;
-  \item sąryšis tarp impulso, masės ir greičio;
-  \item uždaros sistemos impulsų sistema yra konstanta;
-  \item jėgos ir impulso sąryšis;
-  \item antrasis Niutono dėsnis (pagreičio apibrėžimas);
-  \item pirmasis Niutono dėsnis;
-  \item trečiasis Niutono dėsnis;
-  \item gravitacijos jėgos išraiška;
-  \item ryšys tarp darbo ir jėgos;
-  \item ryšys tarp darbo ir potencinės energijos.
-\end{itemize}
+\begin{remember}
+  \item Nuo ko priklauso pagreitis (funkcija radius vektoriaus ir greičio).
+  \item Jei sistemoje yra $N$ dalelių, tai pagreičiai atitinkamai būtų
+    nusakomi, kaip funkcijos dalelių radius…
+  \item Sąryšis tarp impulso, masės ir greičio.
+  \item Uždaros sistemos impulsų sistema yra konstanta.
+  \item Jėgos ir impulso sąryšis.
+  \item Antrasis Niutono dėsnis (pagreičio apibrėžimas).
+  \item Pirmasis Niutono dėsnis.
+  \item Trečiasis Niutono dėsnis.
+  \item Gravitacijos jėgos išraiška.
+  \item Ryšys tarp darbo ir jėgos.
+  \item Ryšys tarp darbo ir potencinės energijos.
+\end{remember}
 
 \section{Tvermės dėsniai.}
 
