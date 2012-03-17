@@ -298,24 +298,83 @@ Iš Galilėjaus transformacijų seka, kad:
 
 \section{Lorenco transformacijos.}
 
-Jei turim reliatyvistinį judėjimo modelį. Bus paaiškinti laiko ir
-geometrijos kitimas.
+Lorenco transformacijos suteikia supratimą apie reliatyvistinį judėjimą.
+Jų pamatas yra Einšteino postulatas:
+\begin{quote}
+  Visose inercinėse atskaitos sistemose šviesos greitis vakuume yra
+  konstanta ir lygus $c$.
+\end{quote}
 
-Lorenco transformacijos yra taikomos tada, kai turime reliatyvistinį
-judėjimą, kai turime kvantinės mechanikos atvejį.
+Esant sąlygai $\left( \frac{v}{c} \right)^{2} \cong 1$ judėjimas
+sistemoje $K'$ atžvilgiu nejudančios sistemos $K$ yra reliatyvistinis.
+Lorenco tranformacijos parodo, kad:
+\begin{equation*}
+  l' = l \sqrt{1 - \left( \frac{v}{c} \right)^{2}} < l,
+\end{equation*}
+čia:
+\begin{description}
+  \item[$l$] – objekto ilgis sistemos $K$ atžvilgiu;
+  \item[$l'$] – objekto ilgis sistemos $K'$ atžvilgiu;
+  \item[$v$] – judančio kūno greitis sistemoje $K'$.
+\end{description}
+Šis reiškinys yra vadinamas Lorenco ilgio mažėjimu. Jis parodo
+erdvės priklausomybę nuo judėjimo.
 
-Jei $\frac{v^{2}}{c^{2}} \approx 1$, tai judėjimas $K'$ atžvilgiu
-nejudančios $K$ sistemos yra reliatyvistinis.
+Jeigu laiko tarpas tarp dviejų įvykių nejudančioje sistemoje yra
+$\Delta t$, tai šis laiko tarpas judančioje sistemoje bus
+trumpesnis:
+\begin{equation*}
+  \Delta t'
+  = \Delta t \sqrt{1 - \left( \frac{v}{c} \right)^{2}}
+  < \Delta t,
+\end{equation*}
+čia $v$ yra judančiojo laikrodžio greitis sistemoje $K'$. Šis reiškinys
+yra vadinamas Lorenco laiko trumpėjimu. Ji rodo laiko priklausomybę
+nuo judėjimo.
 
-Reikia prisiminti: esant tokiam judėjimui kinta laikas ir geometrija.
-Svarbiausia:
-\begin{itemize}
-  \item tinka aprašyti judėjimus, kai $\frac{v^{2}}{c^{2}} \approx 1$;
+Jeigu sistema $K'$ juda kryptimi $x$ greičiu $\bar{v}$ sistemos $K$
+atžvilgiu, tai erdvines koordinates ir laiką abiejose sistemose sieja
+lygtys:
+\begin{align*}
+  t'
+  &= \gamma\left( t - \frac{\bar{v}}{c^{2}}x \right) \\
+  &= \frac{t - \frac{\bar{v}}{c^{2}}x}%
+    {\sqrt{1 - \frac{\bar{v}^{2}}{c^{2}}}} \\
+  x'
+  &= \gamma(x - \bar{v}t) \\
+  &= \frac{x - \bar{v}t}{\sqrt{1 - \frac{\bar{v}^{2}}{c^{2}}}} \\
+  y' &= y \\
+  z' &= z \\
+\end{align*}
+
+TODO: 8 brėžinys iš 16 skaidrės.
+
+TODO: Išsiaiškinti su greičiais (16 skaidrė).
+
+Jei materialusis taškas juda kryptimi $x$ inercinės atskaitos sistemos
+$K'$ atžvilgiu greičiu $v_{2}$, o sistema $K'$ juda $x$ kryptimi
+nejudančios $K$ sistemos atžvilgiu, tai taško greitis sistemos
+$K$ atžvilgiu yra:
+\begin{equation*}
+  v = \frac{v_{1} + v_{2}}{1 + \frac{v_{1}v_{2}}{c^{2}}}
+\end{equation*}
+
+Taip pat, kai turime reliatyvistinį judėjimą, tai kūnų pagreičiai
+įvairių judėjimo sistemų atžvilgiu yra nevienodi.
+
+Kai santykis $\left( \frac{v}{c} \right))^{2}$ artėja į 0, tai
+Lorenco transformacijos virsta Galilėjaus transformacijomis.
+
+\begin{remember}
+  \item Esant reliatyvistiniam judėjimui kinta laikas ir geometrija.
+  \item Lorenco transformacijos tinka aprašyti judėjimus, kai
+    $\frac{v^{2}}{c^{2}} \cong 1$.
   \item Lorenco transformacijos duoda sampratą apie geometrijos
     kitimą esant reliatyvistiniam judėjimui (judančioje sistemoje
-    kūnų geometrija mažėja atžvilgiu nejudančios sistemos);
-  \item judančioje sistemoje laikas sutrumpėja nejudančios sistemos.
-\end{itemize}
+    kūnų geometrija mažėja atžvilgiu nejudančios sistemos).
+  \item Judančioje sistemoje laikas sutrumpėja atžvilgiu
+    nejudančios sistemos.
+\end{remember}
 
 \section{Dinaminiai mechanikos principai.}
 Niutono dėsniai. Gravitacija. Energija (kinetinė, potencinė).
