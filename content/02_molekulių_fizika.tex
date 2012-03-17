@@ -67,32 +67,100 @@ Medžiagos tankis:
 
 \section{Termodinamikos dėsniai.}
 
-Termodinamika neįskaito medžiagos sandūros arba struktūros.
+Fizikos dalis, nagrinėjanti šiluminius procesus ir kūnų šilumines
+savybes, neįskaitant medžiagos vidinės sandaros, vadinama
+termodinamika. Chaotinis dalelių judėjimas vadinamas šiluminiu
+judėjimu, o energija, kurią įgyja šios dalelės dėl tokio judėjimo,
+vadinama šilumine energija. Kai dalelės judėdamos apsikeičia
+vienodais energijos kiekiais, vadinama šilumine pusiausvyra.
+Jeigu kūnai savo vidinę energiją perduoda vienas kitam neatlikdami
+mechaninio darbo, tai yra vadinama šilumine apykaita.
 
 Energija $W = kT$, kur $k$ – Bolcmano konstanta, $T$ – temperatūra
 Kelvino skalėje.
 
-Pirmas termodinamikos dėsnis:
-\begin{equation*}
-  \Delta Q = \Delta U + \Delta A
-\end{equation*}
-
 $S$ – entropija, šilumos pokytis esant tam tikrai temperatūrai. Tai yra
 procesai vykstantys aplinkoje, keičia šilumos kiekį toje temperatūroje.
 
-Termodinamikos dėsnis kartais vadinamas termodinamikos principu.
+$U$ – vidinė kūno energija.
 
-Antras termodinamikos dėsnis: TODO
-
-
-\begin{itemize}
-  \item Riša temperatūra, …
-  \item Perpetum mobile – amžinasis variklis.
-\end{itemize}
-
-Trečiasis termodinamikos dėsnis: TODO
+$A$ – darbas.
 
 $H$ – entalpija, $H = U + pV$. (vidinė energija + slėgio ir tūrio sandauga)
+
+\begin{defn}[Nulinis termodinamikos dėsnis]
+  Jei dvi termodinaminės sistemos yra šiluminėje pusiausvyroje su
+  trečia, tai jos taip pat yra šiluminėje pusiausvyroje tarpusavyje.
+\end{defn}
+
+\begin{defn}[Pirmasis termodinamikos dėsnis]
+  Bet kokio proceso metu bendras energijos kiekis išlieka pastovus.
+
+  Arba kitaip: šilumos kiekis, kurį gauna kūnas šiluminės apykaitos
+  būdu yra naudojamas jo vidinės energijos pokyčiui bei mechaninio
+  darbo atlikimui. Išreiškus formule:
+  \begin{equation*}
+    \Delta Q = \Delta U + \Delta A
+  \end{equation*}
+\end{defn}
+
+\begin{defn}[Antrasis termodinamikos dėsnis]
+  Neįmanomas toks procesas, kurio vienintelis rezultatas būtų iš
+  šildytuvo gautos šilumos pavertimas jai ekvivalentišku darbu.
+
+  Kitaip: bet kurios uždaros sistemos, neesančios terminėje pusiausvyroje,
+  entropija beveik visada didėja.
+
+  \begin{equation*}
+    dS = \frac{\delta Q}{T}
+  \end{equation*}
+\end{defn}
+
+\begin{defn}[Trečiasis termodinamikos dėsnis]
+  Temperatūrai artėjant prie absoliutaus nulio, sistemos entropija
+  tampa pastovi.
+
+  \begin{equation*}
+    \Delta S_{T=0} = 0
+  \end{equation*}
+\end{defn}
+
+Šiluminė apykaita yra susijusi su šiluminiu laidumu. Šiluminio
+laidumo lygtis:
+\begin{equation*}
+  Q = \chi\frac{S \Delta t \tau}{d},
+\end{equation*}
+čia:
+\begin{description}
+  \item[$\chi$] – šiluminio laidumo koeficientas
+    (matuojamas $\frac{W}{m \t{deg}}$);
+  \item[$S$] – plotas;
+  \item[$\tau$] – laikas;
+  \item[$\Delta t$] – temperatūrų skirtumas;
+  \item[$d$] – pernešamos medžiagos storis.
+\end{description}
+
+Svarbus parametras, kurio dėka nusakoma šilumos apykaita yra
+savitoji šiluminė talpa:
+\begin{equation*}
+  c = \frac{Q}{m\Delta t} \left[ \frac{J}{kg\cdot\t{deg}} \right]
+\end{equation*}
+SI sistemos savituoju šiluminės talpos vienetu laikoma tokia kūno
+šiluminė talpa, kurio $1 kg$ masės sugeria arba išspinduliuoja
+$1 J$ energiją, jo temperatūrai pakitus 1 laipsniu.
+
+Šilumos balanso lygtis:
+\begin{equation*}
+  \sum _{i=0} ^{N} Q_{i} = 0,
+\end{equation*}
+čia $Q_{i}$ yra $i$-ojo kūno gautas arba atiduotas šilumos kiekis.
+
+Savitoji medžiagos degimo šiluma:
+\begin{equation*}
+  \lambda = \frac{Q}{m} \left[ \frac{J}{kg} \right].
+\end{equation*}
+SI sistemoje kaloringumo vienetu laikomas toks medžiagos kaloringumas,
+kai pilnai sudegusios 1 kg medžiagos masė išskiria 1 J energiją.
 
 \section{Kietųjų kūnų savybės.}
 
