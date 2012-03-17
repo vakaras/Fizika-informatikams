@@ -164,10 +164,53 @@ kai pilnai sudegusios 1 kg medžiagos masė išskiria 1 J energiją.
 
 \section{Kietųjų kūnų savybės.}
 
-Kristaliniai ir amorfiniai. Kristalinės gardelės. Geometrijos rūšys.
-Septynios singonijos. Kristaliniuose kūnuose tarp atomų esančios jėgos.
-Artiveikės jėgos amorfiniuose kūnuose. Deformacijos. Jungo modulis.
-Huko sąryšis.
+Kietieji kūnai, kurių atomai, molekulės ar jonai erdvėje yra
+išsidėstę tvarkingai ir sudaro periodiškai pasikartojančią vidinę
+struktūrą, vadinami kristalais. Kristalai gali turėti įvairių
+prizmių ar piramidžių formą, tačiau jų pagrindą būtinai sudaro
+taisyklingasis trikampis, kvadratas, lygiagretainis arba šešiakampis.
+
+Svarbiausios kietų kristalinių kūnų savybės:
+\begin{itemize}
+  \item taisyklinga forma;
+  \item anizotropija (kristalų fizinių savybių priklausomybė nuo
+    pasirinktos krypties kristale);
+  \item pastovi lydymosi temperatūra.
+\end{itemize}
+
+TODO: Kas yra kristaliniai, o kas yra amorfiniai kūnai. Dėl kokių
+jėgų veikimo kūnai išlaiko kietą formą?
+
+Visos kristalinės struktūros yra grupuojamos 7 singonijose bei
+yra žinomos 32 jų taškinės simetrijos grupės. Singonijos:
+\begin{enumerate}
+  \item triklininė;
+  \item monoklininė;
+  \item rombinė;
+  \item tetragoninė;
+  \item trigoninė;
+  \item heksagoninė;
+  \item kūbinė.
+\end{enumerate}
+
+Visos 32 taškinės grupės turi tarptautinė žymėjimą bei žymėjimus
+pagal Šubnikovą ir Šemflisą. Kiekviena taškinė grupė skirstoma
+į simetrijos klases ir kiekviena klasė turi savo simbolį.
+Visos taškinės simetrijos grupės yra skirstomos į $K^{I}$ ir $K^{II}$
+atitinkamai pirmąsias ir antrąsias rūšis. Iš viso yra
+$K^{I}$ – 11 ir $K^{II}$ – 21 grupė. $K^{I}$ rūšiai priklauso
+taškinės grupės, kuriose yra tik posūkio ašys, o $K^{II}$
+rūšiai priskiriamos grupės, kuriose yra inversijos bei atspindžio
+centrai.
+
+Visos kristalinės gardelės sugrupuojamos į 14 Bravės gardelių.
+
+Gardelė, turinti tiek taškinės simetrijos operaciją, tiek poslinkius,
+vadinama Bravės grupe, o begalinė gardelė, gauta iš Bravės grupės,
+vadinama Bravės gardele.
+
+Kristalinės gardelės geometrija nusakoma gardelės parametrų a, b, c
+bei geometrinės figūros kampais.
 
 Tamprioji deformacija – tokia deformacija, kai kūną paveikus jėga, jei
 nustojus veikti, kūnas atgauna savo buvusią formą.
@@ -179,34 +222,71 @@ Deformacijos gali būti:
 \begin{itemize}
   \item spaudimo,
   \item tempimo,
-  \item šlyties,
+  \item šlyties (kampinė deformacija),
   \item sukimo,
   \item lenkimo.
 \end{itemize}
 
-$l_{0}$ – pradinis kūno ilgis.
-
-Absoliuti deformacija: $\Delta l = l - l_{0}$.
-
-Santykinė deformacija: $\varepsilon = \frac{\Delta l}{l_{0}}$.
-
-Vidinė įtampa matuojama paskaliais.
-
-Įsidėmėti:
+Taip pat deformacijos gali būti:
 \begin{itemize}
-  \item kokie būna kietieji kūnai (kristaliniai ir amorfiniai);
-  \item kristaliniai kūnai yra nusakomi 7 singonijomis;
-  \item … elementarioji kristalinė gardelė
-  \item kristalinėje gardelėje atomai yra išlaikomi, nes juos veikia
-    toliaveikės jėgos;
-  \item amorfiniuose kūnuose veikia artiaveikės jėgos;
-  \item tamprioji ir plastinė deformacijos;
-  \item absoliuti, santykinė deformacijos;
-  \item kokios gali būti deformacijos pagal aprašymą;
-  \item kas yra Jungo modulis;
-  \item kaip keičiasi kūnų matmenys juos šildant;
-  \item kas yra linijinio ir kas tūrinio plėtimosi koeficientas.
+  \item absoliučios: $\Delta l = l - l_{0}$ ir
+  \item santykinės: $\varepsilon = \frac{\Delta l}{l_{0}}$.
 \end{itemize}
+Čia $l_{0}$ yra pradinis kūno ilgis.
+
+Atliekant deformaciją, kūnas priešinasi deformuojančiai jėgai. Ši
+savybė vadinama kūnų vidine įtampa:
+\begin{equation*}
+  \sigma = \frac{F}{S}
+\end{equation*}
+Vidinė įtampa matuojama paskaliais ($1 Pa = 1 \frac{N}{m^{2}}$).
+
+Esant spaudimo arba tempimo deformacijai:
+\begin{equation*}
+  \sigma = E \varepsilon = E \frac{\Delta l}{l_{0}},
+\end{equation*}
+čia $E$ – Jungo modulis. Jeigu $\Delta l = l_{0}$, tai $E = \sigma$.
+Tokiu būdu Jungo modulis rodo tokį medžiagos mechaninį tempimą, kai
+jos matmenys padidėja dvigubai.
+
+Kūnai taip pat keičia savo matmenis juos šildant arba šaldant. Keičiasi
+jų linijiniai matmenys:
+\begin{equation*}
+  l = l_{0}(1 + \alpha t),
+\end{equation*}
+čia:
+\begin{description}
+  \item[$\alpha$] – linijinio plėtimosi koeficientas
+    ($\alpha = \frac{\Delta l}{l_{0} \Delta t}$);
+  \item[$t$] – kūno temperatūra.
+\end{description}
+Kūnų tūris keičiasi pagal dėsnį:
+\begin{equation*}
+  V = V_{0}\left( 1 + \beta t \right),
+\end{equation*}
+čia $\beta \approx 3 \alpha$.
+
+Šildant kietas medžiagas iki tam tikros temperatūros jos lydosi.
+Medžiagų lydymasis yra nusakomas savitąja lydymosi šiluma:
+\begin{equation*}
+  q = \frac{Q}{m},
+\end{equation*}
+kuri yra matuojama $\frac{J}{kg}$.
+
+\begin{remember}
+  \item Kokie būna kietieji kūnai (kristaliniai ir amorfiniai).
+  \item Kristaliniai kūnai yra nusakomi 7 singonijomis.
+  \item … elementarioji kristalinė gardelė.
+  \item Kristalinėje gardelėje atomai yra išlaikomi, nes juos veikia
+    toliaveikės jėgos.
+  \item Amorfiniuose kūnuose veikia artiaveikės jėgos.
+  \item Tamprioji ir plastinė deformacijos.
+  \item Absoliuti, santykinė deformacijos.
+  \item Kokios gali būti deformacijos pagal aprašymą.
+  \item Kas yra Jungo modulis.
+  \item Kaip keičiasi kūnų matmenys juos šildant.
+  \item Kas yra linijinio ir kas tūrinio plėtimosi koeficientas.
+\end{remember}
 
 \section{Skysčių savybės.}
 
