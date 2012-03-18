@@ -357,15 +357,107 @@ Pagal Ostrogradskio-Gauso formulę:
 tvermės dėsnį.
 
 \section{Puslaidininkai ir dielektrikai elektriniame lauke.}
-Laidumo analizė naudojantis zoniniais (juostiniais) modeliais.
-Savieji ir priemaišiniai puslaidininkai.
 
-Dielektrikai: poliniai ir centrosimetriniai. Elementari kristalinė
-gardelė neturi simetrijos centro. Pagrindiniai parametrai: dielektrinė
-skvarba (poliarizacijos matas), poliarizacija – fizikinis parametras,
-surištas su dielektrine skvarba. Dielektrinė skvarba – kompleksinis dydis
-(reali dalis nusako laukų santykį medžiogoje atžvilgiu vakuumo, menama
-dalis nusako nuostolių kampą, kuris yra surištas su laidumu.)
+Kalbant apie puslaidininkių laidumą, yra skiriamos dvi jo rūšys:
+$n$\footnote{$n$ nuo žodžio „negative“, krūvio nešėjai yra elektronai.}
+ir $p$\footnote{$p$ nuo žodžio „positive“, krūvio nešėjos yra skylės.},
+kurios savo ruožtu yra skirstomos į sąvąjį ir priemaišinį
+laidumus. TODO: Juostinio modelio brėžinys.
+
+Fermis, remdamasis Paulio draudimo principu, užrašė elektronų
+būsenų pasiskirstymo funkciją:
+\begin{align}
+  F(W)
+  &= \frac{1}{e^{\frac{E_{g} - W_{F}}{kT}} + 1} \\
+  &= \frac{1}{e^{\frac{E_{g}}{2kT}} + 1}, \label{eq:puslaidininkai_fw}\\
+\end{align}
+čia:
+\begin{description}
+  \item[$W_{F}$] – Fermio lygmuo;
+  \item[$E_{g}$] – draustinės juostos plotis;
+  \item[$k$] – Bolcmano konstanta;
+  \item[$T$] – temperatūra Kelvino skalėje.
+\end{description}
+Šio modelio rėmuose yra laikoma, kad valentinė juosta (VJ) yra
+užpildyta elektronais, kurie gali pereiti į laidumo juostą (LJ).
+Savasis laidumas reiškiasi, kai elektronai iš VJ pereina į LJ.
+Laisvasis nuo elektronų vietos VJ yra vadinamas elektroninėmis
+skylutėmis.
+
+Kadangi tokiuose puslaidininkiuose $E_{g} - W_{F} = \frac{E_{g}}{2}$,
+tai remiantis \ref{eq:puslaidininkai_fw} formule savasis
+puslaidininkių laidumas išreiškiamas taip:
+\begin{equation*}
+  \sigma = \sigma_{0} e^{-\frac{E_{g}}{2kT}}.
+\end{equation*}
+Šio laidumo temperatūrinė priklausomybė parodyta TODO: 2 brėžinys iš
+56 skaidrės.
+
+Klasikiniai puslaidininkai yra elementų periodinės lentelės IV grupės
+elementai (Ge, Si, Sn, Pb, Ti, Zr ir kiti).
+
+Kristalinėse gardelėse tarp atomų dominuoja kovalentiniai ryšiai.
+Kiekvienas atomas, būdamas keturių kaimynų apsuptyje (kaip tai parodyta
+TODO: paveikslėlis iš 57 skaidrės) rišamas elektronų poromis.
+
+Pasišalinęs iš ryšio elektronas kuria toje vietoje perteklinį teigiamą
+krūvį – susidaro skylutė, kuri irgi pradeda judėti, o susidūrusi
+su elektronu rekombinuoja. Naujas laisvasis elektronas atsiranda
+tada, kai jis įgauna papildomos energijos (ar tai dėl temperatūros,
+ar dėl gardelės virpesių FIXME: Ar tai nėra tas pats?) išsilaisvinimui.
+Juostiniame modelyje rekombinacija reikštų elektronų perėjimą iš LJ
+į laisvąjį VJ lygmenį. Kiek skylučių, tiek ir elektronų tankis
+didėjant temperatūrai eksponentiškai didėja. Kai nėra elektrinio lauko
+$n$ ir $p$ krūviai juda chaotiškai, esant laukui jų judėjimas tampa
+kryptingu.
+
+Implantavus į Ge gardelę penkiavalentį P atomą, atsiranda laisvasis
+elektronas ir puslaidininkis tampa $n$ tipo, o implantavus į
+Si gardelę trivalentį B atomą, atsiranda laisvoji skylutė ir
+puslaidininkis tampa $p$ tipo. TODO: Brėžiniai iš 58 skaidrės.
+
+\begin{remember}
+  \item Kas yra tarp juostų.
+  \item Kas pirmasis įvedė elektronų būsenų skirstymą.
+  \item Laisvoji → valentinė → draudimo.
+  \item Kurioje padėtyje yra Fermio lygmuo.
+  \item Kaip aprašoma laidumo temperatūrinė priklausomybė. (Ir grafikas.)
+\end{remember}
+
+Priemaišiniai atomai $E_{g}$ juostoje sudaro donorinius
+lygmenis (TODO: 4 paveikslėlis iš 59 skaidrės). Tokio priemaišinio
+puslaidininkio laidumo temperatūrinė priklausomybė
+parodyta TODO: 5 paveikslėlis iš 59 skaidrės.
+
+Jeigu į Si gardelę įvesime Boro (B) atomus, tai trivalenčio B
+trijų elektronų nepakanka sudaryti kovalentinių ryšių su
+keturiais Si kaimynais. Tai yra vienas iš ryšių liks nesotintas
+ir sudarys vietą elektrono pagavimui. Pereinant elektronui į šią
+energetinę vietą, liks laisva elektroninė skylutė, kuri judės
+tarp gardelės atomų. Toks laidumas yra $p$, o priemaišiniai
+B atomai sudaro akceptorinius lygmenis. Tokio priemaišinio puslaidininkio
+juostinis modelis parodytas TODO: 6 paveikslėlis iš 60 skaidrės.
+
+Tokio priemaišinio puslaidininkio laidumo temperatūrinė priklausomybė
+yra analogiška, kaip pavaizduota TODO, tik priemaišinėje laidumo
+srityje laidumo eksponentinėje priklausomybėje vietoj
+energijos $\Delta E_{D}$ įrašomas dydis $\Delta E_{A}$.
+
+Dielektrikų laidumas yra aiškinamas analogiškai, kaip ir puslaidininkių,
+tačiau jų $E_{\rho_{\t{dielektrikų}}} \ll E_{g_{\t{puslaidininkių}}}$.
+
+Metalų atveju, jų laidumas yra aiškinamas elektronų pasikeitimu lygmenimis
+valentinėje zonoje (TODO 7 paveikslėlis iš 61 skaidrės).
+Didėjant $T$ metalų savitoji varža $\gamma \cong T$.
+
+\begin{remember}
+  \item Kaip technologiškai daro priemaišinius puslaidininkius.
+  \item Donoriniai, $p$-tipo.
+  \item Laidumo priklausomybė nuo temperatūros (kreivės, formulės).
+\end{remember}
+
+\TODO: Sustota prie 61 skaidrės ir *-8.jpg.
+
 \section{Feroelektrikai.}
 Kristalinės medžiagos, kurių gardelės tam tikroje temperatūroje neturi
 simetrijos centro. Juose vyksta faziniai virsmai, kurie gali būti
@@ -502,7 +594,7 @@ Svarbu:
     už šiluminę energiją.
 \end{itemize}
 
-\section{Diamagnetikai}
+\subsection{Diamagnetikai}
 
 Magnetikai, kuriuose negalima indukuoti magnetinio momento.
 
