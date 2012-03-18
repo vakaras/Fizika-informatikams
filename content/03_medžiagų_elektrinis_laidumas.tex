@@ -296,6 +296,66 @@ Kai kurie panaudoti dydžiai:
 
 \section{Metalai elektriniame lauke.}
 
+TODO: Ekranavimas iš 52 skaidrės.
+
+TODO: Išsiaiškinti kodėl (52 skaidrė):
+$\langle v + v_{t} \rangle = \langle v \rangle + \langle v_{t} \rangle
+= \langle v_{t} \rangle$. (Čia $v$ yra chaotinis judėjimas, o
+$v_{t}$ – tvarkingas.)
+
+Srovės stipris lygus:
+\begin{align*}
+  I
+  &= \frac{dq}{dt} \\
+  &= qnv_{t}S,
+\end{align*}
+čia $q$ – elektringosios dalelės krūvis, $n$ – elektringųjų dalelių
+koncentracija, $v_{t}$ – elektringųjų dalelių kryptingo judėjimo greitis,
+$S$ – laidininko skespjūvio plotas.
+
+Tuo atveju, kai laidininke yra ir $p$ ir $n$ krūvininkai, tai
+\begin{equation*}
+  I = \frac{dq^{+}}{dt} + \frac{dq^{-}}{dt}.
+\end{equation*}
+
+Srovės tankis:
+\begin{equation*}
+  j = \frac{dI}{dS},
+\end{equation*}
+čia $I$ – srovės stipris, o $S$ – laidininko skerspjūvio plotas.
+
+TODO: Elektrinis laidumas $\sigma$. (52 skaidrė)
+
+\begin{defn}[Amperas]
+  Jeigu vakuume dviem be galo ilgais, lygiagrečiais laidininkais,
+  tarp kurių atstumas yra lygus vienam metrui tekančios srovės
+  sukelia sąveiką į kiekvieną ilgio metrą
+  $2\cdot 10^{-7} N$, tai tekančių srovių stipriai lygūs $1A$.
+\end{defn}
+
+TODO: Suprasti ir sutvarkyti. (54 skaidrė)
+
+Lygtis $\oint \vec{j} d \vec{S}$ rodo krūvių ištaką iš tūrio $V$,
+kuris ribotas plotu $S$, per laiko vienetą. Kita vertus, ši
+lygtis rodo krūvių mažėjimo greitį iš tūrio $V$:
+\begin{equation*}
+  \oint _{S} \vec{j} d \vec{S} = - \frac{dq}{dt}.
+\end{equation*}
+
+Dydis $\rho = en$, tai $q = \int_{V} \rho dV$ ir
+$\oint _{S} \vec{j} d\vec{S} = - \frac{d}{dt}\int_{V} \rho dV$.
+Čia reikia imti dalinę išvestinę, nes $\rho$ priklauso nuo laiko
+ir koordinačių.
+
+Pagal Ostrogradskio-Gauso formulę:
+\begin{align*}
+  \int _{S} \vec{E} d S &= \int _{V} \nabla \vec{E}dV \\
+  \int _{V}\nabla\vec{j}dV &= -\int _{V}\frac{\partial \rho}{\partial t}dV \\
+  \nabla \vec{j} &= -\frac{\partial \rho}{\partial t}
+\end{align*}
+Ši lygtis yra vadinama nenutrūkstamumo lygtimi ir išreiškia krūvių
+tvermės dėsnį.
+
 \section{Puslaidininkai ir dielektrikai elektriniame lauke.}
 Laidumo analizė naudojantis zoniniais (juostiniais) modeliais.
 Savieji ir priemaišiniai puslaidininkai.
