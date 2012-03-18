@@ -368,78 +368,321 @@ aukštis:
 
 \section{Dujų savybės.}
 
-\begin{equation*}
-  \vec{K}_{1} = m \vec{V}
-\end{equation*}
-Atsitrenkusios dalelės judėjimo kiekis tampa lygus:
-\begin{equation*}
-  \vec{K}_{2} = -m \vec{V}
-\end{equation*}
+\begin{defn}[Idealiosios dujos]
+  Dujos, kurių molekulės:
+  \begin{itemize}
+    \item mažos, palyginti su atstumais iki jų;
+    \item tarpusavy nesąveikauja;
+    \item susiduria ir juda kaip absoliučiai tamprūs rutuliukai.
+  \end{itemize}
+\end{defn}
 
-Jeigu dalelė per laiką $\Delta \tau$ juda greičiu $\vec{v}$, tai ji
-nulėks nuotolį $\Delta \vec{r} = \vec{v} \Delta \tau$.
+\begin{defn}[Realiosios dujos]
+  Tokios dujos, tarp kurių molekulių veikia sąveikos jėgos.
+\end{defn}
 
-Čia $\Delta \vec{r}$ – laisvasis lėkio nuotolis, $\Delta \tau$ – laisvasis
-lėkio laikas.
-Indo tūris $V= \Delta r l^{2} = \Delta r S = S \Delta \tau \vec{v}$.
-
-Jeigu kiekvienmae tūrio elemente yra $n_{0}$ molekulių, tai visame tūryje
-turėsime $n = Vn_{0}$. Didžiausia tikimybė šiuo atveju, kad dalelės pasieks
-kubo sieneles yra $\frac{1}{6}$, tokiu būdu:
+Dujų molekulės judėjimo kiekis $\vec{K}$ prieš susidūrimą yra:
 \begin{equation}
-  n = \frac{1}{6} \vec{v}S_{\Delta}\tau n_{0}
-  \label{eq:dujos}
+  \vec{K}_{1} = m \vec{v},
+  \label{eq:dujos_K1}
 \end{equation}
-Iš TODO sektų:
+o po susidūrimo, judėjimo kiekis tampa lygus:
+\begin{equation}
+  \vec{K}_{2} = - m \vec{v}.
+  \label{eq:dujos_K2}
+\end{equation}
+
+Jeigu dalelė laiką $\Delta \tau$ juda greičiu $\vec{v}$, tai ji
+nulėks nuotolį:
 \begin{equation*}
-  |\Delta K | = \vec{K}_{2} - \vec{K}_{1} = - m \vec{v} - m \vec{v} =
-  |2m\vec{v}|
+  \Delta \vec{r} = \vec{v} \Delta \tau,
 \end{equation*}
-ir 
+čia:
+\begin{description}
+  \item[$\Delta \vec{r}$] – laisvasis lėkio nuotolis;
+  \item[$\Delta \tau$] – laisvasis lėkio laikas.
+\end{description}
+
+Jei tarsime, kad dalelė skrieja tol kol trenkiasi į indo sienelę, tai
+tokiu atveju indo turį galime įvertinti:
+\begin{align*}
+  V'
+  &= \Delta r l^{2} \\
+  &= \Delta r S \\
+  &= \Delta \tau \vec{v} S \\
+\end{align*}
+Kadangi didžiausia tikimybė, kad dalelė pasieks indo sienelę yra
+$\frac{1}{6}$, tai:
+\begin{align*}
+  V
+  &= \frac{1}{6} V' \\
+  &= \frac{1}{6} \vec{v} S \Delta \tau. \\
+\end{align*}
+
+Jeigu kiekviename tūrio elemente yra $n_{0}$ molekulių, tai visame tūryje
+turėsime:
+\begin{align}
+  n
+  &= Vn_{0} \\
+  &= \frac{1}{6}\vec{v}S \Delta \tau n_{0} \\
+  \label{eq:dujos_n}
+\end{align}
+Iš \ref{eq:dujos_K1} ir \ref{eq:dujos_K2} gauname, kad vienos dalelės
+judėjimo kiekio pokyčio modulis yra:
+\begin{align*}
+  |\Delta K_{d}|
+  &= |\vec{K}_{2} - \vec{K}_{1}| \\
+  &= |-m\vec{v} - m\vec{v}| \\
+  &= |2m\vec{v}|,
+\end{align*}
+o $n$ dalelių sistemos judėjimo kiekis yra:
+\begin{align}
+  \Delta K
+  &= |\Delta K_{d}|n \\
+  &= 2m\vec{v}\frac{1}{6}n_{0}\vec{v}S\Delta\tau \\
+  &= \frac{1}{3}n_{0} m \vec{v}^{2}S\Delta\tau \\
+  \label{eq:dujos_DK}
+\end{align}
+
+Kadangi:
+\begin{align*}
+  \Delta K
+  &= m \Delta v \\
+  &= m a \Delta \tau \\
+  &= F \Delta \tau, \\
+\end{align*}
+be to iš mechanikos žinome, kad $p = \frac{F}{S}$, tai gauname, jog:
+\begin{equation}
+  p = \frac{\Delta K}{\Delta \tau S}
+  \label{eq:dujos_p1}
+\end{equation}
+Iš \ref{eq:dujos_p1} ir \ref{eq:dujos_DK} gauname:
+\begin{align}
+  p
+  &= \frac{\Delta K}{\Delta \tau S} \\
+  &= \frac{1}{3}\frac{n_{0}m\vec{v}^{2}S\Delta \tau}{\Delta \tau S} \\
+  &= \frac{1}{3} n_{0} m \vec{v}^{2} \label{eq:dujos_p2}
+\end{align}
+Gaudami šiuos sąryšius rėmėmės prielaida, kad visų dujų molekulių
+greičiai yra vienodi. Tačiau jie gali būti ir skirtingi, todėl
+reikėtų remtis vidutiniu kvadratiniu greičiu:
 \begin{equation*}
-  \Delta K = |\Delta K| n = 2m \vec{V} \frac{1}{6} TODO
+  \langle\vec{v}\rangle^{2} =
+  \frac{\vec{v}_{1}^{2} + \vec{v}_{2}^{2} + \cdots + \vec{v}_{n}^{2}}{n}.
 \end{equation*}
-…
-Todėl praktiškai reikia vidurkinti:
+Tada \ref{eq:dujos_p2} lygtis bus užrašoma taip:
 \begin{equation*}
-  <\vec{V}>^{2} = \frac{\vec{v}_{1}^{2} + \cdots \vec{v}^{2}_{n}}{n}
+  p = \frac{1}{3}n_{0}m\langle\vec{v}\rangle^{2}.
 \end{equation*}
-
-Padauginus ir padalijus dešinę lygties pusę iš 2 gausime:
+Prisiminę, kad
+$\langle E_{K}\rangle = \frac{m\langle\vec{v}\rangle^{2}}{2}$, ją
+galime perrašyti taip:
+\begin{equation}
+  p = \frac{2}{3}n_{0} \langle E_{K}\rangle.
+  \label{eq:dujos_p}
+\end{equation}
+Ši lygtis yra vadinama pagrindine kinetinės dujų teorijos lygtimi arba
+Klauzijaus lygtimi. Kadangi $n_{0} = \frac{n}{V}$, tai alternatyvi
+jos forma būtų:
 \begin{equation*}
-  p = \frac{2}{3} n_{0} \left( \frac{m <\vec{v}>^{2}}{2} \right)
+  p = \frac{2}{3}\frac{n}{V} \langle E_{K}\rangle,
 \end{equation*}
-TODO
+čia:
+\begin{description}
+  \item[$p$] – dujų slėgis;
+  \item[$n$] – molekulių skaičius inde;
+  \item[$V$] – indo tūris;
+  \item[$\langle E_{K} \rangle$] – vidutinė kinetinė energija.
+\end{description}
+Vieno molio atveju $n=N_{A}$, o tūris $V = V_{0}$, tai gauname
+tokią lygtį:
+\begin{equation*}
+  pV_{0} = \frac{2}{3}N_{A} \langle E_{K} \rangle.
+\end{equation*}
+Čia sandauga $N_{A} \langle E_{K} \rangle = U_{0}$ yra vadinamas vieno
+molio idealiųjų dujų šiluminė energija.
 
-„deg“ yra laipsnis.
+Pavyzdžiui, vieno molio tūris, esant slėgiui $p = 101 kPa$ bei
+$t = 0^{\circ}C$ ir $V_{0} = 22,4 \cdot 10^{-3} \frac{m^{3}}{mol}$,
+tai gausime, jog:
+\begin{align*}
+  U_{0}
+  &= \frac{3}{2} p V_{0} \\
+  &= \frac{3 \cdot 1,01 \cdot 10^{5} Pa \cdot 22,4
+    \cdot 10^{-3}\frac{m^{3}}{mol}}{2} \\
+  &= 3390 \frac{J}{mol} \\
+\end{align*}
 
-$C$ – šiluminė talpa.
+Eksperimentu nustatyta, kad vienatomių idealiųjų dujų molinė šiluminė
+talpa, esant pastoviam tūriui, yra $C (C=12,4 \frac{J}{mol \cdot deg})$
+($deg$ – laipsnis).
 
-Jeigu $<E_{K}> = \frac{m <\vec{v}>^{2}}{2}$, o $n_{0}m = M$, tai…
+Pakitus dujų temperatūrai vienu laipsniu, jų šiluminė energija pakis
+ir bus lygi:
+\begin{equation}
+  U_{2} - U_{1} = C (t_{2} - t_{1})
+  \label{eq:dujos_DU}
+\end{equation}
+Dabar galime rasti temperatūrą $t_{2}$, kuriai esant dujų šiluminė
+energija taps lygi 0 ($t_{1} = 0^{\circ} C, U_{1} = 3390 \frac{J}{mol}$):
+\begin{align*}
+  t_{2}
+  &= \frac{U_{2} - U_{1}}{C} \\
+  &= - \frac{3390}{12,4} \\
+  &= -273,16^{\circ} C.
+\end{align*}
 
+Pagal Kelviną ši temperatūra priimta atskaitos tašku temperatūrų skalėje
+ir yra vadinama absoliučiuoju nuliu. Temperatūrų skalė, kurioje atskaitos
+taškas yra absoliutus nulis, yra vadinama Kelvino skale.
+Temperatūrų tarp Celsijaus ir Kelvino skalių sąryšis:
+\begin{equation*}
+  T = t + 273,
+\end{equation*}
+čia:
+\begin{description}
+  \item[$T$] – temperatūra Kelvino skalėje;
+  \item[$t$] – temperatūra Celsijaus skalėje.
+\end{description}
+
+Pasinaudodami $T$, vieno molio idealiųjų dujų šiluminę energiją
+galime išreikšti taip:
+\begin{equation*}
+  U = \left( \frac{2}{3}C \right)T.
+\end{equation*}
+Pažymėję $\frac{2}{3}C = R$, kur $R$ – universalioji dujų konstanta
+($R = 8,3 \frac{J}{mol \cdot K}$), gauname:
+\begin{equation*}
+  p V_{0} = RT
+\end{equation*}
+Dabar abi lygties puses padauginę iš molių skaičiaus $\nu$, turėsime:
+\begin{align}
+  \nu p V_{0} &= \nu R T \\
+  pV &= \nu R T \label{eq:klapeirono-mendelejevo} \\
+  pV &= \frac{M}{\mu} R T,
+\end{align}
+čia:
+\begin{description}
+  \item[$p$] – dujų slėgis;
+  \item[$V$] – indo tūris;
+  \item[$M$] – medžiagos masė;
+  \item[$\mu$] – medžiagos molinė masė;
+  \item[$T$] – temperatūra Kelvino skalėje.
+\end{description}
+\ref{eq:klapeirono-mendelejevo} lygtis vadinama idealiųjų dujų būvio
+arba Klapeirono-Mendelejevo lygtimi.
+
+Kadangi bendra $n$ molekulių masė $M$ yra lygi $mn$, o vieno molio
+masė $\mu = m N_{A}$, tai $\frac{M}{\mu} = \frac{n}{N_{A}}$, tai
+\ref{eq:klapeirono-mendelejevo} galime perrašyti taip:
+\begin{equation*}
+  pV = \frac{n}{N_{A}}RT.
+\end{equation*}
+Dydis $k (k = \frac{R}{N_{A}})$ yra vadinamas Bolcmano konstanta
+($k = 1,38 \cdot 10^{-23} \frac{J}{K}$).
+\begin{equation}
+  pV = knT
+  \label{eq:dujos_bolcmano}
+\end{equation}
+
+Iš \ref{eq:dujos_p} ir \ref{eq:dujos_bolcmano} gauname:
+\begin{equation*}
+  \langle E_{K} \rangle = \frac{3}{2} k T.
+\end{equation*}
+
+Čia visur buvo kalbama apie idealiasias dujas, kurios yra viename ir
+tame pačiame būvyje. Tačiau, dujos esant tam tikroms sąlygoms gali
+keisti savo būvį. Tegul I būvyje dujos nusakomos
+$M_{1}, p_{1}, V_{1}$ ir $T_{1}$, o II būvyje –
+$M_{2}, p_{2}, V_{2}$ ir $T_{2}$. Tada iš \ref{eq:klapeirono-mendelejevo}
+turėsime:
+\begin{align*}
+  p_{1}V_{1} &= \frac{M_{1}}{\mu}RT_{1} \\
+  p_{2}V_{2} &= \frac{M_{2}}{\mu}RT_{2}. \\
+\end{align*}
+Palyginę gausime:
+\begin{align*}
+  \frac{p_{1}V_{1}}{M_{1}T_{1}} = \frac{p_{2}V_{2}}{M_{2}T_{2}}.
+\end{align*}
+Jeigu $M_{1} = M_{2}$, tai:
+\begin{equation*}
+  \frac{p_{1}V_{1}}{T_{1}} = \frac{p_{2}V_{2}}{T_{2}}.
+\end{equation*}
+
+Esant izoterminiam procesui ($T_{1} = T_{2}$) turėsime:
+\begin{equation*}
+  \frac{p_{1}}{p_{2}} = \frac{V_{2}}{V_{1}}.
+\end{equation*}
+Šį dėsningumą nepriklausomai vienas nuo kito nustatė Boilis ir Mariotas,
+todėl jis yra vadinamas Boilio-Marioto dėsniu.
+
+Esant izochoriniam procesui ($V_{1} = V_{2}$) turėsime:
+\begin{equation*}
+  \frac{p_{1}}{p_{2}} = \frac{T_{1}}{T_{2}}.
+\end{equation*}
+Šį dėsningumą nustatė Šarlis.
+
+Esant izobariniam procesui ($p_{1} = p_{2}$) turėsime:
+\begin{equation*}
+  \frac{V_{1}}{V_{2}} = \frac{T_{1}}{T_{2}}.
+\end{equation*}
+Šį dėsningumą nustatė Gei-Liusakas.
+
+Izobarinio proceso metu atliekamas darbas lygus:
+\begin{align*}
+  A
+  &= p\left( V_{2} - V_{1} \right) \\
+  &= p \Delta V \\
+\end{align*}
+
+Dujose galimas ir toks procesas, kai šiluminė apykaita su aplinka
+nevyksta. Toks procesas vadinamas adiabatiniu.
+
+Realiųjų dujų (garų) atveju tinka visi idealiųjų dujų dėsningumai,
+jeigu realiosios dujos yra žemuose slėgiuose ir aukštose temperatūrose.
+Kalbant, pavyzdžiui, apie $H_{2}O$ garų kiekį, pavyzdžiui, atmoseferoje
+naudotinos absoliučios bei santykinės drėgmės sąvokos. $H_{2}O$
+garų kiekis vienetiniame oro tūryje vadinamas absoliučia drėgme.
+Ji matuojama $\rho' = \frac{m}{V}$, čia $m$ – garų masė, o
+$V$ – tūris. Temperatūra, kuriai esant $H_{2}O$ garai atmosferoje
+tampa sotinantys, vadinami rasos tašku. Vandens garų kiekis tūrio
+vienete oro, esant jų sočiai (rasos taškui) vadinamas didžiausia
+oro drėgme ir žymimas $\rho_{0}$. Sotį galime pasiekti dviem
+būdais:
+\begin{itemize}
+  \item didindami garų tankį išlaikydami temperatūrą arba
+  \item išlaikydami tankį žeminti temperatūrą.
+\end{itemize}
 Santykine oro drėgme $\beta = \frac{\rho'}{\rho_{0}} \cdot 100 \%$.
 Drėgmė matuojama psichrometrais. Kalbant apie atmosferą svarbu
 žinoti, koks oro molekulių skaičius supančios Žemę jos atmosferos
 vienetiniame tūryje. Tai surandame taip:
 \begin{align*}
   n
-  &= \frac{N_{A}}{V} \\
-  &= \frac{6,02 \cdot 10^{23}}{22,4 \cdot 10 ^{-3}} \\
+  &= \frac{N_{A}}{\mu_{\t{oro}}} \\
+  &= \frac{6,02 \cdot 10^{23} \frac{1}{mol}}%
+    {22,4 \cdot 10 ^{-3} \frac{m^{3}}{mol}} \\
   &= 2,7 \cdot 10 ^{25} m^{-3} \\
 \end{align*}
 
-Svarbu.
-\begin{itemize}
+Oro molekulių siurbimas iš tam tikros patalpos, vadinamas vakuumavimu.
+Dabar skiriamos trys vakuumavimo pakopos:
+\begin{description}
+  \item[žemas vakuumas] $p$ nuo $10^{5}$ iki $10^{2} Pa$;
+  \item[vidutinis vakuumas] $p$ nuo $10^{2}$ iki $10^{-1} Pa$;
+  \item[aukštas (gibusis) vakuumas] $p$ nuo $10^{-1}$ iki $10^{-4} Pa$.
+\end{description}
+Labaratorinėmis sąlygomis galima pasiekti vakuumus iki $10^{-10}Pa$.
+Absoliučiu vakuumu vadinamas toks, kai talpoje absoliučiai nėra nei
+vienos dalelės.
+
+\begin{remember}
   \item Kokios gali būti dujos (realios ir idealios).
   \item Kuo jos skiriasi.
-  \item Prisiminti Klauzijaus sąryšį: $p = \frac{2}{3} n_{0} <E_{K}>$.
+  \item Prisiminti Klauzijaus sąryšį:
+    $p = \frac{2}{3} n_{0} \langle E_{K} \rangle$.
   \item Mendelejevo-Klapeirono lygtį: $pV = \frac{M}{\mu}RT$.
   \item Prisiminti tris būvius(?): izoterminį, izochorinį ir izobarinį.
   \item Klausimo pavyzdys: Šarlio dėsnis.
   \item Visur naudojamos suvidurkintos energijos!
-\end{itemize}
-
-Idealios dujos. Atitikmenys tarp realiųjų ir idealiųjų dujų. Nagrinėjant
-realiasias, tai yra įskaičiuojamos sąveikos tarp dujų molekulių. Idealiuoju
-atveju, tik tarp atomų? Vidutinė kinetinė energija. Sąryšiai tarp
-temperatūros ir.
+\end{remember}
