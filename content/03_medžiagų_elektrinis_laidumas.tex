@@ -464,7 +464,70 @@ Didėjant $T$ metalų savitoji varža $\gamma \cong T$.
 \end{remember}
 
 
-\section{Feroelektrikai.}
+\subsection{Dielektrikai elektriniame lauke}
+
+\begin{equation*}
+  P_i = q*l
+\end{equation*}
+$P_i$ - dipolinis momentas
+$q$ - krūvis
+$l$ - atstumas tarp teigiamo ir neigiamo krūvio
+Paprasčiausias dipolinis momentas - elektronas skriejantis apie teigiamą branduolį.
+
+Matavimo vienetai:
+\begin{equation*}
+  \overrightarrow{P} = [\frac{Cm}{m^3}]=[\frac{C}{m^2}]
+\end{equation*}
+\begin{equation*}
+  P = [\frac{V}{m}]
+\end{equation*}
+\begin{equation*}
+  \overrightarrow{D} = [\frac{F*V}{m*m}]=[\frac{C}{m^2}]
+\end{equation*}
+
+
+\subsection{PNP tranzistoriai}
+
+\textbf{Voltamperinė charakteristika}:
+
+\includegraphics[scale=1]{volamperine.svg} 
+
+Sujungus n ir p tipo puslaidininkius, skylės ir elektronai difunduoja vienas į kitą.
+
+Akceptoriuose (p-ozitive tipo puslaidininkiuose), fermio lygmuo išsidėsto arčiau valentinės juostos.
+Donoruose (n-egative tipo puslaidininiuose), fermio lygmuo išsidėsto arčiau laidumo juostos.
+
+Patalpinus puslaidininkį į elektrinį lauką
+\begin{itemize}
+  \item pliusas(+) prie P, minusas(-) prie N. Tiesioginė kryptis -
+  sandūros plotis mažiausias.
+  \item pliusas(+) prie N, minusas(-) prie P. Atvirkštinė kryptis -
+  sandūros plotis didžiausias, taigi ir varža didžiausia.
+\end{itemize}
+
+
+$I$ - Srovės stipris (Matavimo vienetas: $[A]$)
+$U$ - Įtampa (Matavimo vienetas: $[V]$)
+
+Kai prijungta tiesiogine kryptimi, tai srovės stiprio ir įtampos priklausomybė
+atitinka Omo dėsnį. Apie ašies centrą gali būti nukrypimų.
+Prijungus atvirkštine kryptimi didinant įtampą srovė nedidėja.
+Labai padidinus įtampą įvyksta pramušimas.
+
+Diodai naudojami kintamajai elektros srovei lyginti.
+
+\begin{remember}
+  \item Kas atsitinka, kai sujungiame
+  \item Kaip ir kodėl išsidėsto lygmenys
+  \item PN sandūra elektriniame lauke
+  \item Diodas (prijungus elektrą)
+  \item Voltamperinė charakteristika + panaudojimas
+\end{remember}
+
+
+
+
+\subsection{Feroelektrikai}
 Kristalinės medžiagos, kurių gardelės tam tikroje temperatūroje neturi
 simetrijos centro. Juose vyksta faziniai virsmai, kurie gali būti
 dvejopi: pirmos rūšies (laisvosios energijos pirmosios išvestinės
@@ -505,17 +568,17 @@ $P_s$ ─ spontaninė
 $F_0$ ─ termodinaminis potencialas.
 
 \begin{itemize}
-	\item Jeigu medžiagoje vyksta 1-mos rūšies faziniai virsmai,
-	tai pakanka nagrinėti skleistinę iki iki $\gamma$ (skleistinės parametro)
-	\item Jei 2-ros rūšies ─ termodinaminis potencialas nagrinėjamas iki $beta$
-	parametro.
+  \item Jeigu medžiagoje vyksta 1-mos rūšies faziniai virsmai,
+  tai pakanka nagrinėti skleistinę iki iki $\gamma$ (skleistinės parametro)
+  \item Jei 2-ros rūšies ─ termodinaminis potencialas nagrinėjamas iki $beta$
+  parametro.
 \end{itemize}
 
 \begin{itemize}
-	\item Jei medžiagoje vyksta 1-mos rūšies fazinis virsmas,
-	tai jo metu šuoliškai kinta termodinaminio potencialo pirmosios išvestinės.
-	\item Jei feroelektrikuose vyksta 2-tros rūšies fazinis virsmas
-	─ jų metu šuoliškai kinta termodinaminio potenicialo 2-osios išvestinės.
+  \item Jei medžiagoje vyksta 1-mos rūšies fazinis virsmas,
+  tai jo metu šuoliškai kinta termodinaminio potencialo pirmosios išvestinės.
+  \item Jei feroelektrikuose vyksta 2-tros rūšies fazinis virsmas
+  ─ jų metu šuoliškai kinta termodinaminio potenicialo 2-osios išvestinės.
 \end{itemize}
 
 Pravartu žinoti kai nuo temperatūros kinta dielektrinė skvarba:
@@ -531,7 +594,107 @@ tai paraelektrinėje fazėje medžiaga tampa nepolinė
 
 \textbf{2-tros rūšies fazinis virsmas}:
 \includegraphics[scale=1]{dist/svg-fero2.pdf}
-Vyksta kitimas iš $F$ero elektrinės į $P$apra elektrinę fazę.
+Vyksta kitimas iš $F$ero elektrinės į $P$ara elektrinę fazę.
+
+Visais atvejais fero-elektriką nusako Kiuri dėsnis
+$\varepsilon = \varepsilon_{\infty} - \frac{C}{T - T_K}$
+$\varepsilon_{\infty}$ - lūžio rodiklio kvadratas \textit{(?)},
+dielektrinė skvarba, kuri yra elektroninės poliarizacijos matas \textit{(?)}.
+$C$ - konstanta
+
+Jei vyksta 1-mos rūšies faziniai virsmai,
+tai C $\approx (10^3 - 10^4) deg$
+
+Jei 2-tros rūšies ─ C $\approx (10^2 - 10^3) deg$
+
+\textbf{1-mos rūšies}:
+
+\includegraphics[scale=1]{fero2-2.svg}
+
+Iš Paraelektrinės fazės pereinama į Feroelektrinę
+
+\textbf{2-tros rūšies}:
+
+\includegraphics[scale=1]{fero3.svg}
+
+Kreivę pratęsiame iki centro.
+$T_{C-V}$ - Kuri-Veisp (Veiss) temperat8ra, kuri ir laikoma fazinio virsmo
+iš Fero į Paraelektrinę temperatūra.
+\textit{Nesumaišyti: $T_C$ - tiksli reikšmė, $T_{C-V}$ - pratęsta iki centro reikšmė}
+
+\textbf{1-mos rūšies virsmas}:
+
+\includegraphics[scale=1]{fero4.svg}
+
+$P_S$ - Sponetninė poliarizacija. Matavimo vienetas $[\frac{C}{m^2}]$ \textit{(?)}
+
+Vykstant fiziniams virsmams medžiagoje keičiasi ne tik kristalinė struktūra,
+tačiau ir išnyksta domeninė struktūra, kai pasiekiama temperatūra Kiuri.
+
+\textbf{2-tros rūšies virsmas}:
+
+\includegraphics[scale=1]{fero5.svg}
+
+\textbf{Priklausomybė nuo elektrinio lauko stiprio}:
+
+\textbf{Fero elektrinė fazė}:
+
+\includegraphics[scale=1]{fero6.svg}
+
+$\varepsilon'$ - dielektrinė skvarba
+$\varepsilon$ - elektrinio lauko stipris. Matavimo vienetai: $\frac{V}{m}$
+
+Būnant fero elektrikui fero elektrinėje fazėje, kyla iki Koercinio elekrinio stiprio,
+toliau mažėja pagal $\frac{1}{x}$ dėsnį.
+
+Daugiau domenų orientuojasi, todėl dielektrinė skvarba didėja.
+Pasiekiamas Kiuri taškas. Medžiaga tampa modnodomenine, taigi P tampa konstanta.
+Elektrinis laukas ir toliau didėja, taigi dielektrinė skvarba kinta pagal $\frac{1}{E}$
+dėsnį.
+
+\begin{equation*}
+  \varepsilon' = \frac{P}{E} 
+\end{equation*}
+$\varepsilon'$ - dielektrinė skvarba
+$P$ - poliarizacija
+$E$ - Elektrinis laukas
+
+\begin{equation*}
+  D = q * N
+\end{equation*}
+$D$ - Domeninė koncentracija
+
+\textbf{Paraelektrinė fazė}:
+
+\includegraphics[scale=1]{fero7.svg}
+
+Kadangi nėra domenų, tai dielektrinė skvarba kinta pagal $\frac{1}{E}$
+dėsnį.
+
+\textbf{Periodiniu laiko momentu}
+
+\includegraphics[scale=1]{fero8.svg}
+
+$P$ - polaizirazija
+$E$ - Elektrinis laukas
+
+Fero elektrinėje fazėje kreivė vadinama Histerizės kilpa.
+Paraelektrinėje fazėje polairizacija nuo elektrinio lauko priklauso tiesiškai
+
+Liekamoji poliarizacija esant Fero elektrinėje fazėje įsimenama polių.
+Efektas panaudojamas kuriant atminties elementus.
+
+\begin{remember}
+	\item Kas yra feroelektrikai
+	\item Kad fero elektrinėje fazėje reiškiasi domeninė struktūra
+	\item Faziniai virsmai (1-mos, 2-tros rūšies)
+	\item Koks dėsnis aprašo (Kiuri)
+	\item Dielektrinė skvarba (1-mos, 2-tros rūšies) nuo temperatūros
+	\item Faziniai virsmai (Landau) (1-mos, 2-tros rūšies)
+	\item Kaip kinta spontaninė poliarizacija (1-mos, 2-tros rūšies)
+	\item Dielektrinė skvarba priklauso nuo elektrinio stiprio (P ir F)
+	\item Poliarizacija patalpinant į periodinį lauką (P ir F; Histerizė)
+\end{remember}
 
 \section{Diamagnetikai, paramegnetikai, feromagnetikai magnetiniame lauke.}
 Feromagnetikų visi netiesiniai parametrų kitimai yra valdomi magnetiniais
