@@ -461,7 +461,7 @@ Didėjant $T$ metalų savitoji varža $\gamma \cong T$.
 \subsection{Dielektrikai elektriniame lauke}
 
 \begin{equation*}
-  P_i = q*l
+	P_i = q*l
 \end{equation*}
 $P_i$ - dipolinis momentas
 $q$ - krūvis
@@ -470,13 +470,13 @@ Paprasčiausias dipolinis momentas - elektronas skriejantis apie teigiamą brand
 
 Matavimo vienetai:
 \begin{equation*}
-  \overrightarrow{P} = [\frac{Cm}{m^3}]=[\frac{C}{m^2}]
+	\overrightarrow{P} = [\frac{Cm}{m^3}]=[\frac{C}{m^2}]
 \end{equation*}
 \begin{equation*}
-  P = [\frac{V}{m}]
+	P = [\frac{V}{m}]
 \end{equation*}
 \begin{equation*}
-  \overrightarrow{D} = [\frac{F*V}{m*m}]=[\frac{C}{m^2}]
+	\overrightarrow{D} = [\frac{F*V}{m*m}]=[\frac{C}{m^2}]
 \end{equation*}
 
 
@@ -493,10 +493,10 @@ Donoruose (n-egative tipo puslaidininiuose), fermio lygmuo išsidėsto arčiau l
 
 Patalpinus puslaidininkį į elektrinį lauką
 \begin{itemize}
-  \item pliusas(+) prie P, minusas(-) prie N. Tiesioginė kryptis -
-  sandūros plotis mažiausias.
-  \item pliusas(+) prie N, minusas(-) prie P. Atvirkštinė kryptis -
-  sandūros plotis didžiausias, taigi ir varža didžiausia.
+	\item pliusas(+) prie P, minusas(-) prie N. Tiesioginė kryptis -
+	sandūros plotis mažiausias.
+	\item pliusas(+) prie N, minusas(-) prie P. Atvirkštinė kryptis -
+	sandūros plotis didžiausias, taigi ir varža didžiausia.
 \end{itemize}
 
 
@@ -559,17 +559,17 @@ $P_s$ ─ spontaninė
 $F_0$ ─ termodinaminis potencialas.
 
 \begin{itemize}
-  \item Jeigu medžiagoje vyksta 1-mos rūšies faziniai virsmai,
-  tai pakanka nagrinėti skleistinę iki iki $\gamma$ (skleistinės parametro)
-  \item Jei 2-ros rūšies ─ termodinaminis potencialas nagrinėjamas iki $beta$
-  parametro.
+	\item Jeigu medžiagoje vyksta 1-mos rūšies faziniai virsmai,
+	tai pakanka nagrinėti skleistinę iki iki $\gamma$ (skleistinės parametro)
+	\item Jei 2-ros rūšies ─ termodinaminis potencialas nagrinėjamas iki $beta$
+	parametro.
 \end{itemize}
 
 \begin{itemize}
-  \item Jei medžiagoje vyksta 1-mos rūšies fazinis virsmas,
-  tai jo metu šuoliškai kinta termodinaminio potencialo pirmosios išvestinės.
-  \item Jei feroelektrikuose vyksta 2-tros rūšies fazinis virsmas
-  ─ jų metu šuoliškai kinta termodinaminio potenicialo 2-osios išvestinės.
+	\item Jei medžiagoje vyksta 1-mos rūšies fazinis virsmas,
+	tai jo metu šuoliškai kinta termodinaminio potencialo pirmosios išvestinės.
+	\item Jei feroelektrikuose vyksta 2-tros rūšies fazinis virsmas
+	─ jų metu šuoliškai kinta termodinaminio potenicialo 2-osios išvestinės.
 \end{itemize}
 
 Pravartu žinoti kai nuo temperatūros kinta dielektrinė skvarba:
@@ -646,14 +646,14 @@ Elektrinis laukas ir toliau didėja, taigi dielektrinė skvarba kinta pagal $\fr
 dėsnį.
 
 \begin{equation*}
-  \varepsilon' = \frac{P}{E} 
+	\varepsilon' = \frac{P}{E} 
 \end{equation*}
 $\varepsilon'$ - dielektrinė skvarba
 $P$ - poliarizacija
 $E$ - Elektrinis laukas
 
 \begin{equation*}
-  D = q * N
+	D = q * N
 \end{equation*}
 $D$ - Domeninė koncentracija
 
@@ -678,15 +678,15 @@ Liekamoji poliarizacija esant Fero elektrinėje fazėje įsimenama polių.
 Efektas panaudojamas kuriant atminties elementus.
 
 \begin{remember}
-  \item Kas yra feroelektrikai
-  \item Kad fero elektrinėje fazėje reiškiasi domeninė struktūra
-  \item Faziniai virsmai (1-mos, 2-tros rūšies)
-  \item Koks dėsnis aprašo (Kiuri)
-  \item Dielektrinė skvarba (1-mos, 2-tros rūšies) nuo temperatūros
-  \item Faziniai virsmai (Landau) (1-mos, 2-tros rūšies)
-  \item Kaip kinta spontaninė poliarizacija (1-mos, 2-tros rūšies)
-  \item Dielektrinė skvarba priklauso nuo elektrinio stiprio (P ir F)
-  \item Poliarizacija patalpinant į periodinį lauką (P ir F; Histerizė)
+	\item Kas yra feroelektrikai
+	\item Kad fero elektrinėje fazėje reiškiasi domeninė struktūra
+	\item Faziniai virsmai (1-mos, 2-tros rūšies)
+	\item Koks dėsnis aprašo (Kiuri)
+	\item Dielektrinė skvarba (1-mos, 2-tros rūšies) nuo temperatūros
+	\item Faziniai virsmai (Landau) (1-mos, 2-tros rūšies)
+	\item Kaip kinta spontaninė poliarizacija (1-mos, 2-tros rūšies)
+	\item Dielektrinė skvarba priklauso nuo elektrinio stiprio (P ir F)
+	\item Poliarizacija patalpinant į periodinį lauką (P ir F; Histerizė)
 \end{remember}
 
 \section{Diamagnetikai, paramegnetikai, feromagnetikai magnetiniame lauke.}
