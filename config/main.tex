@@ -4,6 +4,16 @@
 \usepackage{mdframed}
 \usepackage{gensymb}
 
+\newcommand{\includesvg}[2]{%
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=1]{content/svg/#1.pdf}%
+  \caption{#2}
+  \label{fig:svg:#1}
+\end{figure}
+}
+\newcommand{\refsvg}[1]{\ref{fig:svg:#1}}
+
 \begin{document}
   \input{global-config.tex}
   \maketitle
