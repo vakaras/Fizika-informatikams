@@ -18,6 +18,11 @@ SVG_FILES_NAMES=\
 	fero7.svg \
 	fero8.svg \
 	volamperine.svg \
+	feromagnet.svg \
+	feromagnet2.svg \
+	feromagnet3.svg \
+	feromagnet4.svg \
+	feromagnet5.svg \
 
 SVG_FILES=$(shell \
 					for file_name in ${SVG_FILES_NAMES}; do \

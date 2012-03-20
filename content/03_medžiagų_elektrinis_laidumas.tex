@@ -852,70 +852,88 @@ fazių: feromagnetinėje arba paramagnetinėje fazėje. Tai yra
 feromagnetikuose, priklausomai nuo temperatūros, vyksta fazinis virsmas
 iš feromagnetinės į paramagnetinę fazę. Feromagnetinėje fazėje
 egzistuoja domeninė struktūra. Feromagnetikuose domenai, tai yra
-sritys, turinčios tam tikros krypties, magnetinę indukciją.
+sritys, turinčios tam tikros krypties magnetinę indukciją.
 Magnetinė indukcija yra žymima raide $B$. Sąryšis tarp magnetinės
-indukcijos ir magnetinio lauko stiprio yra $B = \mu\mu_{0}H$.
-$H$ yra matuojamas $\left[ \frac{A}{m} \right]$, $\mu$ – bedimensinis
-dydis, o $\mu_{0} = 4 \pi \cdot 10 ^{-7}\frac{H}{m}$. Taigi
+indukcijos ir magnetinio lauko stiprio $H$ yra $B = \mu\mu_{0}H$,
+čia $\mu$ yra santykinė aplinkos magnetinė skvarba, o
+$\mu_{0}$ – magnetinė konstanta. $H$ yra matuojamas
+$\left[ \frac{A}{m} \right]$, $\mu$ yra bedimensinis dydis, o
+$\mu_{0} = 4 \pi \cdot 10 ^{-7}\frac{H}{m}$. Taigi
 magnetinė indukcija yra matuojama teslomis $T$. Jeigu talpiname
-feromagnetiką į magnetinį lauką ir didiname magnetinio lauko stipri,
+feromagnetiką į magnetinį lauką ir didiname magnetinio lauko stiprį,
 tai esant tam tikram magnetinio lauko stipriui $H$ visi domenai išsidėstys
 lauko kryptimi. Koercinis laukas (žymimas $H_{c}$) – lauko stipris,
 kuriam esant orientuojasi visi domenai pagal išorinio lauko kryptį.
-Gaunama monodomeninį (?) atvejį. Ši situacija yra įmanoma tik tada,
-kai feromagnetikas yra feromagnetinėje fazėje.
+Gaunamas monodomenas. Ši situacija yra įmanoma tik tada, kai
+feromagnetikas yra feromagnetinėje fazėje.
 
-% TODO: \mu priklausomybė nuo T (absoliučiosios temperatūros).
-$T_{c}$ – temperatūra fazinio virsmo iš feromagnetinės į paramagnetinę
-fazę.
+\includesvg{feromagnet}{$\mu$ priklausomybės nuo $T_{K}$ grafikas.}
+\refsvg{feromagnet} paveikslėlyje pateiktas santykinės aplinkos
+magnetinės skvarbos priklausomybės nuo temperatūros grafikas.
+Grafike $\mu$ yra santykinė aplinkos magnetinė skvarba, $T_{K}$ –
+temperatūra Kelvino skalėje, o $T_{C}$ – Kiuri temperatūra, kuri
+žymi fazinį virsmą iš feromagnetinės į paramagnetinę fazę. $F$ žymi
+feromagnetinę, o $P$ – paramagnetinę fazę.
 
-% TODO: B priklausomybė nuo T.
-Paramagnetinėje fazėje išnykstant domeninei struktūrai indukuotų
-sričių magnetinė indukcija sumažėja iki 0.
+\includesvg{feromagnet2}{$B$ priklausomybės nuo $T_{K}$ grafikas.}
+\refsvg{feromagnet2} paveikslėlyje pateiktas magnetinės indukcijos
+priklausomybės nuo temperatūros grafikas. Matome, kad
+paramagnetinėje fazėje išnykstant domeninei struktūrai indukuotų
+sričių magnetinė indukcija sumažėja iki 0. Grafike $B$ žymi magnetinę
+indukciją, matuojamą teslomis, o $T$ – temperatūrą Kelvino skalėje.
+$F$ žymi feromagnetinę, o $P$ – paramagnetinę fazę.
 
-% TODO: \mu priklausomybė nuo H.
-Didėjant magnetinio lauko stipriui, magnetinė skvarba, iki tam tikros
-magnetinio lauko stiprio reikšmės $H_{c}$ didėja, o vėliau didėjant
-magnetinio lauko stipriui, feromagnetiko magnetinė skvarba mažėja.
-(Ši priklausomybė yra galima tik tada, kai feromagnetikas yra 
-feromagnetinėje fazėje.)
-Priežastis: didėjant lauko stipriui vis daugiau ir daugiau domenų
-orientuojasi magnetinio lauko kryptimi ir dėl šitos priežastis
-magnetinė indukcija didėja ir savo ruožtu didėja magnetinė
-skvarba.
+\includesvg{feromagnet3}{$\mu$ priklausomybės nuo $H$ grafikas, kai
+feromagnetikas yra feromagnetinėje fazėje.}
+\refsvg{feromagnet3} paveikslėlyje pateiktas santykinės aplinkos
+magnetinės skvarbos $\mu$ priklausomybės nuo magnetinio lauko stiprio
+$H$ grafikas, kai feromagnetikas yra feromagnetinėje fazėje. Didėjant
+magnetinio lauko stipriui, magnetinė skvarba, iki tam tikros magnetinio
+lauko stiprio reikšmės $H_{c}$ didėja, o vėliau didėjant magnetinio
+lauko stipriui, feromagnetiko magnetinė skvarba mažėja. (Ši
+priklausomybė yra galima tik tada, kai feromagnetikas yra
+feromagnetinėje fazėje.) Priežastis: didėjant lauko stipriui vis
+daugiau ir daugiau domenų orientuojasi magnetinio lauko kryptimi ir
+dėl šitos priežastis magnetinė indukcija didėja ir savo ruožtu
+didėja magnetinė skvarba.
 \begin{align*}
   \mu &= \frac{B}{\mu_{0}H} & B = const\t{, kai} H \geq H_{c} \\
 \end{align*}
 Esant koerciniam laukui $H_{c}$ feromagnetikas tampa monodomeniniu ir
 toliau didėjant magnetinio lauko stipriui, indukcija $B$ lieka konstanta.
 
-%TODO: \mu priklausomybė nuo H, kai feromagnetikas yra paramagnetinėje
-% fazėje (primena 1/x grafiką).
+\includesvg{feromagnet4}{$\mu$ priklausomybės nuo $H$ grafikas, kai
+feromagnetikas yra paramagnetinėje fazėje.}
+\refsvg{feromagnet4} paveikslėlyje pateiktas santykinės aplinkos
+magnetinės skvarbos $\mu$ priklausomybės nuo magnetinio lauko
+stiprio $H$ grafikas, kai feromagnetikas yra paramagnetinėje
+fazėje.
 
-%TODO: B priklausomybė nuo H, kai talpiname į periodinį lauką.
-% (Feromagnetinėje fazėje.)
-Ši kreivė yra vadinama Histerezės kilpa.
+\includesvg{feromagnet5}{$B$ priklausomybė nuo periodiškai kintančio $H$.}
+\refsvg{feromagnet5} paveikslėlyje pateikti magnetinės indukcijos $B$
+priklausomybės nuo periodiškai kintančio magnetinio lauko stiprio $H$
+grafikai. Kai feromagnetikas yra feromagnetinėje fazėje, tai
+jo grafikas yra taip vadinama Histerizės kilpa. Kai feromagnetikas
+yra Paramagnetinėje fazėje, jo grafikas yra tiesinė magnetinio
+lauko stiprio funkcija.
 
-%TODO: B priklausomybė nuo H, kai talpiname į periodinį lauką.
-% (Paramagnetinėje fazėje.)
-Paramagnetiko indukcija yra tiesinė jo magnetinio lauko stiprio
-funkcija.
-
-Svarbu:
-\begin{itemize}
-  \item kas yra būdinga feromagnetikams (kad jie priklausomai nuo
+\begin{remember}
+  \item Kas yra būdinga feromagnetikams (kad jie priklausomai nuo
     temperatūros gali būti arba feromagnetinėje arba paramagnetinėje
-    fazėje);
-  \item vyksta fazinis virsmas iš feromagnetinės į paramagnetinę;
-  \item domenai
-  \item kaip kinta magnetinė skvarba priklausomai nuo T ir H;
-  \item kaip kinta H nuo T;
-  \item mokėti paaiškinti, kodėl yra tokia $\mu$ priklausomybė nuo H;
-  \item kas darosi, jei feromagnetiką talpiname į periodinį magnetinį
+    fazėje).
+  \item Vyksta fazinis virsmas iš feromagnetinės į paramagnetinę.
+  \item Domenai.
+  \item Kaip kinta magnetinė skvarba priklausomai nuo $T$ ir $H$.
+  \item Kaip kinta $H$ nuo $T$.
+  \item Mokėti paaiškinti, kodėl yra tokia $\mu$ priklausomybė nuo $H$.
+  \item Kas darosi, jei feromagnetiką talpiname į periodinį magnetinį
     lauką.
-\end{itemize}
-Dažniausiai pasitaiko tik pirmos rūšies fazinis virsmas. (Bet pridėjus
-priemaišų, galima gauti ir antros rūšies fazinė virsmą.)
+\end{remember}
+
+\begin{note}
+  Dažniausiai pasitaiko tik pirmos rūšies fazinis virsmas. (Bet pridėjus
+  priemaišų, galima gauti ir antros rūšies fazinė virsmą.)
+\end{note}
 
 \subsection{Paramagnetikai}
 
