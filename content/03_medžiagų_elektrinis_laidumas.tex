@@ -2,7 +2,7 @@
 
 \section{Elektros srovės nešėjų metaluose prigimtis}
 
-Plačiau žr. \cite[53p.]{elektra-magnetizmas}
+Plačiau žr. \cite[53p.]{elektra-magnetizmas}.
 
 Pirmasis jau 1901 metais elektros srovės nešėjų metaluose prigimtį
 bandė eksperimentiškai nustatyti Rikke. Jis dirbo jau žinodamas
@@ -417,22 +417,30 @@ TODO: Juostinio modelio brėžinys.
 
 \section{Puslaidininkai ir dielektrikai elektriniame lauke.}
 
+Plačiau žr. \cite[56p.]{elektra-magnetizmas}
+
 Kalbant apie puslaidininkių laidumą, yra skiriamos dvi jo rūšys:
 $n$\footnote{$n$ nuo žodžio „negative“, krūvio nešėjai yra elektronai.}
 ir $p$\footnote{$p$ nuo žodžio „positive“, krūvio nešėjos yra skylės.},
 kurios savo ruožtu yra skirstomos į sąvąjį ir priemaišinį
 laidumus. TODO: Juostinio modelio brėžinys.
 
+Plačiau: \url{http://en.wikipedia.org/wiki/Fermi_level} ir
+\url{http://en.wikipedia.org/wiki/Fermi-Dirac_statistics#Fermi.E2.80.93Dirac_distribution}
+
 Fermis, remdamasis Paulio draudimo principu, užrašė elektronų
-būsenų pasiskirstymo funkciją:
+būsenų pasiskirstymo funkciją\footnote{Iš statistikos kurso žinome,
+kad tolydžiojo skirstinio pasiskirstymo funkcija apibrėžiama taip:
+$F(x) = P(X < x)$.}:
 \begin{align}
-  F(W)
+  F(W_{F})
   &= \frac{1}{e^{\frac{E_{g} - W_{F}}{kT}} + 1} \\
   &= \frac{1}{e^{\frac{E_{g}}{2kT}} + 1}, \label{eq:puslaidininkai_fw}\\
 \end{align}
 čia:
 \begin{description}
-  \item[$W_{F}$] – Fermio lygmuo;
+  \item[$W_{F}$] – Fermio lygmuo (Fermio lygmuo yra teorinis
+    kristalinio kūno elektrono potencinės energijos lygmuo);
   \item[$E_{g}$] – draustinės juostos plotis;
   \item[$k$] – Bolcmano konstanta;
   \item[$T$] – temperatūra Kelvino skalėje.
@@ -455,7 +463,7 @@ puslaidininkių laidumas išreiškiamas taip:
 Klasikiniai puslaidininkai yra elementų periodinės lentelės IV grupės
 elementai (Ge, Si, Sn, Pb, Ti, Zr ir kiti).
 
-Kristalinėse gardelėse tarp atomų dominuoja kovalentiniai ryšiai.
+Kristalinėse gardelėse tarp atomų dominuoja kovalentiniai ryšiai. \
 Kiekvienas atomas, būdamas keturių kaimynų apsuptyje (kaip tai parodyta
 TODO: paveikslėlis iš 57 skaidrės) rišamas elektronų poromis.
 
@@ -502,12 +510,22 @@ yra analogiška, kaip pavaizduota TODO, tik priemaišinėje laidumo
 srityje laidumo eksponentinėje priklausomybėje vietoj
 energijos $\Delta E_{D}$ įrašomas dydis $\Delta E_{A}$.
 
-Dielektrikų laidumas yra aiškinamas analogiškai, kaip ir puslaidininkių,
-tačiau jų $E_{\rho_{\t{dielektrikų}}} \ll E_{g_{\t{puslaidininkių}}}$.
+Dielektrikų laidumas yra aiškinamas analogiškai, kaip ir
+puslaidininkių, tačiau jų draustinės juostos plotis yra žymiai
+didesnis nei puslaidininkių.
+Plačiau žr. \cite[59p.]{elektra-magnetizmas}.
 
 Metalų atveju, jų laidumas yra aiškinamas elektronų pasikeitimu lygmenimis
 valentinėje zonoje (TODO 7 paveikslėlis iš 61 skaidrės).
-Didėjant $T$ metalų savitoji varža $\gamma \cong T$.
+Plačiau žr. \cite[55p.]{elektra-magnetizmas}.
+
+Metalų savitosios varžos priklausomybė nuo temperatūros:
+\begin{equation*}
+  \rho(t) = \rho_{0} \left( 1 + \alpha t \right),
+\end{equation*}
+čia $\rho$ – savitoji varža, $t$ – temperatūra Celsijaus skalėje,
+$\alpha$ – konstanta, $\rho_{0}$ – savitoji varža $0^{\circ}C$
+temperatūroje.
 
 \begin{remember}
   \item Kaip technologiškai daro priemaišinius puslaidininkius.
