@@ -533,28 +533,84 @@ temperatūroje.
   \item Laidumo priklausomybė nuo temperatūros (kreivės, formulės).
 \end{remember}
 
-
 \subsection{Dielektrikai elektriniame lauke}
 
+Plačiau žr. \cite[37p.]{elektra-magnetizmas}.
+
+Patalpinus medžiagas į elektrinį lauką, jose krūvininkai pradeda
+kryptingai judėti. Dielektrikai paprastai yra joninio ryšio
+kristalinės medžiagos. Jonų elektroninės orbitos yra uždaros
+ir jų elektrinius $n, p$ laidumus gali sąlygoti priemaišos, kurios
+dalinai sutrikdo šių orbitų uždarumą.
+
+Joniniai kristalai gali būti nepoliniai arba poliniai. Poliniais
+jie vadinami tada, kai kristalinė gardelė neturi simetrijos centro.
+Patalpinus tokius kristalus į elektrinį lauką molekulės, kurios
+yra vaizduojamos kaip dipoliai, stengiasi išsidėstyti lauko
+kryptimi. TODO: 8 paveikslėlis iš 62 skaidrės. Toks molekulių
+išsidėstymas $\vec{E}$ krypties atžvilgiu vadinamas poliarizacija.
+
+Elektriniame lauke nepoliniuose dielektrikuose poliarizacijos
+vektoriaus kryptis ir $\vec{E}$ krytis sutampa, tuo tarpu poliniuose
+dielektrikuose net nesant elektrinio lauko, jie jau yra poliarizuoti.
+
+Poliarizacijos vektorius:
 \begin{equation*}
-  P_i = q*l
+  \vec{P} = \frac{\sum _{\Delta V}\vec{p}_{i}}{\Delta V},
 \end{equation*}
-$P_i$ - dipolinis momentas
-$q$ - krūvis
-$l$ - atstumas tarp teigiamo ir neigiamo krūvio
-Paprasčiausias dipolinis momentas - elektronas skriejantis apie teigiamą branduolį.
+čia:
+\begin{description}
+  \item[$\vec{P}$] – poliarizacijos vektorius;
+  \item[$\Delta V$] – dielektriko tūris;
+  \item[$\vec{p}$] – molekulės dipolinis momentas.
+\end{description}
+Dipolinis momentas gali būti išreikštas:
+\begin{equation*}
+  P_{i} = q \cdot l,
+\end{equation*}
+čia $q$ – krūvis, $l$ – atstumas tarp teigiamo ir neigiamo krūvio, dar
+kitaip vadinamas dipolio pečiu. Paprasčiausias dipolinis momentas –
+elektronas skriejantis apie teigiamą branduolį.
+
+Molekulės įgyjamas dipolinis momentas yra proporcingas molekulę
+veikiančiam vietiniam elektriniam laukui:
+\begin{equation*}
+  \vec{p} = \alpha \varepsilon_{0} \vec{E'}
+\end{equation*}
+čia:
+\begin{description}
+  \item[$\vec{p}$] – dipolinis momentas;
+  \item[$\alpha$] – proporcingumo koeficientas, kuris yra vadinamas
+    molekuliniu elektriniu jautriu;
+  \item[$\varepsilon_{0}$] – dielektrinė konstanta;
+  \item[$\vec{E'}$] – molekulę veikiantis vietinis elektrinis laukas
+    ($\vec{E'} = \vec{E}_{d} - \vec{E}_{m}$, kur $\vec{E}_{d}$ yra
+    išorinio elektrinio lauko stipris dielektrike, o
+    $\vec{E}_{m}$ – molekulės kuriamo elektrinio lauko stipris).
+\end{description}
+Plačiau žr. \cite[38p.]{elektra-magnetizmas}.
+
+TODO: Išsiaiškinti kas čia per dydis. (63 skaidrė.)
+Elektrinės indukcijos vektorius:
+\begin{align*}
+  \vec{D}
+  &= \varepsilon_{0}\vec{E} + \vec{P} \\
+  &= \varepsilon_{0}\vec{E} + \alpha \varepsilon_{0} \vec{E} \\
+  &= \varepsilon_{0}(1 + \alpha)\vec{E} \\
+  &= \varepsilon \varepsilon_{0} \vec{E} \\
+\end{align*}
 
 Matavimo vienetai:
-\begin{equation*}
-  \overrightarrow{P} = [\frac{Cm}{m^3}]=[\frac{C}{m^2}]
-\end{equation*}
-\begin{equation*}
-  P = [\frac{V}{m}]
-\end{equation*}
-\begin{equation*}
-  \overrightarrow{D} = [\frac{F*V}{m*m}]=[\frac{C}{m^2}]
-\end{equation*}
-
+\begin{align*}
+  \vec{P}
+  &= \left[ \frac{Cm}{m^3} \right] \\
+  &= \left[ \frac{C}{m^2} \right] \\
+  \vec{p}
+  &= \left[ Cm \right] \\
+  \vec{D}
+  &= \left[ \frac{F*V}{m*m} \right] \\
+  &= \left[ \frac{C}{m^2} \right]
+\end{align*}
 
 \subsection{PNP tranzistoriai}
 
