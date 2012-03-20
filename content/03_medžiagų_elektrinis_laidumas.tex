@@ -997,39 +997,88 @@ lauko stiprio funkcija.
 
 \subsection{Paramagnetikai}
 
-$C$ – Kiuri konstanta,
-$T$ – temperatūra absoliučioje temperatūroje.
+Jeigu medžiagų atomų magnetinis momentas $p_{m} \neq 0$, tokiu atveju
+turime paramagnetikus. Pagal Kiuri, paramagnetikų magnetinis jautris
+yra lygus:
+\begin{equation*}
+  \chi = \frac{C}{T},
+\end{equation*}
+kur $C$ yra Kiuri konstanta, o $T$ – temperatūra Kelvino skalėje.
 
-Įmagnetėjimas $\vec{I} = n_{0}\vec{p}_{m}L(a)$, čia
+1905 metais Lanževenas paskelbė klasikinę paramagnetikų teoriją.
+Pagal ją, atomas $\vec{B}$ magnetinę indukciją turinčiame lauke
+įgyja energiją:
+\begin{equation*}
+  W = -p_{m}B\cos \varphi,
+\end{equation*}
+čia $\varphi$ yra kampas tarp $\vec{p}_{m}$ ir $\vec{B}$.
+Medžiagos įmagnetėjimas:
+\begin{equation*}
+  \vec{J} = n_{0}\vec{p}_{m}L(\alpha),
+\end{equation*}
+čia:
 \begin{description}
   \item[$n_{0}$] – elektronų koncentracija;
-  \item[$L(a)$] – klasikinė Lanžaveno funkcija,
-    $L(a) = \coth a - \frac{1}{a}$.
+  \item[$\vec{p}_{m}$] – magnetinis momentas;
+  \item[$L(\alpha)$] – klasikinė Lanžaveno funkcija,
+    $L(\alpha) = \coth\left( \alpha - \frac{1}{\alpha} \right)$,
+    $\alpha = \frac{\mu_{0}p_{m}H}{kT}$.
 \end{description}
 
-Wėberis – magnetinio lauko linijų skaičius kertantis tam tikra ploto
-vienetą.
+Kai $Hp_{m} \ll kT$, tai $L(\alpha) \approx \frac{\alpha}{3}$ ir
+\begin{equation*}
+  \vec{J} = \frac{n_{0}p_{m}^{2}\mu_{0}}{3kT} \vec{H}.
+\end{equation*}
+Taip pat:
+\begin{align*}
+  \vec{J}
+  &= \chi_{kmol}\vec{H} \\
+  \chi_{kmol}
+  &= \frac{\vec{J}}{\vec{H}} \\
+  &= \frac{n_{0}p_{m}^{2}\mu_{0}}{3kT} \\
+\end{align*}
 
-Elektrono magnetinis momentas $p_{m} = \mu_{B}$.
+Kai $Hp_{m} \gg kT$, tai $L(\alpha) \to 1$ ir
+\begin{equation*}
+  J = n_{0}p_{m}.
+\end{equation*}
 
-Svarbu:
-\begin{itemize}
-  \item paramegnetikuose galime indukuoti magnetinį momentą esant
-    tam tikriems lauko stipriams;
-  \item kaip galima paskaičiuoti kilomolinį jautri remiantis Kuri
-    formule;
-  \item ką pasiūlė Lanžavenas;
-  \item kaip galime surasti įmagnetėjimą, naudojantis dviem sąlygom
+Metaluose:
+\begin{equation*}
+  \chi_{kmol} = \frac{3n_{0}\mu_{B}^{2}\mu_{0}}{2W_{F}},
+\end{equation*}
+čia:
+\begin{description}
+  \item[$\mu_{B}$] – Boro magnetonas
+    ($\mu_{B} = -\frac{e\hbar}{2m_{e}} =%
+    \frac{1,6\cdot10^{-19} C \cdot 1,0545\cdot10^{-34}J\cdot }%
+    {9,1\cdot 10^{31} kg} = 9,27\cdot10^{-23} \frac{J}{T}$);
+  \item[$W_{F}$] – Fermio energija;
+  \item[$n_{0}$] – elektronų tankis.
+\end{description}
+
+\begin{remember}
+  \item Paramegnetikuose galime indukuoti magnetinį momentą esant
+    tam tikriems lauko stipriams.
+  \item Kaip galima paskaičiuoti kilomolinį jautri remiantis Kuri
+    formule.
+  \item Ką pasiūlė Lanžavenas.
+  \item Kaip galime surasti įmagnetėjimą, naudojantis dviem sąlygom
     kai magnetinio lauko energija yra žymiai mažesnė už šiluminę
     energiją, ir, kai magnetinio lauko energija yra žymiai didesnė
     už šiluminę energiją.
-\end{itemize}
+\end{remember}
 
 \subsection{Diamagnetikai}
 
-Magnetikai, kuriuose negalima indukuoti magnetinio momento.
+Magnetikai, kuriuose negalima indukuoti magnetinio momento. Normaliose
+sąlygose jų $p_{m} = 0$, tačiau papildomu lauku $\vec{B}$ elektriniuose
+apvalkaluose galima indukuoti $p_{m}$.
 
-$\Xi_{kmol}$ – kilomagnetinis jautris?
+Diamagnetikų kilomagnetinis jautris yra:
+\begin{equation*}
+  \Xi_{kmol} = \frac{n_{0}\mu_{B}^{2}\mu_{0}}{2W_{F}}.
+\end{equation*}
 
 Paprasčiausias iš diamagnetikų pavyzdys yra oras.
 
