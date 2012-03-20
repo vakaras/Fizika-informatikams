@@ -612,35 +612,50 @@ Matavimo vienetai:
   &= \left[ \frac{C}{m^2} \right]
 \end{align*}
 
-\subsection{PNP tranzistoriai}
+\subsection{$p$ ir $n$ sandūra}
 
-\textbf{Voltamperinė charakteristika}:
+Visos minėtos medžiagos (metalai, puslaidininkiai, dielektrikai)
+vienaip arba kitaip plačiai naudojami visose mūsų gyvenimo
+srityse. $p$ ir $n$ sandūra gaminama paprasčiausiu atveju
+taip: imamas Ge monokristalas ir inertinių dujų atmosferoje arba
+vakuume į jį implantuojamas In atomas. In atomas difunduoja į
+Ge. Tokiame gylyje, iki kurio difunduoja In, Ge tampa skyliniu.
+Riboje turime $p$-$n$ sandūrą TODO 9 paveikslėlis iš 64 skaidrės.
+
+Sujungus $n$ ir $p$ tipo puslaidininkius, skylės ir elektronai
+difunduoja vienas į kitą.
+
+In atomai sudaro akceptorinius lygmenis. Akceptorinių ir donorinių
+priemaišų pasiskirstymas $p$ ir $n$ sandūrų aplinkoje
+parodytas TODO 10 paveikslėlis iš 65 skaidrės.
+
+$p$ ir $n$ sandūros juostinis modelis parodytas TODO: paveikslėlis
+iš 66 skaidrės.
+Akceptoriuose ($p$ tipo puslaidininkiuose), fermio lygmuo išsidėsto
+arčiau valentinės juostos. Donoruose ($n$ tipo puslaidininiuose),
+fermio lygmuo išsidėsto arčiau laidumo juostos. $\Delta x_{1}$ –
+sandūros plotis. Jei patalpinsime puslaidininkį į elektrinį
+lauką:
+\begin{itemize}
+  \item tiesiogine kryptimi ($+$ prie $p$, o $-$ prie $n$), tai
+    sandūros plotis susitrauks iki $\Delta x_{2}$;
+  \item atvirkštine kryptimi ($-$ prie $p$, o $+$ prie $n$),
+    tai sandūros plotis padidės iki $\Delta x_{3}$, tuo pačiu
+    padidės ir varža.
+\end{itemize}
+Taigi, kai prijungiame tiesiogine kryptimi, tai srovės stiprio ir
+įtampos priklausomybė atitinka Omo dėsnį. Apie ašies centrą gali
+būti nukrypimų. Prijungus atvirkštine kryptimi didinant įtampą
+srovė nedidėja. Labai padidinus įtampą įvyksta pramušimas.
+Taigi gavome puslaidininkinį diodą. Diodai naudojami kintamajai
+elektros srovei lyginti. Voltamperinė diodo charakteristika
+pavaizduota \refsvg{volamperine} paveikslėlyje ($I$ – srovės stipris,
+matavimo vienetas yra amperas $[A]$, o $U$ – įtampa, matavimo vienetas
+yra $[V]$.)
+
+TODO paveikslėlis iš 67 skaidrės.
 
 \includesvg{volamperine}{Voltamperinė charakteristika}
-
-Sujungus n ir p tipo puslaidininkius, skylės ir elektronai difunduoja vienas į kitą.
-
-Akceptoriuose (p-ozitive tipo puslaidininkiuose), fermio lygmuo išsidėsto arčiau valentinės juostos.
-Donoruose (n-egative tipo puslaidininiuose), fermio lygmuo išsidėsto arčiau laidumo juostos.
-
-Patalpinus puslaidininkį į elektrinį lauką
-\begin{itemize}
-  \item pliusas(+) prie P, minusas(-) prie N. Tiesioginė kryptis -
-  sandūros plotis mažiausias.
-  \item pliusas(+) prie N, minusas(-) prie P. Atvirkštinė kryptis -
-  sandūros plotis didžiausias, taigi ir varža didžiausia.
-\end{itemize}
-
-
-$I$ - Srovės stipris (Matavimo vienetas: $[A]$)
-$U$ - Įtampa (Matavimo vienetas: $[V]$)
-
-Kai prijungta tiesiogine kryptimi, tai srovės stiprio ir įtampos priklausomybė
-atitinka Omo dėsnį. Apie ašies centrą gali būti nukrypimų.
-Prijungus atvirkštine kryptimi didinant įtampą srovė nedidėja.
-Labai padidinus įtampą įvyksta pramušimas.
-
-Diodai naudojami kintamajai elektros srovei lyginti.
 
 \begin{remember}
   \item Kas atsitinka, kai sujungiame
@@ -649,9 +664,6 @@ Diodai naudojami kintamajai elektros srovei lyginti.
   \item Diodas (prijungus elektrą)
   \item Voltamperinė charakteristika + panaudojimas
 \end{remember}
-
-
-
 
 \subsection{Feroelektrikai}
 Kristalinės medžiagos, kurių gardelės tam tikroje temperatūroje neturi
