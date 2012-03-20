@@ -184,30 +184,48 @@ Dabar galime rasti elektrono vidutinę kinetinę energiją:
   &= \frac{q^{2}l^{2}}{2m\vec{v}^{2}}E^{2} \\
 \end{align*}
 
-TODO: Išsiaiškinti ir sutvarkyti. (50-51 skaidrės)
+Plačiau apie elektros srovės darbą, galią ir Džaulio dėsnį
+žr. \cite[48p.]{elektra-magnetizmas}.
 
-Plačiau žr. \cite[54p.]{elektra-magnetizmas}
-
-Tokiu būdu, elektronai susidurdami su gardelės jonais, atiduoda
-$E_{K}$ energiją gardelei. Kadangi kiekvienas elektronas per sekundę
-vidutiniškai turi $E_{K}$ energijos, tai toks kiekis yra atiduodamas
-gardelei, kuri dėl to šyla. Tokiu būdu tūrio vienete per laiko
-vienetą išsiskiria šiluma:
+Žinome, kad per laiką $t$ laidininku pratekėjusios elektros srovės
+atliktas darbas yra lygus:
+\begin{align*}
+  A
+  &= qU \\
+  &= UIt \\
+\end{align*}
+čia $A$ – darbas, $q$ – pratekėjęs krūvis, $U$ – tos grandinės dalies
+įtampa. Jei laidininkas nejuda ir nevyksta jokie cheminiai pokyčiai,
+tai visas atliktas darbas virsta laidininko vidine energija – tai
+yra jis virsta šiluma $Q$. Tekant elektros srovei laidininku šiluma jame
+atsiranda todėl, kad elektronai veikiami elektrinio lauko gauna
+papildomos kinetinės energijos $E_{K}$ ir paskui ją atiduoda gardelei
+susidurdami su jos mazguose esančiais jonais. Pasinaudodami
+Omo dėsniu išsiskyrusį šilumos kiekį galime išreikšti ir taip:
+\begin{equation*}
+  Q = I^{2}Rt,
+\end{equation*}
+čia $R$ yra laidininko varža. Norėdami ją surasti panagrinėkime be
+galo mažą laidininko elementą. Tarkime, kad $dl$ yra jo ilgis,
+nukreiptas lygiagrečiai srovės tankio vektoriui $\vec{j}$, o
+$dS$ yra skerspjūvio plotas, nukreiptas statmenai jam. Tada
+tokio elemento varža būtų:
+\begin{equation*}
+  R = \rho \frac{dl}{dS},
+\end{equation*}
+čia $\rho$ yra savitoji laidininko varža. Jame išsiskirianti šiluma
+tada būtų:
 \begin{align*}
   \frac{dQ}{dt}
-  &= n \frac{1}{\tau}\langle E_{K} \rangle \\
-  &= \frac{n q^{2} l}{2 m \vec{v}} E^{2} \\
-  &= R I^{2} \\
-\end{align*}
-
-\begin{align*}
-  R
-  &= \gamma \frac{\frac{dl}{dS}}{\frac{dQ}{dt}} \\
-  &= \gamma \frac{dl}{ds}\left( jds \right)^{2} \\
-  &= \gamma j^{2} dV \\
+  &= \left( d I \right)^{2}R \\
+  &= \left( d I \right)^{2}\rho\frac{dl}{dS} \\
+  &= j^{2}\left( d S \right)^{2} \rho \frac{dl}{dS} \\
+  &= \rho j^{2} dS dl \\
+  &= \rho j^{2} dV \\
   Q
-  &= \int _{0} ^{t} dt \int _{V} \gamma j^{2} dV \\
+  &= \int _{0}^{t} dt \int _{V} \rho j^{2} dV, \\
 \end{align*}
+čia $dV (dV = dl \cdot dS)$ yra laidininko elemento tūris.
 Pastaroji matematinė išraiška atitinka Džaulio-Lenco dėsnį.
 (Tekant elektros srovei laidininku, jis šyla.)
 
