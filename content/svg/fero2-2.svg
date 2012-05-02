@@ -59,8 +59,8 @@
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1176"
+     inkscape:window-width="1366"
+     inkscape:window-height="744"
      inkscape:window-x="0"
      inkscape:window-y="24"
      inkscape:window-maximized="1" />
@@ -72,7 +72,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -83,7 +83,7 @@
      transform="translate(0,-952.36218)">
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
-       d="m 12.218776,1038.1586 0,-81.25002"
+       d="m 12.218776,1040.1586 0,-81.25002"
        id="path3753"
        inkscape:connector-curvature="0" />
     <path
@@ -123,18 +123,9 @@
          sodipodi:role="line"
          id="tspan5530"
          x="86.504486"
-         y="1030.6586">T</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:6px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="94.18306"
-       y="1034.23"
-       id="text5532"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan5534"
-         x="94.18306"
-         y="1034.23">K</tspan></text>
+         y="1030.6586">T<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan3009">K</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
@@ -146,19 +137,9 @@
          id="tspan3945"
          x="45.880718"
          y="1044.2606"
-         dy="5.8083777">T</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:6px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="54.467018"
-       y="1051.0792"
-       id="text3947"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan3949"
-         x="54.467018"
-         y="1051.0792"
-         dx="-2.2728431">C</tspan></text>
+         dy="5.8083777">T<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan3007">C</tspan></tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 49.6875,85.446429 0,3.482142"
@@ -167,15 +148,15 @@
        transform="translate(0,952.36218)" />
     <text
        xml:space="preserve"
-       style="font-size:6px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="1.6071426"
-       y="969.68365"
+       style="font-size:11.54323769px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="1.6293155"
+       y="969.62823"
        id="text3976"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3978"
-         x="1.6071426"
-         y="969.68365">E'</tspan></text>
+         x="1.6293155"
+         y="969.62823">𝜀</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:6px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"

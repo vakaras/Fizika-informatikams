@@ -59,8 +59,8 @@
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1680"
-     inkscape:window-height="1026"
+     inkscape:window-width="1366"
+     inkscape:window-height="744"
      inkscape:window-x="0"
      inkscape:window-y="24"
      inkscape:window-maximized="1" />
@@ -72,7 +72,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -83,7 +83,7 @@
      transform="translate(0,-952.36218)">
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
-       d="m 12.218776,1038.1586 0,-81.25002"
+       d="m 12.218776,1040.1586 0,-81.25002"
        id="path3753"
        inkscape:connector-curvature="0" />
     <path
@@ -105,14 +105,14 @@
     <text
        xml:space="preserve"
        style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="1.7902056"
-       y="962.65857"
+       x="3.7902055"
+       y="960.65857"
        id="text4391"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4393"
-         x="1.7902056"
-         y="962.65857">E'</tspan></text>
+         x="3.7902055"
+         y="960.65857">𝜀</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
@@ -156,26 +156,24 @@
     <text
        xml:space="preserve"
        style="font-size:10px;font-style:italic;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Italic"
-       x="28.53681"
-       y="13.379419"
+       x="22.53681"
+       y="973.74158"
        id="text5767"
-       sodipodi:linespacing="125%"
-       transform="translate(0,952.36218)"><tspan
+       sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan5769"
-         x="28.53681"
-         y="13.379419">F</tspan></text>
+         x="22.53681"
+         y="973.74158">F</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:10px;font-style:italic;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Italic"
-       x="72.983521"
-       y="14.137034"
+       x="70.983521"
+       y="974.49921"
        id="text5771"
-       sodipodi:linespacing="125%"
-       transform="translate(0,952.36218)"><tspan
+       sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan5773"
-         x="72.983521"
-         y="14.137034">P</tspan></text>
+         x="70.983521"
+         y="974.49921">P</tspan></text>
   </g>
 </svg>
