@@ -590,7 +590,9 @@ veikiančiam vietiniam elektriniam laukui:
 \end{description}
 Plačiau žr. \cite[38p.]{elektra-magnetizmas}.
 
-TODO: Išsiaiškinti kas čia per dydis. (63 skaidrė.)
+TODO: Išsiaiškinti kas čia per dydis. (63 skaidrė.) Kuo jis
+skiriasi nuo elektrinės slinkties
+aprašytos\cite[28p.]{elektra-magnetizmas}?
 Elektrinės indukcijos vektorius:
 \begin{align*}
   \vec{D}
@@ -666,99 +668,336 @@ TODO paveikslėlis iš 67 skaidrės.
 \end{remember}
 
 \subsection{Feroelektrikai}
-Kristalinės medžiagos, kurių gardelės tam tikroje temperatūroje neturi
-simetrijos centro. Juose vyksta faziniai virsmai, kurie gali būti
-dvejopi: pirmos rūšies (laisvosios energijos pirmosios išvestinės
-kinta šuoliškai temperatūros Kuri taške) ir antros rūšies (termodinamo
-antrosios išvestinės Kuri-Vero taške kinta šuoliškai). Tai yra
-aktualu kuriant elektriniu lauku valdomus kondensatorius.
 
-\textbf{Fero elektrikai} - poliniai dielektrikai,
-kristalinės medžiagos, kurių elementariosios kristalinės gardelės neturi simetrijos centro.
-Tokiose medžiagose dominuoja (reiškiasi) domeninė struktūra.
-\textbf{Domenai} - tai yra tam tikros feroelekriko tūryje poliarizuotos sritys.
+\begin{note}
+  Dėstytojo monologas.
 
-Tačiau patalpinus tokį fero elektriką į elektrinį lauką,
-didinant elekterinio lauko stiprį priverčiame domenus orientuotis lauko kryptimi.
-lauko stipris, kuriam esant domenai orientuojasi lauko kryptimi,
-vadinamas \textbf{koerciniu lauku}.
-Esant koerciniam laukui kristalas tampa \textit{monodoemeniniu} (tarsi visą sudarytų vienas domenas).
+  Jei tokią sandūra mes talpintume į elektrinį lauką, tai elektrinis
+  laukas keistų tos sandūros plotį. Tokiu atveju keistųsi ir
+  sandūros varža.
 
-Be poliarizacijos, svarbų vaidmenį vaidina dielkrinė skvarba.
-Todėl dažnai yra tiriama dielektrinės skvarbos realios dalies temperatūrinė ir \textit{(?)} priklausomybė nuo elektrinio lauko situacija.
+  Jei netalpiname, tai susidaro $\Delta x_{1}$ pločio sandūra.
 
-Paprastai fero elektrikai gali būti 1-mos arba 2-tros rūšies.
-Kaip taisyklė fero elektrikuose vyksta faziniai virsmai.
-Fero elektrikų faziniai virsmai irgi gali būti 1-mos arba 2-tros.
-Sutinkamai su \textit{Landau} teorija, termodinaminį potencialą pažymėjus
-I raide. F galėsime skleisti eilute pagal tvarkos parametrus.
-Feroelektriko \textit{paraelektrinė} \textit{(?)} fazė - vykstanti jame spontaninė poliarizacija.
-Spontaninė poliarizacija - tai tokia, kuri egzistuoja net nesant elektriniam
+  Jei talpiname į elektrinį lauką ir prie $n$ tipo prijungtume
+  neigiamą poliaringumą, tai sandūros plotis sumažėja iki
+  $\Delta x_{2}$ ir taip vadinamas barjerinis aukštis 
+  sumažėja. Tokiu atveju sakome, kad turime tiesioginį
+  jungimą. Gavome prietaisą – diodą. Trikampiukas yra anodas,
+  o juostelė – katodas.
+
+  Galime prijungti ir atvirkščiai. Jei prie anodo prijungiame
+  neigiamą poliarumą, tada sandūros plotis plečiasi, tada
+  berjero aukštis irgi didėja. Kuo barjero aukštis yra aukštesnis,
+  tuo varža yra didesnė.
+
+  TODO: Brėžinys. Diodo voltamperinė charakteristika yra $I$
+  priklausomybė nuo $U$. Jeigu keičiame įtampa prijungę tiesiogine
+  kryptimi, tai yra šioks toks nuokrypis nuo Omo dėsnio, bet
+  šiaip $I$ tiesiškai priklauso nuo $U$ tiesiškai. Jei prijungtume
+  atvirkščiai, tai … Diodai yra naudojami periodiškai kintančių
+  įtampų lyginimui.
+
+  67 skaidrės aiškinimas apie 12:00 Balsas-0009.mp3.
+
+  \begin{itemize}
+    \item Kas atsitinka, kai sujungiame $n$ ir $p$ puslaidininkius.
+    \item Kaip išsidėsto donoriniai lygmenys $p$ puslaidininkyje
+      ir akceptoriniai lygmenys $n$ puslaidininkyje.
+    \item Kas darosi su $p$ $n$ sandūra, kai talpiname ją į elektrinę
+      lauką.
+    \item Kas darosi, kai vienokio ar kitokio poliaringumo elektrinį
+      lauką prijungiame prie diodo elektrodų.
+    \item Diodo voltamperinė charakterstika. Kaip ji yra FIXME?
+  \end{itemize}
+
+  Balsas-0009.mp3 15:28 „Dielektrikai elektriniame lauke.“
+
+  Dielektrikai yra medžiagos, kurios gali būti tiek kristalinės
+  tiek amorfinės, bet jos visumoj yra mažai laidžios elektrai.
+  Jei turime kristalinius dielektrikus, tai jų elementariosios
+  kristalinės gardelės gali turėti simetrijos centrą, arba gali
+  jo neturėti. Jei jos neturi simetrijos centro, tai tokie
+  dielektrikai yra vadinami poliniais. Jei turi – nepoliniais
+  (arba centrosimetriniais).
+
+  Jeigu nepolinį dielektriką patalpiname į elektrinį lauką, tai
+  elektriniai dipoliai išsidėsto taip, kad jų momentai sutaptų
+  su elektrinio lauko vektoriumi.
+  Jei polinį dielektriką patalpiname į elektrinį lauką, tai
+  dipoliai nebūtinai išsidėsto taip, kad jų momentai sutaptų
+  su lauko kryptimi, tačiau didindami galime ir jų momentus
+  pakreipti lauko kryptimi.
+  Tokia dipolių orientacija yra vadinama dielektrikų poliarizacija.
+
+  Jeigu poliarizacija pažymėtume raide $\vec{P}$ TODO Formulė iš 63
+  skaidrės. Jeigu įvesime dydį, kuris vadinamas dielektriniu jautriu,
+  ir lyginsime jį su dielektrine skvarba, tai
+  $\varepsilon = 1 + \chi$. Jei poliarizaciją išreikštume per
+  elektrinio lauko stiprį ir $\chi$, gautume:
+  \begin{equation*}
+    \vec{P} = \chi \varepsilon_{0} \vec{E},
+  \end{equation*}
+  čia: $\chi$ – dielektrinis jautris, $\varepsilon_{0}$ – dielektrinė
+  konstanta, $\vec{E}$ – elektrinio lauko stipris.
+
+  Elektrinio lauko indukcijos vektorius:
+  \begin{equation*}
+    \vec{D}
+    &= \varepsilon_{0} \vec{E} + \vec{P} \\
+    &= \varepsilon\varepsilon_{0} \vec{E} \\
+  \end{equation*}
+  Jeigu medžiagos dielektrinė skvarba $\varepsilon$, pavyzdžiui, oro,
+  yra 1 tai $\vec{D} = \varepsilon_{0} \vec{E}$.
+
+  Nepolinių dielektrikų $\varepsilon \cong 10$, o polinių, tokių kaip
+  feroelektrikai $\varepsilon \cong 10^{2}-10^{4}$.
+
+  Balsas-0009.mp3 24:00 Feroelektrikai
+
+  Feroelektrikai tai yra poliniai dielektrikai. Tai yra kristalinės
+  medžiagos, kurių elementariosios kristalinės gardelės neturi
+  simetrijos centro. Tokiose medžiagose dominuoja (reiškiasi)
+  domeninė struktūra. Domenai tai yra tam tikrosios feroelektriko
+  tūryje poliarizuotos sritys. TODO: Brėžinys iš Aurelijus-10.jpg.
+  Tačiau, jeigu patalpiname tokį feroelektriką į elektrinį lauką,
+  tai didinant elektrinio lauko stiprį mes priverčiame domenus
+  orientuotis lauko kryptimi. Lauko stipris, kuriam esant domenai
+  orientuojasi lauko kryptimi, yra vadinamas koerciniu lauku.
+  Esant koerciniam laukui kristalas tampa monodomeniniu. Tai
+  yra tarsi turime vientisą domeną. Poliarizacijos vektoriai
+  sutampa su lauko stiprio vektoriumi.
+  
+  Svarbų vaidmenį vaidina dielektrinė skvarba. Todėl dažnai yra
+  tiriama dielektrinės skvarbos temperatūrinė priklausomybė ir
+  priklausomybė nuo elektrinio lauko. Paprastai feroelektrikai
+  gali būti pirmos ir antros rūšies. Kaip taisyklė
+  feroelektrikuose vyksta faziniai virsmai. Faziniai virsmai
+  feroelektrikuose irgi gali būti pirmos arba antros rūšies.
+
+  Sutinkamai su Landau termodinamine teorija termodinaminį
+  potencialą feroelektriko pažymėjęs $I$ raide, galime
+  skleisti eilute pagal tvarkos parametrą. Tvarkos parametru
+  feroelektrikų yra vykstanti jame spontaninė poliarizacija.
+  Spontaninė poliarizacija, tai yra savaiminė poliarizacija,
+  kuri egzistuoja netgi nesant elektrinio lauko. Tokiu
+  atveju pagal Landau termodinaminę teoriją bet kuris
+  termodinaminis potencialas, kai nėra jokio poveikio
+  feroelektriko + 1/2 \alpha savaiminio potencialo…
+
+  Jeigu medžiagoje vyksta pirmos rūšies faziniai virsmai tai
+  pakanka nagrinėti termodinaminio potencialo skleistinę iki
+  skleistinės parametro $\gamma$. Jeigu feroelektrike vyksta
+  antros rūšies faziniai virsmai, tai termodinaminis
+  potencialas nagrinėjamas iki $\beta$ parametro. Jeigu
+  medžiagoje vyksta pirmos rūšies fazinis virsmas, tai jo
+  metu šuoliškai kinta termodinaminio potencialo pirmosios
+  išvestinės. O jeigu feroelektrikuose vyksta antros rūšies faziniai
+  virsmai, tai jų metu šuoliškai kinta termodinaminio potencialo
+  antrosios išvestinės.
+  
+  Kaip kinta nuo temperatūros ir elektrinio lauko stiprio dielektrinė
+  skvarba ir spontaninė poliarizacija.
+
+  %TODO: \includesvg{fero1}
+  Jeigu turime pirmos rūšies fazinį virsmą, tai turime tokį dielektrinės
+  skvarbos kitime. Prie temperatūros $T_{C}$ įvyksta kitimas iš
+  feroelektrinės į paraelektrinę fazę. Jeigu feroelektrinėje fazėje
+  feroelektrikas turi polinę simetrija, tai paraelektrinėje
+  fazėje medžiaga tampa nepoline. Tai yra elemenetari kristalinė
+  gardelė įgyja simetrijos centrą.
+   
+  Balsas-0010.mp3 2:20
+  Tokiu atveju mes turim tokį staigų $\varepsilon$ nuo temperatūros
+  kitimą ir būtent temperatūra $T_{C}$ parodo fazinį virsmą ir būtent
+  jis yra susijęs su medžiagos kristalinės struktūros kitimu.
+  Tai yra dielektrikai iš polinių tampa centrosimetriniai.
+
+  % TODO: \includesvg{fero2}
+  Kaip kinta dielektrinė skvarba, kai yra antros rūšies fazinis virsmas.
+  Kaip žinia dielektrinė skvarba neturi dimensijos. Šiuo atveju mes
+  turime tokį kitimą: tai yra nėra tokios griežtos ribos
+  temperatūrinės, kad galėtume pasakyti, kad tai yra feroelektrinė,
+  o tai paraelektrinė fazė. Paimkime, kad žemų temperatūrų
+  srityje yra feroelektrinė, o aukštų – paraelektrinė. Visais
+  atvejais feroelektrikuose ar tai būtų pirmos, ar antros
+  rūšies, feroelektrikus nusako Kiuri dėsnis. Tai yra
+  \begin{equation*}
+    \varepsilon = \varepsilon_{\infty} - \frac{C}{T - T_{C}}
+  \end{equation*},
+  čia: $\varepsilon_{\infty}$ – lūžio rodiklio kvadratas, tai yra
+  dielektrinė skvarba, kuri yra elektroninės poliarizacijos matas,
+  $C$ – konstanta. Jeigu vyksta feroelektrike pirmos rūšies
+  faziniai virsmai, tai jų $C \approx 10^{3}-10^{4} deg$.
+  Jeigu vyksta antros rūšies faziniai virsmai, tai
+  $C \approx 10^{2} - 10^{3} deg$.
+
+  Jeigu atvaizduosime, kaip kinta atvirkštinė $\varepsilon$ nuo
+  temperatūros pirmos ir antros rūšies fazinio virsmo atveju,
+  tai turėsime tokią priklausomybę:
+  jeigu žeminsime temperatūra iš paraelektrinės fazės artėdami
+  prie feroelektrinės fazės, nes šitą temperatūra, mes turime
+  staigų šuoliuką, ir jis yra būdingas pirmos rūšies faziniams
+  virsmams. % TODO: \includesvg{fero2-2}
+
+  % TODO: \includesvg{fero3}
+  Antros rūšies visiškai neaišku, kurioje vietoje vyksta fazinis
+  virsmas temperatūrinėje skalėje. Todėl yra daroma taip šitas
+  yra pratesiamas ir projektuojamas į temperatūrinę skalę
+  ir gauname tašką temperatūrinį, šis taškas yra žymimas
+  $T_{C-V}$ (Kiuri-Veiso temperatūra), kuri ir yra laikoma
+  fazinio virsmo temperatūra iš paraelektrinės į feroelektrinę
+  fazę. Tai yra antros rūšies fazinio virsmo atveju.
+
+  % TODO: Patikrinti hipotezę:
+  % pirmos rūšies fazinis virsmas – virsmas, kai dingsta iš karto
+  % visi domenai, o antros – kai jie dingsta palaipsniui.
+
+  Kitas svarbus parametras, tai yra kaip jau matosi iš Landau
+  … spontaninės poliarizacijos priklausomybė nuo temperatūros
+  pirmos ir antros rūšies fazinių virsmų atveju.
+  Jos dimensija yra $\frac{C}{m^{2}}$. Dabar šiek tiek dar
+  sugrįšime prie šitų lygybių. 
+
+  SKIP: 12:00 - 15:30
+  Grįžtam prie poliarizacijos. Poliarizacijos dydis, kurį
+  galima išreikšti per 
+
+  Spontaninės poliarizacijos temperatūrinė priklausomybė nuo
+  temperatūros. $T_{C}$ taške pirmo fazinio virsmo atveju
+  spontaninė poliarizacija šuoliškai išnyksta. Tai yra
+  vykstant faziniam virsmui medžiagoje keičiasi ne tik
+  kristalinė struktūra: tai yra iš polinės į nepolinę, tačiau
+  išnyksta ir domeninė struktūra $T_{C}$ temperatūroje.
+
+  Kaip dabar atrodys spontaninės poliarizacijos temperatūrinė
+  priklausomybė esant antros rūšies faziniams virsmams. Tai
+  yra turime ne šuolišką, bet tokį lėtą kitimą. Taškas,
+  kuriame visiškai išnyksta yra $T_{C-V}$.
+
+  Kitas svarbus yra dalykas, kaip elgiasi feroelektrikai, jeigu
+  juos talpinsime į nuolatinį elektrinį lauką. Jeigu talpiname
+  į nuolatinį elektrinį lauką ir žiūrime, kaip kinta …
+  Būnant feroelektrikui feroelektrinėje fazėje dielektrinė
+  skvarba didėja, pasiekia maksimumą koercinio lauko $E_{C}$
+  taške ir paskui silpnėja. Taip atsitinka dėl to, kad
+  $\varepsilon = \frac{P}{E}$, didinant elektrinio lauko
+  stiprį vis daugiau ir daugiau domenų orientuojasi lauko kryptimi,
+  $\vec{P}$ didėja ir $\varepsilon$ didėja, bet kai pasiekiamas
+  koercinis lauko stipris, tai toliau didinant $\vec{E}$ dydis
+  $\vec{P}$ išlieka konstanta, nes nėra kam daugiau orientuotis.
+  Toliau $\varepsilon$ kinta pagal dėsnį $\frac{1}{E}$.
+
+  Kaip kinta paramagnetinėje fazėje. Kadangi paraelektrinėje
+  fazėje nėra domenų, tai yra kintant laukui, $\vec{P}$ išlieka
+  konstanta, tai turime $\varepsilon = \frac{1}{E}$.
+
+
+
+
+\end{note}
+
+TODO: Išsiaiškinti ir sutvarkyti.
+
+Plačiau žr. \cite[41p.]{elektra-magnetizmas}.
+
+Feroelektrikais vadinamos kristalinės medžiagos, kurių
+elementariosios gardelės tam tikroje temperatūroje neturi simetrijos
+centro. Juose vyksta faziniai virsmai, kurie gali būti dvejopi:
+\begin{description}
+  \item[pirmos rūšies] – laisvosios energijos pirmosios išvestinės
+    kinta šuoliškai temperatūros Kiuri (\emph{P. Curie}) taške;
+  \item[antros rūšies] – termodinamo antrosios išvestinės
+    Kuri-Vero taške kinta šuoliškai.
+\end{description}
+Tai yra aktualu kuriant elektriniu lauku valdomus kondensatorius.
+Feroelektrikai išlaiko feroelektrines savybes tik žemesnėje, nei
+taip vadinama Kiuri, temperatūroje. Aukštesnėje temperatūroje
+jie virsta paraelektrikais.
+
+Feroelektrikuose dominuoja (reiškiasi) domeninė struktūra. Domenai
+– tai yra tam tikros feroelekriko tūryje poliarizuotos sritys.
+Patalpinus tokį feroelektriką į elektrinį lauką bei didinant
+elektrinio lauko stiprį domenus yra priverčiami orientuotis lauko
+kryptimi. Lauko stipris, kuriam esant domenai orientuojasi lauko
+kryptimi, vadinamas koerciniu lauku. Esant koerciniam laukui kristalas
+tampa monodomeniniu (tarsi būtų sudarytas tik iš vieno domeno).
+
+Be poliarizacijos, svarbų vaidmenį vaidina ir dielektrinė skvarba.
+Todėl dažnai yra tiriama dielektrinės skvarbos realios dalies
+temperatūrinė ir \textit{(FIXME:?)} priklausomybė nuo elektrinio lauko
+situacija.
+
+Paprastai feroelektrikai gali būti pirmos arba antros rūšies.
+Kaip taisyklė feroelektrikuose vyksta faziniai virsmai.
+Feroelektrikų faziniai virsmai irgi gali būti pirmos arba antros
+rūšies. Sutinkamai su Landau teorija, termodinaminį
+potencialą pažymėjus $I$ raide. $F$ galėsime skleisti eilute pagal
+tvarkos parametrus. Feroelektriko \textit{paraelektrinė} \textit{(?)}
+fazė – vykstanti jame spontaninė poliarizacija. Spontaninė
+poliarizacija – tai tokia, kuri egzistuoja net nesant elektriniam
 laukui.
 
 \begin{equation*}
   F = F_0 + \frac{1}{2}\alpha P_s^2 +
   \frac{1}{4}\beta P_s^4 + \frac{1}{6}\gamma P_s^6 + \cdots
 \end{equation*}
-
-$P_s$ ─ spontaninė
-
-$F_0$ ─ termodinaminis potencialas.
+čia $P_s$ yra spontaninė poliarizacija, $F_0$ – termodinaminis potencialas.
 
 \begin{itemize}
-  \item Jeigu medžiagoje vyksta 1-mos rūšies faziniai virsmai,
-  tai pakanka nagrinėti skleistinę iki iki $\gamma$ (skleistinės parametro)
-  \item Jei 2-ros rūšies ─ termodinaminis potencialas nagrinėjamas iki $beta$
-  parametro.
+  \item Jeigu medžiagoje vyksta pirmos rūšies faziniai virsmai,
+    tai pakanka nagrinėti skleistinę iki $\gamma$ (skleistinės
+    parametro).
+  \item Jei antros rūšies – termodinaminis potencialas nagrinėjamas
+    iki $beta$ parametro.
 \end{itemize}
 
 \begin{itemize}
-  \item Jei medžiagoje vyksta 1-mos rūšies fazinis virsmas,
-  tai jo metu šuoliškai kinta termodinaminio potencialo pirmosios išvestinės.
-  \item Jei feroelektrikuose vyksta 2-tros rūšies fazinis virsmas
-  ─ jų metu šuoliškai kinta termodinaminio potenicialo 2-osios išvestinės.
+  \item Jei medžiagoje vyksta pirmos rūšies fazinis virsmas,
+    tai jo metu šuoliškai kinta termodinaminio potencialo pirmosios
+    išvestinės.
+  \item Jei feroelektrikuose vyksta antros rūšies fazinis virsmas
+    – jų metu šuoliškai kinta termodinaminio potenicialo antrosios
+    išvestinės.
 \end{itemize}
 
 Pravartu žinoti kai nuo temperatūros kinta dielektrinė skvarba:
+\begin{itemize}
+  \item pirmos rūšies fazinio virsmo atveju, jei feroelektrinėje
+    fazėje feroelektrikas turėjo polinę simetriją, tai
+    paraelektrinėje fazėje medžiaga tampa nepolinė – gardelė
+    įgyja simetrijos centrą (\refsvg{fero1} paveikslėlis, kuriame:
+    $T_{K}$ – temperatūra Kelvino skalėje, $T_{0}$ – Kiuri
+    temperatūra, $\varepsilon$ – dielektrinė skvarba).
+  \item antros rūšies fazinio virsmo atveju, vyksta kitimas iš
+    feroelektrinės į paraelektrinę fazę (\refsvg{fero2} paveikslėlis).
+\end{itemize}
 
-\textbf{1-mos rūšies fazinis virsmas}:
 \includesvg{fero1}{Pirmos rūšies fazinis virsmas}
-$T_K$ - temperatūra kelvino skalėje
-$T_0$ - temperatūra Kiuri
-$\varepsilon'$ - dielektrinė skvarba
-Jei fero elektrinėje fazėje fero elektrikas turėjo polinę simetriją,
-tai paraelektrinėje fazėje medžiaga tampa nepolinė
-(gardelė įgyja simetrijos centrą)
-
-\textbf{2-tros rūšies fazinis virsmas}:
 \includesvg{fero2}{Antros rūšies fazinis virsmas}
-Vyksta kitimas iš $F$ero elektrinės į $P$ara elektrinę fazę.
 
-Visais atvejais fero-elektriką nusako Kiuri dėsnis
-$\varepsilon = \varepsilon_{\infty} - \frac{C}{T - T_K}$
-$\varepsilon_{\infty}$ - lūžio rodiklio kvadratas \textit{(?)},
-dielektrinė skvarba, kuri yra elektroninės poliarizacijos matas \textit{(?)}.
-$C$ - konstanta
+Visais atvejais fero-elektriką nusako Kiuri dėsnis:
+\begin{equation*}
+  \varepsilon = \varepsilon_{\infty} - \frac{C}{T - T_K},
+\end{equation*}
+čia $\varepsilon_{\infty}$ – lūžio rodiklio kvadratas (FIXME: ar tikrai?),
+dielektrinė skvarba, kuri yra elektroninės poliarizacijos matas
+(FIXME: Ar tikrai?), $C$ – konstanta. Jei vyksta pirmos rūšies
+faziniai virsmai, tai $C \approx (10^3 - 10^4) deg$. Jei antros rūšies
+– $C \approx (10^2 - 10^3) deg$.
 
-Jei vyksta 1-mos rūšies faziniai virsmai,
-tai C $\approx (10^3 - 10^4) deg$
-
-Jei 2-tros rūšies ─ C $\approx (10^2 - 10^3) deg$
-
-\textbf{1-mos rūšies}:
-
+Vykstant pirmos rūšies virsmui iš Paraelektrinės fazės pereinama į
+Feroelektrinę. (\refsvg{fero2-2} paveikslėlis).
 \includesvg{fero2-2}{Pirmos rūšies}
 
-Iš Paraelektrinės fazės pereinama į Feroelektrinę
-
-\textbf{2-tros rūšies}:
+Antros rūšies virsmas pateiktas \refsvg{fero3} paveikslėlyje.
+Kreivę pratęsiame iki centro. $T_{C-V}$ – Kuri-Veisp (Veiss)
+temperatūra, kuri ir laikoma fazinio virsmo iš feroelektrinės į
+paraelektrinę temperatūra.
+\textit{Nesumaišyti: $T_C$ yra tiksli reikšmė, $T_{C-V}$ – pratęsta
+iki centro reikšmė}
 
 \includesvg{fero3}{Antros rūšies}
 
-Kreivę pratęsiame iki centro.
-$T_{C-V}$ - Kuri-Veisp (Veiss) temperat8ra, kuri ir laikoma fazinio virsmo
-iš Fero į Paraelektrinę temperatūra.
-\textit{Nesumaišyti: $T_C$ - tiksli reikšmė, $T_{C-V}$ - pratęsta iki centro reikšmė}
 
 \textbf{1-mos rūšies virsmas}:
 
@@ -1086,6 +1325,158 @@ Kontroliniam darbe bus po 3 skirtingus klausimus. Bus 5 skirtingos
 grupės. Atsinešti rašiklį ir savo smegenis.
 
 \section{Superjonikai.}
+
+Jei srovės pernašoje dalyvauja:
+\begin{itemize}
+  \item $Na^{+}$ – natrio superjonikai;
+  \item $Ag^{+}$ – sidabro superjonikai;
+  \item $Li^{+}$ – lyčio superjonikai;
+  \item $V_{O}^{**}$ – deguonies vakancijų superjonikai;
+  \item $H^{+}$ – protonų superjonikai;
+  \item $O^{2-}$ – deguonies superjonikai.
+\end{itemize}
+
+Deguonies $O_{2}$, anglies monoksido $CO$, anglies dioksido $CO_{2}$
+jutikliuose.
+
+\subsection{Natriosuperjonikai $Na_{2}O-\beta(\beta'')-xAl_{2}O_{3}$}
+
+Natrio beta beta 2 polialiuminatai.
+
+Jei $6 \leq x \leq 11$, tai tokia medžiaga kristalizuoja, tai tokia
+medžiaga priklauso heksagoninei kristalinės simetrijos grupei.
+
+Jei $5,5 \leq x \leq 6$, tai tokia medžiaga kristalizuojasi rombo
+edrinėje kristalinės simetrijos grupėje.
+
+Nubraižytas ab paveiksle. 77 skaidrė.
+
+Kristolografijoje yra naudojamos a, b ir c koordinatės ir jos vadinamos
+kristalinės gardelės parametrais.
+
+Skirtumas tarp singonijų, kad kai kuriose iš jų $a \neq b \neq c$,
+kitose $a = b \neq c$ ir aukščiausioje simetrijos singonijoje
+$a = b = c$ (kubas).
+
+Nupaišytos heksagoninės ir rombaedrinės singonijos. 77 skaidrė.
+
+Anti-Biverso-Rosso energinės padėtys, kurias gali užimti Natrio
+katijonai. Jų užimtumo koeficientas $C < 1$. Užimtumas $ABR$.
+Užimtumo koeficientas, kai $C=1$ yra $BR$ padėčių, o jas gali užimti
+tik tai Natrio katijonai.
+
+Joninio laidumo sandas $\sigma_{j} = q\cdot N_{j} \cdot \mu_{j}$.
+$q$ – elementarusis krūvis ($q = 1,6 \cdot^{-19}C$).
+
+\begin{remember}
+  \item Mokėti skaityti kristalines struktūras Natrio, Natrio $\beta''$
+  \item Žinoti, kad nuo stereometrijos parametro $x$ medžiaga gali
+    būti vienoje iš dviejų kristalinių modifikacijų. Kai
+    $6 \leq x \leq 11$ …
+  \item Heksagoninėje modifikacijoje natrio katijonų yra dvejopos
+    energetinės padėtys elementariojoje … Migracija vyksta abr
+    energetinėm padėtimi. Mažėjant $x$, didėja …
+  \item Pasikeitus simetrijai iš heksagoninės į rombaedrinę, visos
+    natrio… Medžiaga yra nestabili ir neturi praktinės taikomosios
+    paskirties.
+\end{remember}
+
+\subsection{Deguonies vakancijų ($V_{O}^{**}$) superjonikai}
+
+$ZrO_{2}$ stabilizuoto 8 mol \% $Y_{2}O_{3}$.
+
+$\sigma_{j} = \sigma_{0} \exp\left( - \frac{\Delta E_{j}}{kT} \right)$
+
+$\frac{\sigma_{j}}{\sigma_{e}} \ll 1$
+
+TODO: Brėžinys $\sigma [\frac{S}{m}]$ (Simensai iš metro) priklausomybę
+nuo $x mol \% Y_{2}O_{3}$. (Primena parabolę su neigiamu $a$, kurios
+$x_{0}$ yra $8$ moliams.)
+
+Cirkonis $Zr^{4+}$ yra keturvalentis. Jei mes jį keičiam trivalenčiu
+itriu ($Y^{3+}$), tam kad …,  tai turi atsirasti deguonies vakancijų.
+Kai 8mol\% turim kubinę singoniją. …
+
+YSZ – itriu stabilizuotas cirkonis.
+
+\begin{remember}
+  \item Vienas iš populiariausių deguonies vakansijų atstovų yra
+    $ZrO_{2}$ su itrio priemaišomis.
+  \item Pats technologiškai optimaliausias gaunamas, kai
+    ištirpiname $8 mol \%$. Kai ištirpiname tokį kiekį, turime
+    didžiausią joninio laidumo vertę.
+  \item Kiekvienas mol procentas generuoja pusę deguonies vakancijos.
+  \item Mokėti paaiškinti $\sigma$ priklausomybę nuo itrio trioksido
+    kiekio. (Mažėjimas atsiranda dėl judrumo mažėjimo, nes dėl
+    to, kad yra daug vakansijų tarp jų atsiranda stūma.)
+\end{remember}
+
+\subsection{Lyčio $+$ superjonikai.}
+
+Superjonikai, kuriuose pagrindiniai krūvininkai sąlygojantys laidumą
+yra lyčio katijonai.
+
+Lyčio geležies fosfatas.
+
+Turi tam tikrą perimetrą, per kūrį migruoja Lyčio … Tai yra
+elementariojoje gardelėje kiekvienas jonas yra nusakomas ne tik
+energetine padėtimi, bet ir virpėjimu. O jonai yra surišti
+tam tikrais ryšiais, kuriuos formuoja toliaveikės jėgos.
+Judėjimui maišo vibracija deguonies poliedro, kuris yra
+įvardijamas, kaip deguonies langas. Šildant perimetras didėja
+ir virpesiai daro mažesnę įtaką vibracijai, todėl laidumas didėja.
+Pasiekus temperatūrą 523 K įvyksta fazinis virsmas iš
+$\beta$ fazės į $\gamma$ fazę. $\gamma$ fazėje vėl turime
+tris skirtingas energines lyčio fazes, kur $L_{1}$ energinė
+padėtis yra 100\% užimta, per ją migracija yra negalima.
+Padėtys $L_{2}$ ir $L_{3}$ yra dalinai užimtos. Tai yra
+$C_{Li_{2}} < 1$ ir $C_{Li_{3}}$, kai $C_{Li_{1}} = 1$. Todėl
+per $Li_{1}$ migracija yra neįmanoma, o $C_{Li_{2}} → C_{Li_{3}}$
+migracija yra įmanoma. (Čia viskas apie $\gamma$ padėtį.)
+Didžiausias joninis laidumas būtų $\gamma$ fazėje, $\alpha$
+fazėje joninio laidumo nėra, tik elektroninis. Lyčio
+superjonikai naudojami akumuliatoriaus ir anglies dioksido
+jutikliuose.
+
+\begin{remember}
+  \item Lyčio geležies fosfatas, kuris priklausomai nuo temperatūros
+    gali būti vienoje iš trijų fazių.
+  \item Mokėti skaityti žemėlapius. (Brėžinys bus duotas.)
+  \item $\alpha$ fazėje nėra joninės pernašos.
+  \item $\beta$ fazėje pasidaro mišinys … singonijų, bet 
+    jau galimas judėjimas iš $Li_{3}$ į $Li_{1S}$ fazę.
+\end{remember}
+
+\subsection{Protoniniai superjonikai $H^{+}$}
+
+Vandenilio katijoniniai superjonikai. $H^{+}$ superjonikai yra
+Urano fosfatai, kuriuose yra (arba egzistuoja) vandeniliniai ryšiai,
+vandens molekulės bei oksonijaus katijonai. Turi savo sutrumpintą
+pavadinimą $HUP$ (Hydrogen Uranium Phosphate). Tarp urano fosfato
+blokų yra vandeniliniai ryšiai, vandens molekulės, oksonijaus
+katijonai ir $PO_{4}$ kompleksai, kurie suriša visą šią sistemą.
+Šioje sistemoje yra dominuojanti vandens molekulių ir oksonijaus
+katijonų reorientacija. Esant vandens molekulės ir oksonijaus
+katijono reorientacijai yra nutraukiami vandeniliniai ryšiai ir 
+iš vienos energetinės … į kitą yra permetami iš vienos vaned…
+
+\begin{remember}
+  \item Kokie yra struktūriniai ypatumai, tarp 
+  \item Grotaus mechanizmas.
+
+\end{remember}<++>
+
+\subsection{Neišgirdau}
+
+TODO: Grafikas $\log \sigma [\frac{S}{m}]$ nuo $\frac{1}{T}$.
+Virsmo temperatūra Kiuri yra $T_{C} = 142$.
+
+\begin{remember}
+  \item $\alpha$ tūrio centruotas kūbas;
+  \item …
+\end{remember}
+
+
 Medžiagos, kuriose pagrindiniai krūvininkai yra katijonai ir medžiagos
 anijonai. Masės ir elektrinio krūvio perneša. Elektroninis laidumas yra
 žymiai mažesnis už joninį. Superjonikais tas medžiagas vadina fizikai,
