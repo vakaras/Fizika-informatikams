@@ -49,4 +49,4 @@ images: $(PDF_FILES)
 	xelatex -shell-escape -output-directory dist "\input{$*.tex}"
 
 show:
-	xdg-open dist/main.pdf
+	xdg-open dist/main.pdf &> /dev/null
