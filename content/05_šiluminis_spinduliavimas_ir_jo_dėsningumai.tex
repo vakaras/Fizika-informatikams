@@ -2,67 +2,168 @@
 
 % Išdėstyta: 2012-05-02
 
+\section{Elektromagnetinių spinduliavimų rūšys}
+
 \slide{126}
 
 Visi kūnai, kurie yra gamtoje spinduliuoja elektromagnetines bangas.
 Nepriklausomai nuo to ar mes matome tai, ar ne. Spinduliavimai
 priklausomai nuo priežasties vadinami:
 \begin{itemize}
-  \item šiluminiu spinduliavimu;
-  \item chemiliuminescencija;
-  \item elektroliuminescencija;
-  \item …
+  \item šiluminiu spinduliavimu – spinduliavimą sąlygoja temperatūra;
+  \item chemiliuminescencija – cheminės reakcijos;
+  \item elektroliuminescencija – reiškiniai vykstantys tekant elektros
+    srovei;
+  \item katodinė liuminescencija – bombarduojant medžiagas elektronais;
+  \item fotoliuminescencija – vykstant šviesos bangų sugerčiai.
 \end{itemize}
 
-…
+\section{Šiluminis spinduliavimas}
 
-Energetinis kūno švytėjimas:
+Šiluminis spinduliavimas yra pusiausvyrinis procesas. Priklausomai
+nuo temperatūros, kūnai gali spinduliuoti įvairaus ilgio
+elektromagnetines bangas. Kad kūnas spinduliuotų ir nekistų jo
+temperatūra, jo išspinduliuojamas energijos kiekis turi sutapti
+su sugeriamos energijos kiekiu.
+
+Energetinis kūno švytėjimas $R$ – tai energijos srautas, kurį
+spinduliuoja vienetinis kūno ploto vienetas, aprėžtas erdviniu
+$2\pi$ kampu. Kūnas spinduliuoja visą spektrą bangų ilgių ($\lambda$),
+arba kitaip tariant jų dažnių ($\omega$):
 \begin{equation*}
-  R_{\omega} = r_{\omega} d \omega,
+  d R_{\omega} = r_{\omega} d \omega,
 \end{equation*}
-čia $r_{\omega}$ yra temperatūros funkcija.
+čia $r_{\omega}$ yra spinduliavimo geba, kuri yra temperatūros funkcija.
 
-Kirchhofo dėsnis sako, kad spinduliuotės ir sugerties gebų santykis
-nepriklauso nuo medžiagos.
+$R_{\omega T}$ išraišką gauname integruodami pagal dažnį:
+\begin{align*}
+  R_{\omega T}
+  &= \int d R_{\omega T} \\
+  &= \int _{0} ^{\infty} r_{\omega T} d \omega.
+\end{align*}
+Išspinduliuotos bangos ilgį $\lambda$ su jos dažniu $\omega$ sieja
+ryšiai:
+\begin{align*}
+  \lambda &= \frac{2 \pi c}{\omega} \\
+  d \lambda
+  &= - \frac{2 \pi c}{\omega^{2}}d \omega \\
+  &= - \frac{\lambda^{2}}{2 \pi c} d \omega \\
+\end{align*}
+čia „$-$“ parodo tik tai, kad $\omega$ didėjant $\lambda$ mažėja ir
+atvirkščiai.
+
+\section{Spinduliavimo sugertis}
+
+Kitas parametras, nusakantis spinduliavimą yra sugerties geba:
+\begin{equation*}
+  \alpha_{\omega T} = \frac{d \phi'_{\omega}}{d\phi},
+\end{equation*}
+čia:
+\begin{description}
+  \item[$d \phi'_{\omega}$] – energijos srautas, sugeriamas elementariuoju
+    kūno paviršiaus plotu;
+  \item[$d \phi_{\omega}$] – krentantis į šį plotą energijos srautas.
+\end{description}
+
+\section{Kirchofo dėsnis}
+
+Kirchhofo dėsnis\footnote{
+\url{http://en.wikipedia.org/wiki/Kirchhoff\%27s_law_of_thermal_radiation}}
+teigia, kad spinduliuotės ir sugerties gebų santykis nepriklauso nuo
+medžiagos (kitaip tariant nuo kūno prigimties):
+\begin{equation*}
+  \left( \frac{r_{\omega T}}{\alpha_{\omega T}} \right)_{1} =
+  \left( \frac{r_{\omega T}}{\alpha_{\omega T}} \right)_{2} =
+  \left( \frac{r_{\omega T}}{\alpha_{\omega T}} \right)_{3} = \cdots
+\end{equation*}
+
+Kirchofas taip pat nurodė, kad:
+\begin{align*}
+  r _{\omega T}
+  &= f(\omega, T) \\
+  &= \frac{\lambda^{2}}{2 \pi c} \varphi(\lambda, T), \\
+\end{align*}
+čia $\varphi$ yra nežinoma spinduliavimo gebos paskirstymo funkcija.
+
+\section{Absoliučiai juodas kūnas}
 
 \slide{128}
-Sugerties geba skiria dvi medžiagų rūšis:
+Pagal sugerties gabą kūnus galima skirstyti į dvi grupes:
 \begin{itemize}
-  \item absoliučiai juodo kūno $\alpha = 1$;
-  \item o visi kiti – pilki.
+  \item absoliučiai juodus kūnus, kurių $\alpha_{\omega T} = 1$;
+  \item pilkus (visi kiti).
 \end{itemize}
+Absoliučiai juodas kūnas yra fizikinė apbstrakcija, reiškianti
+kūną, kuris sugeria visas į jį krentančias elektromagnetines bangas
+bei bangų neatspindi. Nepaisant to, absoliučiai juodas kūnas gali
+spinduliuoti elektromagnetines bangas ir turėti savo spalvą. Jo
+spinduliavimo spektrą apsprendžia vienintelis parametras –
+temperatūra, dėl to kartais jį siūloma vadinti idealiuoju
+spinduliu.\footnote{
+\url{http://lt.wikipedia.org/wiki/Absoliučiai_juodas_kūnas}}
 
-\slide{129}
-Stefano Bolcmano dėsnis
-
-Stefonas sukūrė kolbą, kuri iš vidaus buvo išklijuota juoduoju aksomu.
-Į kolbą buvo nukreipta šiluminė spinduliuotė, pro angą. Prie išėjimo
-buvo nustatyti indikatoriai, kurie matavo išeinančią energiją.
-Jau tuo atveju, Stefanas nebegalėjo su to laikmečio įranga
-užfiksuoti išeinančio srauto. Po penkių metų su panašia įrangą
-eksperimentą pakartojo Bolcmanas. Po daugelio eksperimentų jie
-nustatė, kad toks įrenginys prilygsta absoliučiai juodam kūnui.
-Energinis švytėjimas gali būti išreikštas:
+Absoliučiai juodų kūnų gamtoje nėra, tačiau galima sukonstruoti
+įrenginį, kurio $\alpha_{\omega T} \cong 1$. Jo paveikslėlis pateiktas
+\slide{129}. Stefanas sukūrė kolbą, kuri iš vidaus buvo išklijuota
+juoduoju aksomu. Į kolbą, pro angą, buvo nukreipta šiluminė
+spinduliuotė. Prie išėjimo buvo nustatyti indikatoriai,
+kurie matavo išeinančią energiją. Jau tuo atveju, Stefanas
+nebegalėjo su to laikmečio įranga užfiksuoti išeinančio srauto. Po
+penkių metų su panašia įranga eksperimentą pakartojo Bolcmanas. Po
+daugelio eksperimentų jie nustatė, kad toks įrenginys prilygsta
+absoliučiai juodam kūnui. Jie eksperimentiškai nustatė, kad 
+energija išspinduliuojama absoliučiai juodo kūno paviršiaus
+vieneto yra:
 \begin{equation*}
-  R^{*} = \int _{0} ^{\infty} f (\omega T) = \sigma T^{4},
+  R^{*} = \sigma T^{4},
 \end{equation*}
-čia $T$ – spinduliuojančio kūno temperatūra.
+čia $T$ – spinduliuojančio kūno temperatūra, o
+$\sigma (\sigma = 5,7 \cdot 10^{-8}\frac{W}{m^{2}K^{4}})$ yra 
+Stefano-Bolcmano konstanta.
 
 \begin{remember}
   \item Stefanas sukonstravo įrenginį prilygstantį absoliučiai juodam
     kūnui.
   \item Leisdamas šiluminę spinduliuotę į tokį kūną, jis nebefiksavo
-    išeities. Kitaip tariant sugertis buvo absoliuti.
-  \item Po to eksperimentą pakartojo Bolcmanas ir jie kartu sulyginę
-    savo rezultatus sukonstravo formulę, kur $\sigma$ yra konstanta
-    nustatyta iš eksperimentinių faktų.
+    atspindžio. Kitaip tariant sugertis buvo absoliuti.
+  \item Po to eksperimentą pakartojo Bolcmanas ir jie kartu palyginę
+    savo rezultatus sukonstravo formulę $R^{*} = \sigma T^{4}$, kur
+    $\sigma$ yra konstanta nustatyta iš eksperimentinių faktų.
 \end{remember}
 
-Šiluminė spinduliuotė - Vino poslinkis. \slide{130}
-$b$ – Vino konstanta.
+\section{Vino poslinkis}
 
-\slide{131}
-Spinduliuotės geba yra dažnio ir temperatūros funkcija.
+Plačiau: \url{http://en.wikipedia.org/wiki/Wien\%27s_displacement_law}.
+
+1893 metais Vinas parodė, kad spektrinio pasiskirstymo funkcija
+\begin{equation*}
+  f(\omega, T) = c \omega^{3} F \left( \frac{\omega}{T} \right),
+\end{equation*}
+o tuo tarpu
+\begin{align*}
+  \varphi(\lambda, T)
+  &= \frac{2 \pi c}{\lambda^{2}} f(\omega(\lambda), T) \\
+  &= \frac{2 \pi c}{\lambda^{2}}
+    f\left( \frac{2\pi c}{\lambda}, T \right) \\
+  &= \frac{2 \pi c}{\lambda^{2}} \left( \frac{2 \pi c}{\lambda} \right)^{3}
+    F\left( \frac{2\pi c}{\lambda} \right) \\
+  &= \frac{1}{\lambda^{5}} \psi\left( \lambda T \right)
+\end{align*}
+Pastaroji lygtis rodo sąryšį tarp bangos ilgio, kuriam tenka
+sugerties $\phi(\lambda, T)$ maksimumas ir temperatūros.
+
+Vino poslinkis yra sąryšis tarp absoliučiai juodo kūno temperatūros ir
+bangos ilgio, ties kuriuo yra spinduliavimo maksimumas:
+\begin{equation*}
+  T\cdot \lambda_{max} = b,
+\end{equation*}
+čia $b = 2,898 \cdot 10^{-3} m\cdot K$. Išsireiškę $\lambda_{max}$
+gauname:
+\begin{equation*}
+  \lambda_{max} = \frac{b}{T},
+\end{equation*}
+iš kurios matome, kad žemėjant temperatūrai $\lambda_{max}$ slenka
+į ilgųjų bangų pusę.
 
 \begin{remember}
   \item Kad Vinas irgi atliko eksperimentinius tyrimus.
@@ -71,14 +172,32 @@ Spinduliuotės geba yra dažnio ir temperatūros funkcija.
   \item Kad nustatė, jog žemėjant temperatūrai maksimumas, kuris atitinka
     tam tikrą bangos ilgį, slenka į ilgųjų bangų pusę. (Prisiminti
     kreives.)
-  \item Nustatė, kad $T\Lambda_{max} = b$, kur $b$ – Vino konstanta.
+  \item Nustatė, kad $T\lambda_{max} = b$, kur $b$ – Vino konstanta.
 \end{remember}
 
-\slide{132}
-Relėjus ir Džinsas užrašė energijos tankio funkciją.
+\section{Relėjaus ir Džinso tyrimai}
 
-Plankui pavyko rasti energijos tankio funkcijos išraišką konstantos
-tikslumu.
+\slide{132}
+
+Relėjus ir Džinsas užrašė energijos tankio funkciją:
+\begin{equation*}
+  f(\omega, T) = \frac{\omega^{2}}{4 \pi^{2}c^{2}}kT.
+\end{equation*}
+Ši išraiška neprieštarauja tam, ką pavyko atrasti Vinui. Taip, pat
+iš šios formulės sektų, kad pusiausvyrinis spinduliavimo energijos
+tankis yra:
+\begin{equation*}
+  u(\omega, T) = \frac{\omega^{2}}{\pi^{2}c^{2}}k T,
+\end{equation*}
+čia $k$ yra Bolcmano konstanta.
+
+1900 metais Plankui energijos tankio funkcijos $u(\omega, T)$
+išraišką pavyko rasti konstantos tikslumu. Jis padarė prielaidą,
+kad spinduliavimas vyksta kvantais su energija:
+\begin{equation*}
+  \varepsilon = \hbar \omega,
+\end{equation*}
+čia $\hbar = \frac{h}{2\pi}$, o $h = 6,62 \cdot 10^{-34} J\cdot s^{-1}$.
 
 \begin{remember}
   \item Pateikė funkcijai išraišką.
