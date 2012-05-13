@@ -1,55 +1,134 @@
 \chapter{Kietakūnių medžiagų taikymas.}
 
-...
+\TODO{Kažko trūksta.}
 
+\section{Frenkelio taškinio defekto teorija.}
 
-\section{... Kažkas su Frenkeliu ...}
+Ši teorija remiasi principu, kad kristalinės gardelės superjonikų
+nėra idealios. Tai yra turi defektus. Turint idealią gardelę, tai
+kai ją sudaro katijonai ir anijonai (\slide{84} „Ideal lattice“),
+tai jie tam tikroje gardelės plokštumoje išsidėsto taip, kaip
+yra pavaizduota. Tai yra kiekvienam katijonui (paveikslėlyje pažymėtam
+„$+$“) atitinka po vieną anijoną (paveikslėlyje pažymėtam „$-$“).
+Pagal Frenkelį nesant idealiai kristalinei gardelei
+gali susidaryti atvejis, kai katijonas palieka reguliarųjį gardelės
+mazgą ir patenka į tarpmazgį (\slide{84} „Point Frenkel – type defects“).
+Tokiu atveju turime defektą, tai yra vakancinis katijoninis mazgas
+ir katijonas tarpmazgyje. Tai yra kristalinės gardelės mazge mes
+neturime masės, o katijonas su mase ir krūviu atsiduria tarpmazgyje.
+Toks defektas, kai gardelėje turime katijoninį vakancinį mazgą
+ir katijoną tarpmazgyje yra vadinamas taškiniu Frenkelio defektu.
 
-Pagal Frenkelį:
- Jei katijonas patenka į tarpmazgį,
- tai jiems migruoti patogiau tarpmazginėje patėtyje.
+Gali būti ir toks atvejis, kai gardelėje reguliarųjį mazgą palieka
+anijonas ir jis atsiduria tarpmazgyje. Vadinasi turime defektą:
+vakancinis anijoninis mazgas ir anijonas tarpmazgyje. Toks defektas
+yra vadinamas taškiniu anti-Frenkelio defektu.
+
+Kaip tai atrodys energetiškai, taškinio Frenkelio defekto situaciją
+atvaizduosime tokiose koordinatėse: energija $W$ ant koordinatės $x$
+(\slide{85}). 1 – kai katijonas yra užėmęs mazgą, 2 – tuščia
+tarpmazginė padėtis, 3 – katijonas yra tarpmazgyje, 4 – neužimta
+tarpmazginė padėtis, 5 – katijonas palikęs reguliarųjį mazgą.
+Pagal Frenkelį jeigu tiktai katijonai patenka į gardelės tarpmazgį,
+tai jiems migruoti yra patogiau tarpmazginėmis padėtimis (Nes
+mažesni energetiniai barjerai.) Katijonų migraciją tarpmazginėmis
+padėtimis stimuliuoja šiluminė energija \TODO{formulės},
+bei \TODO{neišgirdau}.
+
+Iš Frenkelio teorijos reikia žinoti, kad Frenkelis rėmėsi termodinaminiais
+modeliais, kur $R$ yra termodinaminis potencialas, kuris yra išreiškiamas
+per Frenkelio taškinių defektų koncentraciją, Gibso energiją $G$, kuri
+yra reikalinga sukurti defektą, ir minus temperatūra padauginta iš
+\TODO{Ko?}. Gibso energija yra išreiškiama:
+\begin{align*}
+  G_{F} = H_{F} - T \cdot S_{F}, \\
+\end{align*}
+čia:
+\begin{description}
+  \item[$G_{F}$] – Gibso energija, reikalinga sukurti taškinį defektą;
+  \item[$H_{F}$] – entalpija (fizikinis dydis, apibūdinantis
+    termodinaminės sistemos būseną);
+  \item[$T$] – temperatūra;
+  \item[$S_{F}$] – entropijos \FIXME{?} Frenkelio defektą.
+\end{description}
+
+Entropija tai yra šilumos pokytis $\Delta Q$ esant tam tikrai
+sistemos temperatūrai $T$:
+\begin{equation*}
+  S_{F} = \frac{\Delta Q}{T}.
+\end{equation*}
+
+Entalpija:
+\begin{equation*}
+  H_{F} = U + pV,
+\end{equation*}
+čia:
+\begin{description}
+  \item[$U$] – laisvoji energija;
+  \item[$p$] – slėgis;
+  \item[$V$] – tūris.
+\end{description}
+
+Didėjant temperatūrai Frenkelio taškinių krūvių koncentracija eksponentiškai
+didėja, o eksponentės rodiklyje yra Gipso energija reikalinga sukurti
+Frenkelio defektui, padalinta iš dviejų šiluminių energijų.
 
 \begin{remember}
-  \item Frenkelis rėmėsi (formulės) $F = N_F \cdot G_F - T \cdot S$ ir
-  $N_F = \sqrt{NN'}^{-\frac{G_F}{2kT}}$
-  \item Kokia idėja Frankelis rėmėsi, pateikdama savo joninės pernašos
-  idėją:
-  \item Neidealios kristalinės gardelės:\begin{itemize}
-    \item Kristalinėse gardelėse dominuoja Frenkelio ir antifrenkelio
-    taškiniai defektai
-    \item Didėjant temperatūrai, koncentracija didėja eksponentiškai (?)
-  \end{itemize}   
+  \item Kokią idėja Frenkelis rėmėsi pateikdamas savo joninės pernašos
+    teoriją, tai yra išskyrėme koncepciją, kad turime ne idealias
+    kristalines gardeles, kuriose gali būti atvejai, kai kristalinėse
+    gardelėse dominuoja Frenkelio arba anti-Frenkelio taškiniai defektai.
+  \item Reziumuodamas savo teoriją Frenkelis gavo formulę
+    $N_{F} = \sqrt{NN'}^{-\frac{G_F}{2kT}}$, kuria teigia, kad didėjant
+    temperatūrai Frenkelio taškinių defektų koncentracija
+    eksponentiškai didėja ir eksponentės laipsnis yra Gipso energija
+    reikalinga sukurti Frenkelio defektui, padalinta iš dviejų
+    šiluminių energijų.
 \end{remember}
-
 
 \section{Šotkio taškiniai defektai}
 
-Defektų tipai (žr. \textit{Point Shottky-type defects} 87 skaidrė):
-\begin{itemize}
-  \item Šotkio taškinis defektas (\textit{višuje, kur su minusu}).
-  ... pasiekęs paviršių lokalizuojasi ... vakancinį anijoninį mazgą ir
-  anijoną paviršiuje.
-  \item Antišotkio taškinis defektas (\textit{apačioje prie pliuso}).
-  ... pasiekęs paviršių lokalizuojasi ... vakancinis katijoninis mazgas
-  kristalinės gardelės ...
-\end{itemize}
+Plačiau: \url{http://en.wikipedia.org/wiki/Schottky_defect}.
 
-Žr skaidrę \textit{Point Schottky-type defect} (88 skaidrė)
+Šotkis turėdamas daug eksperimentinių faktų, kurie byloja apie tai, kad
+anijonai arba katijonai gali palikti kristalinę gardelę, tai yra
+jos tūrį ir migruodami link kristalo paviršiaus, pasiekę
+paviršių jame lokalizuojasi. Pavyzdžiui, jei anijonas palieka kristalinės
+gardelės turį (\slide{87}) ir migruoja link paviršiaus ir pasiekęs
+paviršių lokalizuojasi, tai turime taškinį defektą kristalinės
+gardelės tūryje – vakancinį anijoninį mazgą ir anijoną kristalo
+paviršiuje. Toks taškinis defektas yra vadinamas Šotkio taškiniu
+defektu. Gali būti situacija kitokia: katijonas palieka kristalinės
+gardelės tūrį, migruoja link kristalo paviršiaus, pasiekęs kristalo
+paviršių lokalizuojasi jame ir turime defektą – vakancinį katijoninį
+mazgą kristalinės gardelės tūryje ir lokalizuotas katijonas kristalo
+paviršiuje. Toks taškinis defektas yra vadinamas anti-Šotkio taškiniu
+defektu.
 
-$k$ - Bolcmano konstanta
-$T$ - temperatūra Kelvino skalėje
-$N$ - koncentracija 
+Šotkis laikydamasis šios koncepcijos pateikė modelį, kuris aprašė
+taškinių defektų koncentracijos priklausomybę nuo temperatūros.
+Šotkis, kaip ir Frenkelis naudojosi pagrindinėmis termodinaminėmis
+lygtimis. Šotkio teorijos išvada yra, kad didėjant temperatūrai
+Šotkio taškinių defektų koncentracija didėja eksponentiškai ir
+eksponentės rodiklyje yra Gipso energija reikalinga sukurti
+taškiniam Šotkio defektui, padalinta iš vienos šiluminės
+energijos(\slide{88}):
+\begin{equation*}
+  N_{\check{S}} = N e^{-\frac{G_{\check{S}}}{kT}}
+\end{equation*}
+čia $N$ yra koncentracija.
 
+\TODO{Įdėti formules su paaiškinimais.}
+ 
 \begin{remember}
-  \item Kokiomis idėjomis rėmėsi Šotkis\begin{itemize}
-    \item Kas yra Šotkio ir antišotkio tipo defektas
-    \item $F = N_Š \cdot G_Š - T \cdot S$
-    \item $G_Š = H_Š - T \cdot S_Š$
-  \end{itemize}
+  \item Kokios idėjos vedamas Šotkis sukūrė savo teorija. Kitaip tariant
+    reikia žinoti kas tai yra Šotkio taškiniai defektai, anti-Šotkio
+    taškiniai defektai.
+  \item Termodinamikoje yra įvedamos \FIXME{kas?}, kurios yra susietos
+    su koncentracija, temperatūra, entropija.
   \item Koncentracijos ir temperatūros priklausomybė:
-  $N_Š = N^{-\frac{G_Š}{k \cdot T}}$
+    $N_{\check{S}} = N e^{-\frac{G_{\check{S}}}{kT}}$.
 \end{remember}
-
 
 \section{Superjoninės keramikos}
 Žr. 89 skaidrę (In 1938...)
