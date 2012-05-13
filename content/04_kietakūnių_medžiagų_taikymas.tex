@@ -212,6 +212,132 @@ Skirtingos struktūros skiriasi savo elektrine talpa ir varža.
 
 \section{Keramikų elektrinės savybės}
 
+% Balsas-0002.mp3 5:35 – 32:00
+
+Norint pagamintas medžiagas vienaip ar kitaip taikyti, reikia mokėti
+matuoti jų elektrines savybes. Paprastai tam, kad pasinaudoti
+superjoninėmis keramikomis, tai turi būti jų joninis laidumas
+kuo didesnis, o aktyvacijos energija kuo mažesnė. Nagrinėsime keramikų
+elektrines savybes. Kaip žinia joninis laidumas yra išreiškiamas,
+kaip ir puslaidininkių atveju: elementarusis krūvis, koncentracija,
+judrumas. Iš Frenkelio ar tai Šotkio teorijų žinome, kad defektų
+koncentracija didėjant temperatūrai didėja eksponentiškai, o aktyvacijos
+energija tai yra Gipso energija.
+  {Antanas Garšva nukabina keltuvininko uniformą. Mėlynas kelnes su
+  raudona siūle ir burokinės spalvos švarką su mėlynais atlapais,
+  „auksinėmis“ sagomis, pintais antpečiais. Švarko atlapų kampuose
+  blizga numeriai. 87 iš kairės, 87 iš dešinės. Jei svečias
+  nepatenkintas keltuvininku, jis gali, prisiminęs numerį, įskųsti jį
+  starteriui. „87 kalės vaikas, 87 užkėlė mane keturiais aukštais
+  aukščiau, 87 87 87, aš sugaišau dvi minutes šioje dėžėje,
+  prakeiktas kalės vaikas 87!“}%
+\footnote{\url{http://antologija.lt/texts/58/tekstas/01.html}}
+Tačiau visuomet, jeigu tik tai kalbama apie savybes sudėtingų
+elektrinių medžiagų, tokių kaip keramikos, iš karto turime
+įsivaizduoti, arba turėti elektrinį ekvivalentą, kurį galima
+naudoti nusakant medžiagą. Paprastai medžiagos yra nusakomos arba
+lygiagrečia, arba nuoseklia elektrine grandine, sudaryta iš
+kondensatoriaus ir varžos (\slide{93}). Šiose medžiagose induktyvumo,
+kaip elemento neturime.
+
+Tokiu atveju, jeigu kalbėti apie diagramas, tai mes turime dvi
+lygiagrečias grandinėles sujungtas nuosekliai, tai yra $C$
+tarpkristalininių \FIXME{Kas?}, $R$ tarpkristalininių \FIXME{Kas?}
+ir tai yra prijungta prie $C$ kristaliukų ir $R$ kristaliukų.
+Paprastumo dėlei panagrinėkime vieną iš šių grandinėlių. Tarkime,
+kad turime tik kristalinę. Paprastai talpa … prijungiame prie
+generatoriaus, grandinė užsidaro … Generatorius yra sinusinių
+arba kosinusinių signalų. Tokioje situacijoje mes turime, kad
+įtampa generatoriaus, kadangi jis lygiagrečiai pajungtas prie
+grandinės, tai kritimas įtampos bus toks pats tiek kondensatoriuje
+tiek varžoje. Kitaip sakant, jeigu mes pažiūrėsime …, tai $U$
+bus ta pati vertė kondensatoriuje ir varžoje. Tačiau, jeigu
+turime lygiagretų jungimą, tai pro kondensatorių tekės srovės
+stipris $I_{C}$, o per varžą $I_{R}$.  Jeigu turėtume nuoseklų
+jungimą, tai turėtume, kad … Paprastai šis dalykas yra
+analizuojamas pasinaudojant vektorinių diagramų metodu.
+… Atidedam įtampa, tai srovė tekanti per aktyvųjį elementą sutampa
+su faze su įtampa. \TODO{Įtampos srovės rezonansas.} …
+Jeigu turim nuoseklų kontūrą, tai įvyksta įtampos rezonansas,
+o jei lygiagretų, tai srovės stiprio rezonansas. Tekanti
+srovė per talpą lenkia įtampą $90\deg$ kampu. … Jeigu kokį
+vektorių kilosime lygiagrečiai jam pačiam kokioje nors plokštumoje, tai
+nuo to sistema nesikeičia. Jeigu $I_{C}$ yra pagal modulį tokios
+vertės ir lenkia $90\deg$ kampu $I_{R}$, kuris pagal modulį
+tarkime yra tokios vertės, tai {
+  Smagu kolioti skaičių. Smagu operuoti
+  skaičiais. 24035 į Sibirą. Smagu. 47 žuvo lėktuvo katastrofoje.
+  Smagu. Parduotos 7038456 adatos. Smagu. Šiąnakt Mister X buvo
+  laimingas 3 kartus. Smagu. Šiandien Miss Y mirė 1 kartą. Smagu. Šiuo
+  metu esu vienas ir prarysiu vieną tabletę. Ir man bus smagiau.}%
+\footnote{\url{http://antologija.lt/texts/58/tekstas/01.html}}
+mes galime $I_{R}$ perkelti lygiagrečiai jam pačiam tarkime į čia.
+Sudedame vektorius $I_{C}$ ir $I_{R}$, gauname atstojamąją $I$.
+Ką mes čia turime: kampą tarp $I$ ir $U$ bei kampą papildantį iki
+$90\deg$ pažymėkime $\delta$. Jeigu skaičiuosime šito kampo tangentą,
+tai būtų srovių santykis: $I_{R}$ su $I_{C}$. Įstačius $I_{R}$
+iš Omo dėsnio ($I_{R} = \frac{U}{R}$), o reaktyvioji varža $I_{C}$
+($I_{C} = \frac{U}{\frac{1}{\omega \cdot C}}$). Padalinę vieną
+iš kito gausime:
+\begin{align*}
+  \tg \delta
+  &= \frac{I_{R}}{I_{C}} \\
+  &= \frac{\frac{U}{R}}{\frac{U}{\frac{1}{\omega \cdot C}}} \\
+  &= \frac{1}{\omega R C}, \\
+\end{align*}
+čia $\omega (2 \pi f)$ yra generatoriaus ciklinis dažnis. …
+
+Paprasčiausiu atveju mes turime plokščią kondensatorių, tai $C$ būtų:
+\begin{equation*}
+  C = \frac{\varepsilon \varepsilon_{0} S}{d},
+\end{equation*}
+čia:
+\begin{description}
+  \item[$\varepsilon$] – medžiagos santykinė dielektrinė skvarba;
+  \item[$\varepsilon_{0}$] – dielektrinė konstanta;
+  \item[$d$] – atstumas tarp plokštelių;
+  \item[$S$] – plokštelių plotas.
+\end{description}
+Kaip žinia, dielektrinė skvarba yra kompleksinis dydis: reali dalis
+$-$ menamoji dalis. … $\varepsilon''$ yra susijęs su medžiagos
+laidumu $\sigma$:
+\begin{equation*}
+  \sigma = \varepsilon' \varepsilon_{0} \omega \tg \delta.
+\end{equation*}
+Dabar $\tg \delta$ gali išreikštas, kaip dielektrinių skvarbų santykis:
+realios ir menamos. Tokiu atveju, jei vietoj $\tg \delta$ įstatysime
+$\frac{\varepsilon''}{\varepsilon'}$, tai $\varepsilon'$ susiprastins
+ir lieka:
+\begin{equation*}
+  \sigma = \varepsilon_{0} \omega \varepsilon''.
+\end{equation*}
+Iš tokių matavimų seka pagrindinis parametras, kuris yra labai
+svarbus taikymo atveju, tai laidumas. … Kadangi šitas
+priklauso eksponentiškai, šitas yra konstanta, šitas kaip puslaidininkų
+teorijoje eksponentiškai priklauso, tai turime ir laidume …
+gausime nuo atvirkštinės temperatūros eksponentinį kitimą \slide{94}.
+… 
+
+\begin{remember}
+  \item Kadangi keramikos yra dviejų bazių visuma: tarkristalininių
+    sandūrų ir kristalinių, tai jos gali būti elektriškai atvaizduotos,
+    kaip lygiagrečiai sujungtos talpa ir varža, taip ir nuosekliai.
+    (Nagrinėjom lygiagrečiai, nuosekliai nebūtina žinoti.)
+  \item Vienas iš parametrų nusakančių keramiką yra laidumas, o laidumai
+    plaukia iš srovės tekėjimo analizės esant kintamam lauke per
+    lygiagrečiai sujungtus varžą ir kondensatorių. …
+  \item Vektorinių diagramų metodu yra prieinama prie laidumo
+    $\sigma$ išraiškos nuo dažnio ir menamos dalies kompleksinės
+    dielektrinės skvarbos.
+  \item Kaip matuoti laidumą taikant tokius metodus. Kodėl priklausomybė
+    nuo temperatūros yra eksponentinė. 
+  \item Kad priklauso laidumas nuo medžiagos išeities parametrų.
+\end{remember}
+
+
+02.mp3: 5:50
+
+
 Žr. 93 skaidrės (su elektros grandinėmis)
 
 $C = \frac{\epsilon \cdot \epsilon_0 \cdot S}{d}$ - elektrinė talpa.
